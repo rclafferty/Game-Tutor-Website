@@ -1,0 +1,328 @@
+{
+    "services" : [
+        {
+            "id": "unity",
+            "currently-offered": true,
+            "name": "Unity 101",
+            "subtitle": "Unity tutoring your way!",
+            "description": "Get personalized help in starting your Unity adventures!",
+            "image": "",
+            "price": 40,
+            "research-price": 20,
+            "deliverable-price": 20,
+            "priceType": "per hour",
+            "session-length": "1-2 hours",
+            "benefits": [
+                "One-on-one sessions",
+                "Tailored learning plans",
+                "Flexible scheduling"
+            ],
+            "addons": [
+                {
+                    "display": true,
+                    "name": "Provide custom project assets",
+                    "description": "Receive custom assets tailored to your project needs.",
+                    "price": 20,
+                    "priceType": "per asset"
+                },
+                {
+                    "display": true,
+                    "name": "Provide custom recordings or documentation",
+                    "description": "Receive custom learning materials to personalize your async learning experience.",
+                    "price": 20,
+                    "priceType": "per deliverable"
+                },
+                {
+                    "display": false,
+                    "name": "Develop custom features or plugins",
+                    "description": "I will create features for you to test and expand upon in your learning process.",
+                    "price": 100,
+                    "priceType": "per asset"
+                }
+            ],
+            "topics": [
+                "Unity Fundamentals",
+                "Game Design",
+                "User Experience (UX)",
+                "User Interface (UI)",
+                "Animation",
+                "Physics",
+                "Asset Management",
+                "C# Scripting",
+                "Debugging",
+                "Version Control",
+                "Game Artificial Intelligence (AI)",
+                "Music and Sound Effects",
+                "Testing",
+                "Accessibility",
+                "Team Collaboration",
+                "Tools and Task Tracking",
+                "Building to Different Platforms",
+                "Third-Party Integrations"
+            ]
+        },
+        {
+            "id": "unreal",
+            "currently-offered": true,
+            "name": "Unreal 101",
+            "subtitle": "Unreal tutoring your way!",
+            "description": "Get personalized help in starting your Unreal adventures!",
+            "image": "",
+            "price": 40,
+            "research-price": 20,
+            "deliverable-price": 20,
+            "priceType": "per hour",
+            "session-length": "1-2 hours",
+            "benefits": [
+                "One-on-one sessions",
+                "Tailored learning plans",
+                "Flexible scheduling"
+            ],
+            "addons": [
+                {
+                    "display": true,
+                    "name": "Provide custom project assets",
+                    "description": "Receive custom assets tailored to your project needs.",
+                    "price": 20,
+                    "priceType": "per asset"
+                },
+                {
+                    "display": true,
+                    "name": "Provide custom recordings or documentation",
+                    "description": "Receive custom learning materials to personalize your async learning experience.",
+                    "price": 20,
+                    "priceType": "per deliverable"
+                },
+                {
+                    "display": false,
+                    "name": "Develop custom features or plugins",
+                    "description": "I will create features for you to test and expand upon in your learning process.",
+                    "price": 100,
+                    "priceType": "per asset"
+                }
+            ],
+            "topics": [
+                "Unreal Fundamentals",
+                "Game Design",
+                "User Experience (UX)",
+                "User Interface (UI)",
+                "Animation",
+                "Physics",
+                "Asset Management",
+                "C# Scripting",
+                "Debugging",
+                "Version Control",
+                "Game Artificial Intelligence (AI)",
+                "Music and Sound Effects",
+                "Testing",
+                "Accessibility",
+                "Team Collaboration",
+                "Tools and Task Tracking",
+                "Building to Different Platforms",
+                "Third-Party Integrations"
+            ]
+        },
+        {
+            "id": "game_programming",
+            "currently-offered": true,
+            "name": "Game Programming",
+            "subtitle": "C++ tutoring your way!",
+            "description": "Get personalized help in starting your C++ adventures!",
+            "image": "",
+            "price": 40,
+            "research-price": 20,
+            "deliverable-price": 20,
+            "priceType": "per hour",
+            "session-length": "1-2 hours",
+            "benefits": [
+                "One-on-1one sessions",
+                "Tailored learning plans",
+                "Flexible scheduling"
+            ],
+            "addons": [
+                {
+                    "display": true,
+                    "name": "Provide custom project assets",
+                    "description": "Receive custom assets tailored to your project needs.",
+                    "price": 20,
+                    "priceType": "per asset"
+                },
+                {
+                    "display": true,
+                    "name": "Provide custom recordings or documentation",
+                    "description": "Receive custom learning materials to personalize your async learning experience.",
+                    "price": 20,
+                    "priceType": "per deliverable"
+                },
+                {
+                    "display": false,
+                    "name": "Develop custom features or plugins",
+                    "description": "I will create features for you to test and expand upon in your learning process.",
+                    "price": 100,
+                    "priceType": "per asset"
+                }
+            ],
+            "topics": [
+                "C++ Fundamentals",
+                "Game Design",
+                "User Experience (UX)",
+                "User Interface (UI)",
+                "Animation",
+                "Physics",
+                "Asset Management",
+                "C# Scripting",
+                "Debugging",
+                "Version Control",
+                "Game Artificial Intelligence (AI)",
+                "Music and Sound Effects",
+                "Testing",
+                "Accessibility",
+                "Team Collaboration",
+                "Tools and Task Tracking",
+                "Building to Different Platforms",
+                "Third-Party Integrations"
+            ]
+        },
+        {
+            "id": "game_design",
+            "currently-offered": true,
+            "name": "Game Design",
+            "subtitle": "C++ tutoring your way!",
+            "description": "Get personalized help in starting your C++ adventures!",
+            "image": "",
+            "price": 40,
+            "research-price": 20,
+            "deliverable-price": 20,
+            "priceType": "per hour",
+            "session-length": "1-2 hours",
+            "benefits": [
+                "One-on-1one sessions",
+                "Tailored learning plans",
+                "Flexible scheduling"
+            ],
+            "addons": [
+                {
+                    "display": true,
+                    "name": "Provide custom project assets",
+                    "description": "Receive custom assets tailored to your project needs.",
+                    "price": 20,
+                    "priceType": "per asset"
+                },
+                {
+                    "display": true,
+                    "name": "Provide custom recordings or documentation",
+                    "description": "Receive custom learning materials to personalize your async learning experience.",
+                    "price": 20,
+                    "priceType": "per deliverable"
+                },
+                {
+                    "display": false,
+                    "name": "Develop custom features or plugins",
+                    "description": "I will create features for you to test and expand upon in your learning process.",
+                    "price": 100,
+                    "priceType": "per asset"
+                }
+            ],
+            "topics": [
+                "C++ Fundamentals",
+                "Game Design",
+                "User Experience (UX)",
+                "User Interface (UI)",
+                "Animation",
+                "Physics",
+                "Asset Management",
+                "C# Scripting",
+                "Debugging",
+                "Version Control",
+                "Game Artificial Intelligence (AI)",
+                "Music and Sound Effects",
+                "Testing",
+                "Accessibility",
+                "Team Collaboration",
+                "Tools and Task Tracking",
+                "Building to Different Platforms",
+                "Third-Party Integrations"
+            ]
+        },
+        {
+            "id": "qa",
+            "currently-offered": false,
+            "name": "QA for Games",
+            "subtitle": "C++ tutoring your way!",
+            "description": "Get personalized help in starting your C++ adventures!",
+            "image": "",
+            "price": 40,
+            "research-price": 20,
+            "deliverable-price": 20,
+            "priceType": "per hour",
+            "session-length": "1-2 hours",
+            "benefits": [
+                "One-on-1one sessions",
+                "Tailored learning plans",
+                "Flexible scheduling"
+            ],
+            "addons": [
+                {
+                    "display": true,
+                    "name": "Provide custom project assets",
+                    "description": "Receive custom assets tailored to your project needs.",
+                    "price": 20,
+                    "priceType": "per asset"
+                },
+                {
+                    "display": true,
+                    "name": "Provide custom recordings or documentation",
+                    "description": "Receive custom learning materials to personalize your async learning experience.",
+                    "price": 20,
+                    "priceType": "per deliverable"
+                },
+                {
+                    "display": false,
+                    "name": "Develop custom features or plugins",
+                    "description": "I will create features for you to test and expand upon in your learning process.",
+                    "price": 100,
+                    "priceType": "per asset"
+                }
+            ],
+            "topics": [
+                "C++ Fundamentals",
+                "Game Design",
+                "User Experience (UX)",
+                "User Interface (UI)",
+                "Animation",
+                "Physics",
+                "Asset Management",
+                "C# Scripting",
+                "Debugging",
+                "Version Control",
+                "Game Artificial Intelligence (AI)",
+                "Music and Sound Effects",
+                "Testing",
+                "Accessibility",
+                "Team Collaboration",
+                "Tools and Task Tracking",
+                "Building to Different Platforms",
+                "Third-Party Integrations"
+            ]
+        }
+    ],
+    "primary-services" : [
+        {
+            "id": "unity"
+        },
+        {
+            "id": "unreal"
+        }
+    ],
+    "secondary-services" : [
+        {
+            "id": "game_programming"
+        },
+        {
+            "id": "game_design"
+        },
+        {
+            "id": "qa"
+        }
+    ]
+}

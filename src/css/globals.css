@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #6A0DAD;
+    --secondary-color: #FF1000;
+    --primary-color-selected: #3949ab;
+    --secondary-color-selected: #c20d00;
+    --background-color: #F5F5F5;
+    --text-color: #1B1B1B;
+    --button-color: var(--secondary-color);
+
+    /* -webkit-text-stroke: 0.3px black;         Standard property for future support */
+}
+
+body {
+    background-color: var(--background-color) !important;
+}
+
+html[data-theme="color-blind"] {
+    --primary-color: black;
+    --secondary-color: rgb(37, 37, 37);
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+.themeFontColor {
+    color: var(--primary-color);
+}
+
+tr {
+    cursor: pointer;
+}
+
+button {
+    border-radius: 1rem !important;
+    font-weight: bold !important;
+    border: none;
+}

@@ -1,0 +1,9 @@
+.calendly-inline-widget-custom {
+    min-width: 20rem;
+    min-height: 50rem;
+}
+
+.calendly-inline-widget-custom iframe {
+    min-width: 20rem;
+    min-height: 50rem;
+}

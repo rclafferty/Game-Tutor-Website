@@ -1,0 +1,12 @@
+.discount-banner {
+    width: 80%;
+    margin: 2rem auto;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.discount-banner h1 {
+    /* color: var(--secondary-color); */
+    color: white;
+}
