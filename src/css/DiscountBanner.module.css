@@ -5,8 +5,15 @@
     color: white;
     text-align: center;
     padding: 2rem;
+    border-radius: 2rem;
 }
 .discount-banner h1 {
     /* color: var(--secondary-color); */
     color: white;
+    font-size: 1.7rem;
+}
+.discount-banner h5 {
+    /* color: var(--secondary-color); */
+    color: white;
+    font-size: 1rem;
 }

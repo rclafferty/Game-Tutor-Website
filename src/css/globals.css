@@ -1,6 +1,7 @@
 :root {
     --primary-color: #6A0DAD;
-    --secondary-color: #FF1000;
+    --secondary-color: #008cff;
+    --tertiary-color: #FF1000;
     --primary-color-selected: #3949ab;
     --secondary-color-selected: #c20d00;
     --background-color: #F5F5F5;
@@ -39,4 +40,8 @@ button {
     border-radius: 1rem !important;
     font-weight: bold !important;
     border: none;
+    background-color: var(--button-color);
+    color: white;
+    padding: 0.25rem;
+    margin: 0 auto;
 }

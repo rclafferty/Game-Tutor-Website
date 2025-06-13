@@ -1,5 +1,8 @@
 .discount {
     color: var(--primary-color);
     text-decoration: underline;
-    
+}
+
+.service-header {
+    color: var(--primary-color);
 }

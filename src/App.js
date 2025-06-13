@@ -27,7 +27,7 @@ function App() {
         <>
             <BrowserRouter>
                 <ErrorBoundary fallback="An error has occurred. For the static site, please visit this page: ">
-                    <Banner headerText="Game Tutor" subHeaderText="Begin your game dev journey here!"/>
+                    <Banner headerText={name} subHeaderText="Begin your game dev journey today!"/>
                 </ErrorBoundary>
                 <Routes>
                     <Route index element={<Home />} />

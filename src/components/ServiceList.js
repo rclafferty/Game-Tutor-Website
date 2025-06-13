@@ -30,7 +30,7 @@ export default function ServiceList() {
                             key={i}
                             id={service.id}
                             name={service.name}
-                            description={service.description}
+                            description={service["short-description"]}
                         />
                     );
                 })}
@@ -47,7 +47,7 @@ export default function ServiceList() {
                             key={id}
                             id={service.id}
                             name={service.name}
-                            description={service.description}
+                            description={service["short-description"]}
                         />
                     );
                 })}

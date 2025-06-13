@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import propTypes from 'prop-types';
 
-import logo from './../logo.svg';
+// import logo from '/images/logo.png';
 
 import NavBar from './NavBar';
 import DiscountBanner from './DiscountBanner';
@@ -46,7 +46,7 @@ export default function Banner(props) {
             <header className="row mb-4" style={{ position: 'relative' }}>
                 <div className="col-5 d-flex align-items-center">
                     <img
-                        src={logo}
+                        src="/images/logo.png"
                         alt="Logo"
                         className={BannerStyles.logo}
                         onClick={() => navigate(`/`)}
