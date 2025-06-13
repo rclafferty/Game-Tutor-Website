@@ -10,19 +10,3 @@
     padding: 0.5rem 0;
     z-index: 1;
 }
-.navbar button {
-    min-width: 10rem;
-    padding: 0.25rem;
-    background-color: var(--primary-color);
-    color: white;
-}
-.navbar button:hover {
-    background-color: var(--secondary-color-selected) !important;
-    color: white;
-}
-
-/* Add a class for the selected/active state */
-.navbar button.selected {
-    background-color: var(--secondary-color);
-    color: white;
-}

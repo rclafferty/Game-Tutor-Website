@@ -1,0 +1,9 @@
+.about-image {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+h1.about {
+    text-align: center;
+    margin: 2rem auto;
+}

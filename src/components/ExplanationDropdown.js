@@ -13,7 +13,7 @@ function ExplanationDropdown({json}) {
     <div className={styles["dropdown-container"]}>
       <div className={styles["button-row"]}>
         {json.map((item, index) => item.display ? (
-          json[index].display && <button key={index} onClick={() => toggleDropdown(index)}>
+          json[index].display && <button key={index} className='secondary' onClick={() => toggleDropdown(index)}>
             {openIndex === index ? `Hide ${json[index].title}` : `${json[index].title}`}
           </button>
         ) : null )}

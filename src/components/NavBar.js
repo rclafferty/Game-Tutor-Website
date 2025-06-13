@@ -1,4 +1,4 @@
-import { useLocation, useParams, useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 
 import styles from '../css/NavBar.module.css';
 
@@ -7,25 +7,25 @@ export default function NavBar() {
     
     const location = useLocation();
     
-    const getActiveClass = (path) => location.pathname === path ? styles.selected : "";
+    const getActiveClass = (path) => location.pathname === path ? "selected" : "";
 
     return (
         <>
             <div className={styles.navbar}>
                 <button
-                    className={`btn ${getActiveClass("/")}`}
+                    className={`${getActiveClass("/")}`}
                     onClick={() => navigate(`/`)}
                 >
                     Home
                 </button>
                 <button
-                    className={`btn ${getActiveClass("/book")}`}
+                    className={`${getActiveClass("/book")}`}
                     onClick={() => navigate(`/book`)}
                 >
                     Book a Service
                 </button>
                 <button
-                    className={`btn ${getActiveClass("/about")}`}
+                    className={`${getActiveClass("/about")}`}
                     onClick={() => navigate(`/about`)}
                 >
                     About

@@ -1,15 +1,11 @@
-import { useLocation, useParams } from "react-router";
+import { useParams } from "react-router";
 
-import DiscountBanner from './DiscountBanner';
 import ExplanationDropdown from './ExplanationDropdown';
 
 import styles from '../css/Service.module.css'
 import ServicesJson from '../json/Services.json';
 
 export default function Service() {
-    // const location = useLocation();
-    // const { house } = location.state;
-
     const { id } = useParams();
     const details = ServicesJson.services.find(x => String(x.id) === id);
 
@@ -17,19 +13,10 @@ export default function Service() {
 
     return (
         <>
+            <h1 className={`col-12 header`}>{details.name}</h1>
+            <h2 className={`col-12 header`}>{details.subtitle}</h2>
             <div className="row">
-                {/* <div className="col-5">
-                    <div className="row">
-                        <img className="img-fluid" src={details.image ? `/images/${details.image}.jpeg` : '/images/defaultphoto.jpeg'} alt="" />
-                    </div>
-                </div> */}
                 <div className>
-                    <div className="row mt-2">
-                        <h1 className="col-12">{details.name}</h1>
-                    </div>
-                    <div className="row">
-                        <h2 className="col-12">{details.subtitle}</h2>
-                    </div>
                     {details["short-description"] && (
                         <div className="row">
                             <p className="col-12 mt-3">{details["short-description"]}</p>
@@ -49,7 +36,6 @@ export default function Service() {
                     <div className="row">
                         <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>
                     </div>
-                    {/* <DiscountBanner /> */}
                     <div className="row">
                         <h5 className={"col-12 mt-3 " + styles["service-header"]}>Topics Covered:</h5>
                         

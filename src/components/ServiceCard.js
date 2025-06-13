@@ -9,7 +9,7 @@ export default function ServiceCard(service) {
         <div className={ServiceCardStyles["service-card"]} onClick={() => navigate(`/service/${service.id}`)}>
             <h3>{service.name}</h3>
             <p>{service.description}</p>
-            <button className="btn">Learn More</button>
+            <button>Learn More</button>
         </div>
     );
 }

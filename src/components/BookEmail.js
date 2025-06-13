@@ -1,7 +1,3 @@
-import { Link } from 'react-router-dom';
-
-import styles from '../css/Book.module.css'
-
 export default function BookEmail() {
 
     const email = "test@test.com";
@@ -21,11 +17,7 @@ export default function BookEmail() {
 
     return (
         <>
-            <h2>Email</h2>
-            <p>Email us at </p>
-            <a href={mailtoLink} target="_blank" rel="noopener noreferrer">
-                {email}
-            </a>
+            <button className={`wide secondary`} onClick={() => { window.location.href = mailtoLink; }} title={`Email us at ${email}`}>Email us at {email}</button>
         </>
     );
 }

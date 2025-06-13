@@ -2,16 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import propTypes from 'prop-types';
 
-// import logo from '/images/logo.png';
-
 import NavBar from './NavBar';
-import DiscountBanner from './DiscountBanner';
 
 import BannerStyles from '../css/Banner.module.css';
 
-// `props` is an object that contains the properties passed to the component
-//      In this case, `props.headerText` is used to display the header text
-//      `props` is a common convention in React
 export default function Banner(props) {
     const navigate = useNavigate();
     
@@ -70,8 +64,6 @@ export default function Banner(props) {
                     </h2>
                 </div>
                 <NavBar />
-
-                {/* <DiscountBanner /> */}
             </header>
         </>
     );

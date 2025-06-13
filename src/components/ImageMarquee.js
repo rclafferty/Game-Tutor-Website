@@ -38,8 +38,6 @@ const ImageMarquee = () => {
   const [isTransitioning, setIsTransitioning] = useState(true);
   const sliderRef = useRef(null);
 
-  const totalSlides = imageList.length + 1; // includes cloned first image
-
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prev => prev + 1);
@@ -88,9 +86,6 @@ const ImageMarquee = () => {
             <Link key={i} to={item.page} style={styles.linkWrapper}>
                 <img src={item.image} alt={`Slide ${i}`} style={styles.image} />
             </Link>
-        //   <a key={i} href={item.service} style={styles.linkWrapper}>
-        //     <img src={item.image} alt={`Slide ${i}`} style={styles.image} />
-        //   </a>
         ))}
       </div>
     </div>

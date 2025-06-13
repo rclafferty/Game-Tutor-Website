@@ -1,10 +1,4 @@
-import { useLocation, useParams } from "react-router";
-
 import styles from '../css/DiscountBanner.module.css'
-
-import BookCalendly from "./BookCalendly";
-import BookEmail from "./BookEmail";
-import BookPhone from "./BookPhone";
 
 export default function Book() {
     return (

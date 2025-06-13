@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import styles from '../css/Book.module.css'
 
 export default function BookCalendly() {
@@ -16,6 +16,8 @@ export default function BookCalendly() {
     return (
         <>
             <h2>Calendly</h2>
+            <p>Ready to book now? Use the Calendly view below to schedule your free introductory call.</p>
+
             <div
                 className={
                     "calendly-inline-widget " +

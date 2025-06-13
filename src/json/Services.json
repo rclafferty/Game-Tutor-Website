@@ -59,7 +59,7 @@
             "topics": [
                 {
                     "title": "Unity Fundamentals",
-                    "description": "Get a solid foundation in Unity—the world's leading real-time development platform. Whether you're new to game development or switching engines, we'll guide you through the Unity Editor, scene setup, components, and prefabs with practical, hands-on exercises. You'll gain the confidence to navigate projects, build scenes, and understand how everything fits together in a real production workflow.",
+                    "description": "Get a solid foundation in Unity, one of the world's leading real-time development platforms. Whether you're new to game development or switching engines, we'll guide you through the Unity Editor, scene setup, components, and prefabs with practical, hands-on exercises. You'll gain the confidence to navigate projects, build scenes, and understand how everything fits together in a real production workflow.",
                     "display": true
                 },
                 {
@@ -83,16 +83,6 @@
                     "display": true
                 },
                 {
-                    "title": "User Experience (UX)",
-                    "description": "test",
-                    "display": false
-                },
-                {
-                    "title": "User Interface (UI)",
-                    "description": "test",
-                    "display": false
-                },
-                {
                     "title": "Physics",
                     "description": "Make your world feel responsive and grounded with Unity's powerful physics system. We'll explore Rigidbody dynamics, collision detection, forces, gravity, and more. Whether you're building a fast-paced platformer or a puzzle game with precise interactions, you'll learn how to make physics work for your design, not against it.",
                     "display": true
@@ -103,39 +93,9 @@
                     "display": true
                 },
                 {
-                    "title": "Asset Management",
-                    "description": "test",
-                    "display": false
-                },
-                {
-                    "title": "Debugging",
-                    "description": "test",
-                    "display": false
-                },
-                {
                     "title": "Version Control",
                     "description": "Whether you're working alone or in a team, version control is your safety net. We'll guide you through version tracking tools and workflows that protect your project from data loss and help you manage changes over time. Learn how to stay organized, roll back mistakes, and collaborate smoothly with others, all without missing a beat.",
                     "display": true
-                },
-                {
-                    "title": "Music and Sound Effects",
-                    "description": "test",
-                    "display": false
-                },
-                {
-                    "title": "Tools and Task Tracking",
-                    "description": "test",
-                    "display": false
-                },
-                {
-                    "title": "Building to Different Platforms",
-                    "description": "test",
-                    "display": false
-                },
-                {
-                    "title": "Third-Party Integrations",
-                    "description": "test",
-                    "display": false
                 }
             ]
         },
@@ -144,8 +104,8 @@
             "currently-offered": true,
             "name": "Unreal 101",
             "subtitle": "Unreal tutoring your way!",
-            "short-description": "Get personalized help in starting your Unreal adventures!",
-            "description": "Get personalized help in starting your Unreal adventures!",
+            "short-description": "Get personalized help in starting your Unreal Engine journey! Whether you're building a prototype or aiming to develop a polished, professional game, this is the perfect place to level up with expert guidance in both Blueprints and C++.",
+            "description": "Unlock the full potential of Unreal Engine with one-on-one tutoring tailored to your goals. Whether you're building your first game or leveling up your professional skills, we'll guide you through Unreal's powerful systems, from level design and animation to AI and cross-platform builds. With a flexible learning plan built around your experience and interests, you'll gain confidence using both C++ and Blueprints while developing real-world, production-ready skills. Learn faster, solve real challenges, and bring your ideas to life your way.",
             "image": "",
             "price": 40,
             "research-price": 20,
@@ -207,18 +167,18 @@
                     "display": true
                 },
                 {
-                    "title": "User Experience (UX)",
-                    "description": "test",
+                    "title": "Testing Fundamentals",
+                    "description": "Get ahead of bugs before they become blockers. Learn how to use Unreal's debugging tools like the Visual Logger, output log, breakpoints, and on-screen debugging. We'll also cover in-editor testing, play-in-editor workflows, and methods for validating systems before they go live.",
                     "display": true
                 },
                 {
-                    "title": "User Interface (UI)",
-                    "description": "test",
+                    "title": "C# Scripting",
+                    "description": "Unlock the full power of Unity with C# scripting. We'll help you go from zero to fluent in writing game logic, creating interactivity, and architecting your systems the right way. Learn core programming concepts, Unity's scripting API, and best practices that will help you code smarter, cleaner, and more efficiently. This is where your games truly come to life.",
                     "display": true
                 },
                 {
-                    "title": "Animation",
-                    "description": "Bring your characters and creatures to life with powerful animation tools in Unreal. Explore animation blueprints, blend spaces, state machines, and control rigs to create fluid and responsive motion. Whether it's a walk cycle or complex combat animations, you'll learn how to tie animation into gameplay for dynamic results.",
+                    "title": "Game AI",
+                    "description": "Build smarter, more reactive NPCs with Unreal's AI systems. You'll explore Behavior Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
                     "display": true
                 },
                 {
@@ -227,53 +187,13 @@
                     "display": true
                 },
                 {
-                    "title": "Asset Management",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "C# Scripting",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Debugging",
-                    "description": "test",
+                    "title": "Animation",
+                    "description": "Bring your characters and creatures to life with powerful animation tools in Unreal. Explore animation blueprints, blend spaces, state machines, and control rigs to create fluid and responsive motion. Whether it's a walk cycle or complex combat animations, you'll learn how to tie animation into gameplay for dynamic results.",
                     "display": true
                 },
                 {
                     "title": "Version Control",
                     "description": "Whether you're working alone or in a team, version control is your safety net. We'll guide you through version tracking tools and workflows that protect your project from data loss and help you manage changes over time. Learn how to stay organized, roll back mistakes, and collaborate smoothly with others, all without missing a beat.",
-                    "display": true
-                },
-                {
-                    "title": "Game Artificial Intelligence (AI)",
-                    "description": "Build smarter, more reactive NPCs with Unreal's AI systems. You'll explore Behavior Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
-                    "display": true
-                },
-                {
-                    "title": "Music and Sound Effects",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Testing Fundamentals",
-                    "description": "Get ahead of bugs before they become blockers. Learn how to use Unreal's debugging tools like the Visual Logger, output log, breakpoints, and on-screen debugging. We'll also cover in-editor testing, play-in-editor workflows, and methods for validating systems before they go live.",
-                    "display": true
-                },
-                {
-                    "title": "Tools and Task Tracking",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Building to Different Platforms",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Third-Party Integrations",
-                    "description": "test",
                     "display": true
                 }
             ]
@@ -705,14 +625,5 @@
         }
     ],
     "secondary-services" : [
-        {
-            "id": "game_programming"
-        },
-        {
-            "id": "game_design"
-        },
-        {
-            "id": "qa"
-        }
     ]
 }
