@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+const cycleTime = 7;
+
 const imageList = [
   {
     "image": '/images/164558.jpeg',
@@ -42,7 +44,7 @@ const ImageMarquee = () => {
     const interval = setInterval(() => {
       setIndex(prev => prev + 1);
       setIsTransitioning(true);
-    }, 2000);
+    }, cycleTime * 1000);
 
     return () => clearInterval(interval);
   }, []);

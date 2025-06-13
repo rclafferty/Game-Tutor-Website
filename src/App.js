@@ -1,28 +1,17 @@
-import { useCallback, useState } from 'react';
-
 import './css/App.css';
 import './css/globals.css';
 
 import Banner from './components/Banner';
 import ErrorBoundary from './components/ErrorBoundary';
-import navValues from './helpers/navValues';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import Home from './components/Home';
 import Service from './components/Service';
 import About from './components/About';
-import Footer from './components/Footer';
 import Book from './components/Book';
 
 const name = 'Game Tutor';
 
 function App() {
-    const navigate = useCallback(
-        (navTo, param) => setNav({current: navTo, param, navigate}),
-        []
-    );
-
-    const [nav, setNav] = useState({ current: navValues.home, navigate});
-
     return(
         <>
             <BrowserRouter>
@@ -37,7 +26,6 @@ function App() {
                     {/* Add more routes as needed */}
                 </Routes>
             </BrowserRouter>
-            <Footer copyright={name}/>
         </>
     );
 }

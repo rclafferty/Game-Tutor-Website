@@ -1,4 +1,7 @@
 footer {
+    width: 100%;
+}
+footer p {
     text-align: center;
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
 }

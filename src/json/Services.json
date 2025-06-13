@@ -172,8 +172,8 @@
                     "display": true
                 },
                 {
-                    "title": "C# Scripting",
-                    "description": "Unlock the full power of Unity with C# scripting. We'll help you go from zero to fluent in writing game logic, creating interactivity, and architecting your systems the right way. Learn core programming concepts, Unity's scripting API, and best practices that will help you code smarter, cleaner, and more efficiently. This is where your games truly come to life.",
+                    "title": "C++ and Blueprints",
+                    "description": "Master Unreal Engine's dual powerhouses: Blueprints and C++. Learn how to build gameplay systems visually with Blueprints, then go deeper with C++ to unlock advanced functionality, custom actors, and performance-driven solutions. We'll show you how these two systems work together so you can create clean, scalable, and flexible game logic with confidence. Whether you're aiming for rapid prototyping or full-scale development, this balanced approach gives you the best of both worlds.",
                     "display": true
                 },
                 {

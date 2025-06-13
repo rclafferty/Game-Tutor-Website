@@ -17,11 +17,6 @@ export default function Service() {
             <h2 className={`col-12 header`}>{details.subtitle}</h2>
             <div className="row">
                 <div className>
-                    {details["short-description"] && (
-                        <div className="row">
-                            <p className="col-12 mt-3">{details["short-description"]}</p>
-                        </div>
-                    )}
                     <div className="row">
                         <p className="col-12 mt-3">{details.description}</p>
                     </div>
