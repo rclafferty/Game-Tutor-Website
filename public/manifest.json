@@ -1,25 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Game Tutor",
+  "name": "Game Tutor - Learn Game Development",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "GameTutorIco.ico",
+      "type": "image/x-icon",
+      "sizes": "64x64"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "logo2.ico",
+      "type": "image/x-icon",
+      "sizes": "427x427"
     },
     {
-      "src": "logo512.png",
+      "src": "logo2.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "427x427"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1a1a2e",
+  "background_color": "#f0f0f0"
 }

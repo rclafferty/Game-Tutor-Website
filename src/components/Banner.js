@@ -30,13 +30,13 @@ export default function Banner(props) {
 
     return (
         <>
-            <button
+            {/* <button
                 onClick={handleToggleTheme}
                 className={BannerStyles.toggleThemeButton}
                 aria-label="Toggle theme"
             >
                 {themeText}
-            </button>
+            </button> */}
             <header className="row mb-4" style={{ position: 'relative' }}>
                 <div className="col-5 d-flex align-items-center">
                     <img
