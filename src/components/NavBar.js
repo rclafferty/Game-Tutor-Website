@@ -13,19 +13,19 @@ export default function NavBar() {
         <>
             <div className={styles.navbar}>
                 <button
-                    className={`${getActiveClass("/")}`}
+                    className={`${getActiveClass(`/`)}`}
                     onClick={() => navigate(`/`)}
                 >
                     Home
                 </button>
                 <button
-                    className={`${getActiveClass("/book")}`}
+                    className={`${getActiveClass(`/book`)}`}
                     onClick={() => navigate(`/book`)}
                 >
-                    Book a Service
+                    Book a Session
                 </button>
                 <button
-                    className={`${getActiveClass("/about")}`}
+                    className={`${getActiveClass(`/about`)}`}
                     onClick={() => navigate(`/about`)}
                 >
                     About

@@ -40,7 +40,7 @@ export default function Banner(props) {
             <header className="row mb-4" style={{ position: 'relative' }}>
                 <div className="col-5 d-flex align-items-center">
                     <img
-                        src="/images/logo.png"
+                        src={`${process.env.PUBLIC_URL}/images/logo.png`}
                         alt="Logo"
                         className={BannerStyles.logo}
                         onClick={() => navigate(`/`)}

@@ -3,22 +3,12 @@
   "name": "Game Tutor - Learn Game Development",
   "icons": [
     {
-      "src": "GameTutorIco.ico",
-      "type": "image/x-icon",
-      "sizes": "64x64"
-    },
-    {
-      "src": "logo2.ico",
-      "type": "image/x-icon",
-      "sizes": "427x427"
-    },
-    {
-      "src": "logo2.png",
+      "src": "WebIcon.png",
       "type": "image/png",
-      "sizes": "427x427"
+      "sizes": "128x128"
     }
   ],
-  "start_url": "/",
+  "start_url": "/Game-Tutor-Website/",
   "display": "standalone",
   "theme_color": "#1a1a2e",
   "background_color": "#f0f0f0"

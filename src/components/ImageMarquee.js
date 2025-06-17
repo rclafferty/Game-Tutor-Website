@@ -6,7 +6,7 @@ const cycleTime = 10;
 const imageList = [
   {
     "image": '/images/Banner/UnityPhysics.png',
-    "page": "service/unity",
+    "page": "/service/unity",
     "subtitle": "Learn Physics",
     "subtitle-2": "in Unity 101"
   },
@@ -18,7 +18,7 @@ const imageList = [
   // },
   {
     "image": '/images/Banner/UnityAI.png',
-    "page": "service/unity",
+    "page": "/service/unity",
     "subtitle": "Learn AI",
     "subtitle-2": "in Unity 101"
   },
@@ -30,13 +30,13 @@ const imageList = [
   // },
   {
     "image": '/images/Banner/Animation.png',
-    "page": "service/unity",
+    "page": "/service/unity",
     "subtitle": "Learn Animation",
     "subtitle-2": "in Unity 101"
   },
   {
     "image": '/images/Banner/CSharp.png',
-    "page": "service/unity",
+    "page": "/service/unity",
     "subtitle": "Learn C# Scripting",
     "subtitle-2": "in Unity 101"
   },
@@ -48,7 +48,7 @@ const imageList = [
   // },
   {
     "image": '/images/Banner/VersionControl.png',
-    "page": "service/unity",
+    "page": "/service/unity",
     "subtitle": "Learn Version Control",
     "subtitle-2": "in Unity 101"
   }
@@ -107,7 +107,7 @@ const ImageMarquee = () => {
         {slides.map((item, i) => (
           <Link key={i} to={item.page} style={styles.linkWrapper}>
             <div style={{ position: 'relative', width: '1300px', height: '400px' }}>
-              <img src={item.image} alt={`Slide ${i}`} style={styles.image} />
+              <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} style={styles.image} />
               <div style={styles.description}>
                 {item.subtitle}<br />{item['subtitle-2']}
               </div>

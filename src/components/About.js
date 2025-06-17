@@ -7,7 +7,7 @@ export default function About() {
 
             <div className="row">
                 <div className="col-5">
-                    <img className={`${styles["about-image"]}`} src="/images/headshot.jpg" alt=""/>
+                    <img className={`${styles["about-image"]}`} src={`${process.env.PUBLIC_URL}/images/headshot.jpg`} alt=""/>
                 </div>
                 <div className="col-6 offset-1">
                     <p>Hey there! I'm Robert Lafferty, and I've been building games for a while now, including big titles like <em>Call of Duty: Modern Warfare III</em> and <em>Call of Duty: Black Ops 6</em>. If you're looking to get into game development or just want to sharpen your skills, I can help. I've worked on everything from indie games to massive franchises, so I know the ins and outs of getting a game made and shipped. Whether it's AI programming in Unreal Engine 5 or gameplay systems in Unity, I've done it, and now I want to help you do it too.</p>

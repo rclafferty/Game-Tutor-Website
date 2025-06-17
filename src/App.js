@@ -3,7 +3,7 @@ import './css/globals.css';
 
 import Banner from './components/Banner';
 import ErrorBoundary from './components/ErrorBoundary';
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { Route, Routes } from 'react-router';
 import Home from './components/Home';
 import Service from './components/Service';
 import About from './components/About';
@@ -14,10 +14,8 @@ const name = 'Game Tutor';
 function App() {
     return(
         <>
-            <BrowserRouter>
-                <ErrorBoundary fallback="An error has occurred. For the static site, please visit this page: ">
-                    <Banner headerText={name} subHeaderText="Begin your game dev journey today!"/>
-                </ErrorBoundary>
+            <ErrorBoundary fallback="An error has occurred. For the static site, please visit this page: ">
+                <Banner headerText={name} subHeaderText="Begin your game dev journey today!"/>
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="service/:id" element={<Service />} />
@@ -25,7 +23,7 @@ function App() {
                     <Route path="about" element={<About />} />
                     {/* Add more routes as needed */}
                 </Routes>
-            </BrowserRouter>
+            </ErrorBoundary>
         </>
     );
 }

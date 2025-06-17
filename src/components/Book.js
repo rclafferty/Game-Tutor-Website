@@ -1,6 +1,4 @@
 import BookCalendly from "./BookCalendly";
-import BookEmail from "./BookEmail";
-import BookPhone from "./BookPhone";
 import BookLink from "./BookLink";
 
 export default function Book() {
