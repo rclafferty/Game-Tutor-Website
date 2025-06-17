@@ -25,10 +25,8 @@ function ExplanationDropdown({json}) {
         {openIndex !== null && (
           <>
             <div className='row'>
-                <div className='col-5'>
-                    <img className={styles["dropdown-image"]} src={`${process.env.PUBLIC_URL}/images/${json[openIndex].image}`} alt="" />
-                </div>
-                <div className='col-7 mt-5'>
+                <img className={styles["dropdown-image"]} src={`${process.env.PUBLIC_URL}/images/${json[openIndex].image}`} alt="" />
+                <div className={`col-7 ${styles["dropdown-text"]}`}>
                     <h5>{json[openIndex].title}</h5>
                     <p>{json[openIndex].description}</p>
                 </div>

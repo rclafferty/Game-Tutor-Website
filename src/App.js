@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Service from './components/Service';
 import About from './components/About';
 import Book from './components/Book';
+import Footer from './components/Footer';
 
 const name = 'Game Tutor';
 
@@ -23,6 +24,7 @@ function App() {
                     <Route path="about" element={<About />} />
                     {/* Add more routes as needed */}
                 </Routes>
+                <Footer copyright={name} />
             </ErrorBoundary>
         </>
     );

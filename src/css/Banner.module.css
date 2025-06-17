@@ -27,3 +27,10 @@
     color: black;
     width: 10rem;
 }
+
+@media (max-width: 767px) {
+    .logo {
+        height: 100%;
+        width: 100%;
+    }
+}

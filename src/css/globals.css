@@ -80,3 +80,9 @@ footer p {
     text-align: center;
     /* margin: 2rem auto; */
 }
+
+@media(max-width: 767px) {
+  .button-row button {
+      width: 100%;
+  }
+}

@@ -6,3 +6,7 @@
 .service-header {
     color: var(--primary-color);
 }
+
+.margin-left {
+    padding-left: 2rem;
+}

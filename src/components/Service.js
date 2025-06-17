@@ -38,7 +38,7 @@ export default function Service() {
                     </div>
                     <div className="row">
                         <h5 className={"col-12 mt-3 " + styles["service-header"]}>Optional Addons:</h5>
-                        <ol>
+                        <ol className={`${styles['margin-left']}`}>
                         {details.addons.map((_, i) => {
                             const addon = details.addons[i % details.addons.length];
                             return (

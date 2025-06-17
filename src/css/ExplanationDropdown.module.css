@@ -39,5 +39,35 @@
 }
 
 .dropdown-image {
+    /* width: 100%; */
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.dropdown-text {
+    margin-top: 3rem !important;
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+@media (max-width: 1199px) {
+  .dropdown-text {
+      margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .dropdown-image {
     width: 100%;
+  }
+  .dropdown-text {
+      margin-top: 1rem !important;
+      flex: 0 0 auto;
+      width: 100%;
+  }
+}
+@media(max-width: 767px) {
+  .button-row button {
+      width: 100%;
+  }
 }
