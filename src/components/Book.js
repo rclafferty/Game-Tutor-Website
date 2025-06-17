@@ -45,7 +45,7 @@ export default function Book() {
             <div className="button-row mb-4">
                 <BookLink
                     link={mailtoLink}
-                    title={`Email us at ${email}`}
+                    title={`Click here to email us at ${email}`}
                     displayTextLine1={
                         <>
                             Email{" "}
@@ -56,7 +56,7 @@ export default function Book() {
                 />
                 <BookLink
                     link={telLink}
-                    title={`Call us at ${formattedPhoneNumber}`}
+                    title={`Click here to call us at ${formattedPhoneNumber}`}
                     displayTextLine1={
                         <>
                             Phone{" "}
@@ -67,7 +67,7 @@ export default function Book() {
                 />
                 <BookLink
                     link={"https://discord.gg/8SSbAs8MEv"}
-                    title="Join the discord server"
+                    title="Click here to join the discord server"
                     displayTextLine1={
                         <>
                             Discord{" "}

@@ -105,7 +105,7 @@ const ImageMarquee = () => {
         }}
       >
         {slides.map((item, i) => (
-          <Link key={i} to={item.page} style={styles.linkWrapper}>
+          <Link key={i} to={item.page} style={styles.linkWrapper} title={`${item.subtitle} ${item['subtitle-2']}`}>
             <div style={{ position: 'relative', width: '1300px', height: '400px' }}>
               <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} style={styles.image} />
               <div style={styles.description}>
