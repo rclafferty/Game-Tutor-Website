@@ -1,36 +1,56 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const cycleTime = 7;
+const cycleTime = 10;
 
 const imageList = [
   {
-    "image": '/images/164558.jpeg',
-    "page": "service/unity"
+    "image": '/images/Banner/UnityPhysics.png',
+    "page": "service/unity",
+    "subtitle": "Learn Physics",
+    "subtitle-2": "in Unity 101"
+  },
+  // {
+  //   "image": '/images/259600.jpeg',
+  //   "page": "service/unreal",
+  //   "subtitle": "Learn Unity Physics",
+  //   "subtitle-2": "in Unity 101"
+  // },
+  {
+    "image": '/images/Banner/UnityAI.png',
+    "page": "service/unity",
+    "subtitle": "Learn AI",
+    "subtitle-2": "in Unity 101"
+  },
+  // {
+  //   "image": '/images/277667.jpeg',
+  //   "page": "service/unreal",
+  //   "subtitle": "Learn Unity Physics",
+  //   "subtitle-2": "in Unity 101"
+  // },
+  {
+    "image": '/images/Banner/Animation.png',
+    "page": "service/unity",
+    "subtitle": "Learn Animation",
+    "subtitle-2": "in Unity 101"
   },
   {
-    "image": '/images/259600.jpeg',
-    "page": "service/unreal"
+    "image": '/images/Banner/CSharp.png',
+    "page": "service/unity",
+    "subtitle": "Learn C# Scripting",
+    "subtitle-2": "in Unity 101"
   },
+  // {
+  //   "image": '/images/277667.jpeg',
+  //   "page": "service/unreal",
+  //   "subtitle": "Learn Unity Physics",
+  //   "subtitle-2": "in Unity 101"
+  // },
   {
-    "image": '/images/277667.jpeg',
-    "page": "service/unity"
-  },
-  {
-    "image": '/images/277667.jpeg',
-    "page": "service/unreal"
-  },
-  {
-    "image": '/images/277667.jpeg',
-    "page": "service/unity"
-  },
-  {
-    "image": '/images/277667.jpeg',
-    "page": "service/unreal"
-  },
-  {
-    "image": '/images/277667.jpeg',
-    "page": "service/unity"
+    "image": '/images/Banner/VersionControl.png',
+    "page": "service/unity",
+    "subtitle": "Learn Version Control",
+    "subtitle-2": "in Unity 101"
   }
   // Add more image URLs
 ];
@@ -68,7 +88,7 @@ const ImageMarquee = () => {
 
     if (slider) {
       slider.style.transition = isTransitioning ? 'transform 0.5s ease-in-out' : 'none';
-      slider.style.transform = `translateX(-${index * 600}px)`;
+      slider.style.transform = `translateX(-${index * 1300}px)`;
     }
   }, [index, isTransitioning]);
 
@@ -85,9 +105,14 @@ const ImageMarquee = () => {
         }}
       >
         {slides.map((item, i) => (
-            <Link key={i} to={item.page} style={styles.linkWrapper}>
-                <img src={item.image} alt={`Slide ${i}`} style={styles.image} />
-            </Link>
+          <Link key={i} to={item.page} style={styles.linkWrapper}>
+            <div style={{ position: 'relative', width: '1300px', height: '400px' }}>
+              <img src={item.image} alt={`Slide ${i}`} style={styles.image} />
+              <div style={styles.description}>
+                {item.subtitle}<br />{item['subtitle-2']}
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
@@ -106,11 +131,28 @@ const styles = {
     height: '100%',
   },
   image: {
-    width: '600px',
+    width: '1300px',
     height: '400px',
     objectFit: 'cover',
     flexShrink: 0,
+    display: 'block',
   },
+  description: {
+    position: 'absolute',
+    inset: 0, // shorthand for top:0, right:0, bottom:0, left:0
+    background: 'rgba(0,0,0,0.1)',
+    color: '#fff',
+    padding: '32px',
+    fontSize: '4rem',
+    boxSizing: 'border-box',
+    textShadow: '1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000, -1px 0 0 #000',
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'center',
+    justifyContent: 'center', // use flex-end for "right" alignment
+    width: '100%',
+    height: '100%',
+  }
 };
 
 export default ImageMarquee;

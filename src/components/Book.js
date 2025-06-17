@@ -1,8 +1,41 @@
 import BookCalendly from "./BookCalendly";
 import BookEmail from "./BookEmail";
 import BookPhone from "./BookPhone";
+import BookLink from "./BookLink";
 
 export default function Book() {
+    const phoneNumber = "+11234567890"; // Replace with your phone number
+    const telLink = `tel:${phoneNumber}`;
+
+    // Format phone number as (123) 456-7890
+    function formatPhoneNumber(number) {
+        // Remove all non-digit characters
+        const cleaned = ('' + number).replace(/\D/g, '');
+        // Match and format
+        const match = cleaned.match(/^1?(\d{3})(\d{3})(\d{4})$/);
+        if (match) {
+            return `+1 (${match[1]}) ${match[2]}-${match[3]}`;
+        }
+        return number;
+    }
+
+    const formattedPhoneNumber = formatPhoneNumber(phoneNumber);
+
+    const email = "test@test.com";
+    const subject = encodeURIComponent("Tutoring Inquiry");
+    const body = encodeURIComponent(
+        `Hi,
+
+        I am interested in tutoring. Please connect me with a tutor.
+
+        [INSERT DETAILS ABOUT YOUR REQUEST]
+
+        Thank you in advance,
+
+        [NAME]`
+    );
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+
     return (
         <>
             <h1 className={`col-12 header`}>Book Your Next Session!</h1>
@@ -12,8 +45,39 @@ export default function Book() {
             <p>Here are some easy ways to schedule a free introductory call. We look forward to connecting and helping you take the next step.</p>
 
             <div className="button-row mb-4">
-                <BookEmail />
-                <BookPhone />
+                <BookLink
+                    link={mailtoLink}
+                    title={`Email us at ${email}`}
+                    displayTextLine1={
+                        <>
+                            Email{" "}
+                            <i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>
+                        </>
+                    }
+                    displayTextLine2={email}
+                />
+                <BookLink
+                    link={telLink}
+                    title={`Call us at ${formattedPhoneNumber}`}
+                    displayTextLine1={
+                        <>
+                            Phone{" "}
+                            <i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>
+                        </>
+                    }
+                    displayTextLine2={formattedPhoneNumber}
+                />
+                <BookLink
+                    link={"https://discord.gg/8SSbAs8MEv"}
+                    title="Join the discord server"
+                    displayTextLine1={
+                        <>
+                            Discord{" "}
+                            <i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>
+                        </>
+                    }
+                    displayTextLine2={"https://discord.gg/8SSbAs8MEv"}
+                />
             </div>
             
             <BookCalendly />
