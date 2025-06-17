@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Game-Tutor-Website/static/css/main.6189a315.css",
-    "main.js": "/Game-Tutor-Website/static/js/main.82a4757b.js",
+    "main.js": "/Game-Tutor-Website/static/js/main.4710bd7e.js",
     "static/js/453.06378a6c.chunk.js": "/Game-Tutor-Website/static/js/453.06378a6c.chunk.js",
     "index.html": "/Game-Tutor-Website/index.html",
     "main.6189a315.css.map": "/Game-Tutor-Website/static/css/main.6189a315.css.map",
-    "main.82a4757b.js.map": "/Game-Tutor-Website/static/js/main.82a4757b.js.map",
+    "main.4710bd7e.js.map": "/Game-Tutor-Website/static/js/main.4710bd7e.js.map",
     "453.06378a6c.chunk.js.map": "/Game-Tutor-Website/static/js/453.06378a6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6189a315.css",
-    "static/js/main.82a4757b.js"
+    "static/js/main.4710bd7e.js"
   ]
 }
