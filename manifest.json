@@ -1,0 +1,25 @@
+{
+  "short_name": "Game Tutor",
+  "name": "Game Tutor - Learn Game Development",
+  "icons": [
+    {
+      "src": "GameTutorIco.ico",
+      "type": "image/x-icon",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo2.ico",
+      "type": "image/x-icon",
+      "sizes": "427x427"
+    },
+    {
+      "src": "logo2.png",
+      "type": "image/png",
+      "sizes": "427x427"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1a1a2e",
+  "background_color": "#f0f0f0"
+}
