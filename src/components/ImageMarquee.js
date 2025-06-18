@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const cycleTime = 10;
+const cycleTime = 5;
 
 const imageList = [
   {
