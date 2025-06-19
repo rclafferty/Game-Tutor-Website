@@ -3,7 +3,7 @@
     border-radius: 2rem;
     /* border: 1px solid; */
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 30%;
     height: 100%;
     float: left;
     margin: 0 2rem 2rem 0;
@@ -23,4 +23,16 @@
 h1.about {
     text-align: center;
     margin: 2rem auto;
+}
+
+.about-connect {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .about-image {
+        width: 40% !important;
+        /* border-radius: 10rem; */
+    }
 }

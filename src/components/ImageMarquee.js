@@ -1,10 +1,25 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime = 5, imageWidth = 1300 }) => {
+const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime = 5 }) => {
     const [index, setIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(true);
     const sliderRef = useRef(null);
+
+    const [imageWidth, setImageWidth] = useState(0);
+
+    useEffect(() => {
+        const updateWidth = () => {
+            if (sliderRef.current) {
+                // Each slide is 100% of the container, so get the container's width
+                const container = sliderRef.current.parentNode;
+                setImageWidth(container.offsetWidth);
+            }
+        };
+        updateWidth();
+        window.addEventListener('resize', updateWidth);
+        return () => window.removeEventListener('resize', updateWidth);
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -52,7 +67,16 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
             >
                 {slides.map((item, i) => {
                     const content = (
-                        <div style={{ position: 'relative', width: '1300px', height: '400px', borderRadius: '1rem' }}>
+                        <div
+                            style={{
+                                position: 'relative',
+                                width: `${imageWidth}px`,
+                                minWidth: `${imageWidth}px`,
+                                height: '400px',
+                                borderRadius: '1rem',
+                                flexShrink: 0,
+                            }}
+                        >
                             <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} style={styles.image} />
                             <div style={styles.description}>
                                 {item.subtitle}
@@ -86,7 +110,7 @@ const styles = {
     height: '100%',
   },
   image: {
-    width: '1300px',
+    width: '100%',
     height: '400px',
     objectFit: 'cover',
     flexShrink: 0,
