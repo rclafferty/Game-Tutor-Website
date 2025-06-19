@@ -1,10 +1,12 @@
 import ImageMarquee from './ImageMarquee';
 import ServiceList from './ServiceList';
 
+import images from '../json/MarqueeImages.json';
+
 export default function Home(props) {
     return (
         <>
-            <ImageMarquee />
+            <ImageMarquee images={images.images} cycleTime={5} />
             <ServiceList />
         </>
     );

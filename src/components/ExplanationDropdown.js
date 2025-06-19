@@ -13,8 +13,19 @@ function ExplanationDropdown({json}) {
     <div className={styles["dropdown-container"]}>
       <div className={styles["button-row"]}>
         {json.map((item, index) => item.display ? (
-          json[index].display && <button key={index} className={`secondary`} onClick={() => toggleDropdown(index)} title={openIndex === index ? `Hide ${json[index].title}` : `Show ${json[index].title}`}>
-            {openIndex === index ? `Hide ${json[index].title}` : `${json[index].title}`}
+          <button
+            key={index}
+            className={`secondary`}
+            onClick={() => toggleDropdown(index)}
+            title={openIndex === index ? `Hide ${json[index].title}` : `Show ${json[index].title}`}
+          >
+            {/* Font Awesome icon for arrow (chevron) or plus */}
+            <span style={{ marginRight: '8px' }}>
+              <i className={`margin-left-1 fa-solid ${openIndex === index ? 'fa-chevron-down' : 'fa-chevron-right'}`}></i>
+              {/* Alternatively, use 'fa-plus' and 'fa-minus' for plus/minus */}
+              {/* <i className={`fa-solid ${openIndex === index ? 'fa-minus' : 'fa-plus'}`}></i> */}
+            </span>
+            {openIndex === index ? `${json[index].title}` : `${json[index].title}`}
           </button>
         ) : null )}
       </div>

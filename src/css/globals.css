@@ -1,9 +1,11 @@
 :root {
     --primary-color: #6A0DAD;
-    --secondary-color: rgb(190, 2, 190);
-    --tertiary-color: #FF1000;
+    --secondary-color: #bd67f7;
+    --tertiary-color: black;
     --primary-color-selected: #3949ab;
+    --primary-color-selected: #490977;
     --secondary-color-selected: #c20d00;
+    --secondary-color-selected: #bd67f7;
     --background-color: #F5F5F5;
     --text-color: #1B1B1B;
     --button-color: var(--secondary-color);
@@ -13,6 +15,13 @@
 
 body {
     background-color: var(--background-color) !important;
+    /* Font idea 1: 'Inter', sans-serif - modern, highly readable, professional */
+    /* Font idea 2: 'Segoe UI', 'Roboto', sans-serif - clean, familiar, friendly */
+    /* Font idea 3: 'Nunito', sans-serif - rounded, welcoming, still professional */
+    
+    /* font-family: 'Segoe UI', 'Roboto', 'Inter', Arial, Helvetica, sans-serif !important; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Merriweather', sans-serif;
 }
 
 html[data-theme="color-blind"] {
@@ -22,6 +31,7 @@ html[data-theme="color-blind"] {
 
 h1 {
     color: var(--primary-color);
+    font-weight: bold;
 }
 h1.header {
     text-align: center;
@@ -30,7 +40,7 @@ h1.header {
 }
 
 h2 {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 h2.header {
     text-align: center;
@@ -45,15 +55,22 @@ tr {
     cursor: pointer;
 }
 
+.margin-left-1 {
+    padding-left: 1rem;
+}
+.margin-left-2 {
+    padding-left: 2rem;
+}
+
 button {
     border-radius: 1rem !important;
     font-weight: bold !important;
     border: none;
     background-color: var(--primary-color);
     color: white;
-    padding: 0.5rem;
+    padding: 0.25rem;
     margin: 0 auto;
-    min-width: 10rem;
+    width: 10rem;
 }
 button.selected, button.secondary {
     background-color: var(--secondary-color);
@@ -63,7 +80,7 @@ button.wide {
 }
 button:hover {
     background-color: var(--secondary-color-selected);
-    color: white !important;
+    /* color: var(--primary-color-selected) !important; */
 }
 
 .button-row {

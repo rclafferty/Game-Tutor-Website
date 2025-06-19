@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
+    "@fontsource/inter": "^5.2.6",
+    "@fontsource/merriweather": "^5.2.9",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",

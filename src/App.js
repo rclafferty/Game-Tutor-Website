@@ -17,14 +17,16 @@ function App() {
         <>
             <ErrorBoundary fallback="An error has occurred. For the static site, please visit this page: ">
                 <Banner headerText={name} subHeaderText="Begin your game dev journey today!"/>
-                <Routes>
-                    <Route index element={<Home />} />
-                    <Route path="service/:id" element={<Service />} />
-                    <Route path="book" element={<Book />} />
-                    <Route path="about" element={<About />} />
-                    {/* Add more routes as needed */}
-                </Routes>
-                <Footer copyright={name} />
+                <div className="container">
+                    <Routes>
+                        <Route index element={<Home />} />
+                        <Route path="service/:id" element={<Service />} />
+                        <Route path="book" element={<Book />} />
+                        <Route path="about" element={<About />} />
+                        {/* Add more routes as needed */}
+                    </Routes>
+                    <Footer copyright={name} />
+                </div>
             </ErrorBoundary>
         </>
     );

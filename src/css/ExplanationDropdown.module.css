@@ -9,9 +9,13 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+  justify-content: flex-start;
 }
 .button-row button {
-    width: 17rem;
+  width: 70%;
+  text-align: left;
+  /* justify-content: flex-start; This aligns items to the left */
+  margin: 0;
 }
 
 .dropdown-content {
@@ -23,6 +27,7 @@
   transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
   /* background: #fafafa; */
   padding: 0 10px;
+  /* justify-content: left; */
 }
 .dropdown-content h5 {
     color: var(--primary-color);

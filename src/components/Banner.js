@@ -38,7 +38,7 @@ export default function Banner(props) {
                 {themeText}
             </button> */}
             <header className="row mb-4" style={{ position: 'relative' }}>
-                <div className="col-5 d-flex align-items-center">
+                {/* <div className="col-5 d-flex align-items-center">
                     <img
                         src={`${process.env.PUBLIC_URL}/images/logo.png`}
                         alt="Logo"
@@ -62,7 +62,7 @@ export default function Banner(props) {
                     >
                         {props.subHeaderText}
                     </h2>
-                </div>
+                </div> */}
                 <NavBar />
             </header>
         </>
