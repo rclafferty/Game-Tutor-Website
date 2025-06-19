@@ -125,19 +125,19 @@
                     "title": "One-on-one sessions",
                     "description": "Get the attention and support you deserve with personalized, one-on-one tutoring. No crowded classes, no generic videos! Just focused time with an experienced mentor who's there to answer your questions, solve your challenges, and guide your growth in real time. Every session is tailored to your goals, your pace, and your project.",
                     "display": true,
-                    "image": "/images/OneOnOneSessions.png"
+                    "image": "OneOnOneSessions.png"
                 },
                 {
                     "title": "Personalized learning plans",
                     "description": "No two developers are alike, so why settle for a one-size-fits-all curriculum? We create a custom learning path built around your experience level, interests, and career goals. Whether you're building your first prototype or refining a portfolio piece, your plan evolves with you, ensuring you're always learning what matters most.",
                     "display": true,
-                    "image": "/images/logo.png"
+                    "image": "PersonalizedLessons.png"
                 },
                 {
                     "title": "Flexible scheduling",
                     "description": "Life gets busy. We get it. That's why we offer flexible scheduling to fit tutoring around your lifestyle, not the other way around. Whether you prefer evenings, weekends, or changing availability week to week, we'll work with you to find times that keep your momentum going without the stress.",
                     "display": true,
-                    "image": "/images/logo.png"
+                    "image": "FlexibleScheduling2.png"
                 }
             ],
             "addons": [
