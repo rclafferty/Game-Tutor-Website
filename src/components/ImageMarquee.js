@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import styles2 from "../css/ImageMarquee.module.css"
+
 const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime = 5 }) => {
     const [index, setIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(true);
@@ -57,35 +59,34 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
     const slides = [...images, images[0]];
 
     return (
-        <div style={styles.container}>
+        <div className={styles2["marquee-container"]}>
             <div
+                className={styles2["marquee-slider"]}
                 ref={sliderRef}
                 style={{
-                    ...styles.slider,
                     width: `${slides.length * 100}%`,
                 }}
             >
                 {slides.map((item, i) => {
                     const content = (
                         <div
+                            className={styles2["marquee-slider-content"]}
                             style={{
-                                position: 'relative',
                                 width: `${imageWidth}px`,
                                 minWidth: `${imageWidth}px`,
-                                height: '400px',
-                                borderRadius: '1rem',
-                                flexShrink: 0,
                             }}
                         >
-                            <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} style={styles.image} />
-                            <div style={styles.description}>
+                            <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} />
+                            <div
+                                className={styles2["marquee-overlay-text"]}
+                            >
                                 {item.subtitle}
                                 {useSubtitle2 && <><br />{item['subtitle-2']}</>}
                             </div>
                         </div>
                     );
                     return useLinks ? (
-                        <Link key={i} to={`/service/${item.service}`} style={styles.linkWrapper} title={`${item.subtitle} ${item['subtitle-2']}`}>
+                        <Link key={i} to={`/service/${item.service}`} title={`${item.subtitle} ${item['subtitle-2']}`}>
                             {content}
                         </Link>
                     ) : (
@@ -95,43 +96,6 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
             </div>
         </div>
     );
-};
-
-const styles = {
-  container: {
-    width: '100%',
-    height: '400px',
-    overflow: 'hidden',
-    position: 'relative',
-    borderRadius: '1rem'
-  },
-  slider: {
-    display: 'flex',
-    height: '100%',
-  },
-  image: {
-    width: '100%',
-    height: '400px',
-    objectFit: 'cover',
-    flexShrink: 0,
-    display: 'block',
-  },
-  description: {
-    position: 'absolute',
-    inset: 0, // shorthand for top:0, right:0, bottom:0, left:0
-    background: 'rgba(0,0,0,0.1)',
-    color: '#fff',
-    padding: '32px',
-    fontSize: '4rem',
-    boxSizing: 'border-box',
-    textShadow: '1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000, -1px 0 0 #000',
-    display: 'flex',
-    alignItems: 'center',
-    textAlign: 'center',
-    justifyContent: 'center', // use flex-end for "right" alignment
-    width: '100%',
-    height: '100%',
-  }
 };
 
 export default ImageMarquee;
