@@ -33,8 +33,8 @@ function ExplanationDropdown({json}) {
       >
         {isOpen && (
           <>
-            <div className='row'>
-                <img className={`margin-left-2 ${styles["dropdown-image"]}`} src={`${process.env.PUBLIC_URL}/images/${json.image}`} alt="" />
+            <div className='row margin-left-2'>
+                <img className={`${styles["dropdown-image"]}`} src={`${process.env.PUBLIC_URL}/images/${json.image}`} alt="" />
                 <div className={`col-7 ${styles["dropdown-text"]}`}>
                     <h5>{json.title}</h5>
                     <p>{json.description}</p>
