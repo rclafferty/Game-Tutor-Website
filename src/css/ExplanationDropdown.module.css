@@ -2,17 +2,18 @@
   width: 100%;
   font-family: sans-serif;
   /* border: 1px solid #ccc; */
+  padding: 0.25rem 1rem;
 }
 
 .button-row {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+  /* padding: 1rem; */
   justify-content: flex-start;
 }
 .button-row button {
-  width: 70%;
+  width: 100%;
   text-align: left;
   /* justify-content: flex-start; This aligns items to the left */
   margin: 0;

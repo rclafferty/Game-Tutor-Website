@@ -4,6 +4,6 @@
 }
 
 .service-header {
-    color: var(--primary-color);
-    font-weight: bold
+    /* color: var(--primary-color); */
+    font-weight: bold;
 }

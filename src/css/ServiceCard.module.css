@@ -18,7 +18,7 @@
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 .service-card h3 {
     /* text-align: center; */

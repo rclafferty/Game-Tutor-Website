@@ -52,7 +52,7 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
             >
                 {slides.map((item, i) => {
                     const content = (
-                        <div style={{ position: 'relative', width: '1300px', height: '400px' }}>
+                        <div style={{ position: 'relative', width: '1300px', height: '400px', borderRadius: '1rem' }}>
                             <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} style={styles.image} />
                             <div style={styles.description}>
                                 {item.subtitle}
@@ -79,6 +79,7 @@ const styles = {
     height: '400px',
     overflow: 'hidden',
     position: 'relative',
+    borderRadius: '1rem'
   },
   slider: {
     display: 'flex',
