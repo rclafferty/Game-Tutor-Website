@@ -15,29 +15,19 @@ export default function About() {
                 <p>Game development can be tough, but you don't have to tackle it alone. Let's build your dream game together. Reach out today for a free chat, ask me anything, or let's just jump into that project you've been dreaming about (or that's been sitting on your hard drive). Whether it's Unreal, Unity, or even a custom engine project, I'm here to help you level up with some real-world developer know-how.</p>
 
                 <div className={styles["about-connect"]}>
-                <BookLink
-                    link={"https://linkedin.com/in/rclafferty"}
-                    title="Click here to connect with me on LinkedIn"
-                    classInfo={styles["about-connect-button"]}
-                    displayTextLine1={
-                        <>
-                            Connect on LinkedIn{" "}
-                    <i className="fab fa-linkedin" aria-hidden="true"></i>
-                        </>
-                    }
-                    displayTextLine2={"https://www.linkedin.com/in/rclafferty"}
-                />
+                    <BookLink
+                        link={"https://linkedin.com/in/rclafferty"}
+                        title="Click here to connect with me on LinkedIn"
+                        classInfo={styles["about-connect-button"]}
+                        displayTextLine1={
+                            <>
+                                Connect on LinkedIn{" "}
+                                <i className="fab fa-linkedin" aria-hidden="true"></i>
+                            </>
+                        }
+                        displayTextLine2={"https://www.linkedin.com/in/rclafferty"}
+                    />
                 </div>
-                {/* <a
-                    href="https://www.linkedin.com/in/rclafferty/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="wide"
-                    style={{ display: "inline-flex", alignItems: "center", gap: "0.5em", textDecoration: "none" }}
-                >
-                    <i className="fab fa-linkedin" aria-hidden="true"></i>
-                    Connect on LinkedIn
-                </a> */}
             </div>
         </>
     );

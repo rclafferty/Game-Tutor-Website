@@ -38,31 +38,6 @@ export default function Banner(props) {
                 {themeText}
             </button> */}
             <header className="row mb-4" style={{ position: 'relative' }}>
-                {/* <div className="col-5 d-flex align-items-center">
-                    <img
-                        src={`${process.env.PUBLIC_URL}/images/logo.png`}
-                        alt="Logo"
-                        className={BannerStyles.logo}
-                        onClick={() => navigate(`/`)}
-                        style={{ cursor: 'pointer' }}
-                    />
-                </div>
-                <div className="col-7 d-flex flex-column justify-content-center">
-                    <h1
-                        className={BannerStyles.header_style}
-                        onClick={() => navigate(`/`)}
-                        style={{ cursor: 'pointer', fontWeight: 'bold' }}
-                    >
-                        {props.headerText}
-                    </h1>
-                    <h2
-                        className={BannerStyles.subtitle_style}
-                        onClick={() => navigate(`/`)}
-                        style={{ cursor: 'pointer' }}
-                    >
-                        {props.subHeaderText}
-                    </h2>
-                </div> */}
                 <NavBar />
             </header>
         </>

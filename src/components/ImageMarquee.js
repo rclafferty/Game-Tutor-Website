@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles2 from "../css/ImageMarquee.module.css"
+import styles from "../css/ImageMarquee.module.css"
 
 const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime = 5 }) => {
     const [index, setIndex] = useState(0);
@@ -35,6 +35,10 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
     useEffect(() => {
         const slider = sliderRef.current;
 
+        if (slider) {
+            slider.style.transform = `translateX(-${index * imageWidth}px)`;
+        }
+
         if (index === images.length) {
             const handleTransitionEnd = () => {
                 setIsTransitioning(false);
@@ -44,44 +48,35 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
 
             slider.addEventListener('transitionend', handleTransitionEnd);
         }
-    }, [index, images.length]);
-
-    useEffect(() => {
-        const slider = sliderRef.current;
-
-        if (slider) {
-            slider.style.transition = isTransitioning ? 'transform 0.5s ease-in-out' : 'none';
-            slider.style.transform = `translateX(-${index * imageWidth}px)`;
-        }
-    }, [index, isTransitioning, imageWidth]);
+    }, [index, images.length, imageWidth, isTransitioning]);
 
     // Combine real images + clone of first
     const slides = [...images, images[0]];
 
     return (
-        <div className={styles2["marquee-container"]}>
+        <div className={styles["marquee-container"]}>
             <div
-                className={styles2["marquee-slider"]}
+                className={styles["marquee-slider"]}
                 ref={sliderRef}
-                style={{
-                    width: `${slides.length * 100}%`,
-                }}
             >
                 {slides.map((item, i) => {
                     const content = (
                         <div
-                            className={styles2["marquee-slider-content"]}
+                            className={styles["marquee-slider-content"]}
                             style={{
-                                width: `${imageWidth}px`,
-                                minWidth: `${imageWidth}px`,
+                                width: imageWidth ? `${imageWidth}px` : undefined,
+                                minWidth: imageWidth ? `${imageWidth}px` : undefined,
                             }}
                         >
                             <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} />
-                            <div
-                                className={styles2["marquee-overlay-text"]}
-                            >
+                            <div className={styles["marquee-overlay-text"]}>
                                 {item.subtitle}
-                                {useSubtitle2 && <><br />{item['subtitle-2']}</>}
+                                {useSubtitle2 &&
+                                    <>
+                                        <br />
+                                        {item['subtitle-2']}
+                                    </>
+                                }
                             </div>
                         </div>
                     );

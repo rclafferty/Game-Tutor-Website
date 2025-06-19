@@ -1,5 +1,5 @@
-import BookCalendly from "./BookCalendly";
 import BookLink from "./BookLink";
+import BookCalendly from "./BookCalendly";
 
 export default function Book() {
     const phoneNumber = "+11234567890"; // Replace with your phone number
@@ -42,7 +42,7 @@ export default function Book() {
 
             <p>Here are some easy ways to schedule a free introductory call. We look forward to connecting and helping you take the next step.</p>
 
-            <div className="button-row mb-4">
+            <div className="button-row">
                 <BookLink
                     link={mailtoLink}
                     title={`Click here to email us at ${email}`}

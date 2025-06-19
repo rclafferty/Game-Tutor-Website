@@ -31,21 +31,25 @@ export default function Service() {
             <h2 className={`col-12 header`}>{details.subtitle}</h2>
             <div className="row">
                 <div>
-                        <p className="col-12 mt-3">{details.description}</p>
-                        <h6 className={`col-12 mt-3 fst-italic ${styles["service-cost"]}`}><strike>{`Cost: $${details.price} ${details.priceType}`}</strike> <div className={styles.discount}>Limited time: $10 per session the first two sessions (75% off)! New students only</div></h6>
-                        <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>
-                        
+                    <p className="col-12 mt-3">{details.description}</p>
+                    <h6 className={`col-12 mt-3 fst-italic ${styles["service-cost"]}`}><strike>{`Cost: $${details.price} ${details.priceType}`}</strike> <div className={styles.discount}>Limited time: $10 per session the first two sessions (75% off)! New students only</div></h6>
+                    <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>
+                    
+                    <div className={styles["explanation-group"]} >
                         <h5 className={"col-12 mt-3 " + styles["service-header"]}>Services Included:</h5>
                         {details.benefits.map((benefit, i) => (
                             <ExplanationDropdown key={i} json={benefit} />
                         ))}
-                        
+                    </div>
+                    
+                    <div className={styles["explanation-group"]} >
                         <h5 className={"col-12 mt-3 " + styles["service-header"]}>Topics Covered:</h5>
-                        <ExplanationDropdown json={details.topics} />
                         {details.topics.map((topic, i) => (
                             <ExplanationDropdown key={i} json={topic} />
                         ))}
-                        
+                    </div>
+                    
+                    <div className={styles["explanation-group"]} >
                         <h5 className={"col-12 mt-3 " + styles["service-header"]}>Optional Addons:</h5>
                         <ol className={`margin-left-2`}>
                         {details.addons.map((_, i) => {
@@ -55,8 +59,9 @@ export default function Service() {
                             );
                         })}
                         </ol>
+                <p>* addons available upon request by student</p>
                     </div>
-                    <p>* addons available upon request by student</p>
+                </div>
             </div>
         </>
     );

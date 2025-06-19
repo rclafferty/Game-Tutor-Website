@@ -1,7 +1,6 @@
 import './css/App.css';
 import './css/globals.css';
 
-import Banner from './components/Banner';
 import ErrorBoundary from './components/ErrorBoundary';
 import { Route, Routes } from 'react-router';
 import Home from './components/Home';
@@ -9,6 +8,7 @@ import Service from './components/Service';
 import About from './components/About';
 import Book from './components/Book';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 const name = 'Game Tutor';
 
@@ -16,7 +16,7 @@ function App() {
     return(
         <>
             <ErrorBoundary fallback="An error has occurred. For the static site, please visit this page: ">
-                <Banner headerText={name} subHeaderText="Begin your game dev journey today!"/>
+                <NavBar />
                 <div className="container">
                     <Routes>
                         <Route index element={<Home />} />

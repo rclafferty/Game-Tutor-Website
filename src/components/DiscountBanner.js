@@ -6,7 +6,9 @@ export default function Book() {
         <>
             <Link
                 to={"/book"}
-                className={styles["discount-banner"] + " " + styles["discount-banner-link"]}>
+                className={styles["discount-banner"] + " " + styles["discount-banner-link"]}
+                title='Click here to secure your discount!'
+            >
                 <h1>Limited time: $10 per session the first two sessions (75% off)! New students only</h1>
             </Link>
         </>

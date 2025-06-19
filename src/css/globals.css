@@ -9,24 +9,17 @@
     --background-color: #F5F5F5;
     --text-color: #1B1B1B;
     --button-color: var(--secondary-color);
-
-    /* -webkit-text-stroke: 0.3px black;         Standard property for future support */
 }
 
 body {
     background-color: var(--background-color) !important;
-    /* Font idea 1: 'Inter', sans-serif - modern, highly readable, professional */
-    /* Font idea 2: 'Segoe UI', 'Roboto', sans-serif - clean, familiar, friendly */
-    /* Font idea 3: 'Nunito', sans-serif - rounded, welcoming, still professional */
-    
-    /* font-family: 'Segoe UI', 'Roboto', 'Inter', Arial, Helvetica, sans-serif !important; */
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Merriweather', sans-serif;
 }
 
 html[data-theme="color-blind"] {
     --primary-color: black;
-    --secondary-color: rgb(37, 37, 37);
+    --secondary-color: rgb(114, 114, 114);
+    --secondary-color-selected: var(--secondary-color);
 }
 
 h1 {
@@ -80,7 +73,6 @@ button.wide {
 }
 button:hover {
     background-color: var(--secondary-color-selected);
-    /* color: var(--primary-color-selected) !important; */
 }
 button.secondary:hover {
     background-color: white;
@@ -92,6 +84,7 @@ button.secondary:hover {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 footer {
