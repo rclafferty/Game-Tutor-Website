@@ -40,3 +40,69 @@
     border-color: var(--secondary-color-selected);
     color: var(--primary-color);
 }
+
+.featured-services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.featured-service {
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    /* padding-bottom: 3rem; */
+    
+    background-color: var(--palette-light-orange);
+}
+.featured-service h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem auto;
+}
+.featured-service a {
+    /* color: var(--primary-color); */
+    text-decoration: none;
+}
+.featured-service .content {
+    /* display: flex; */
+    flex-direction: column;
+    height: 100%;
+    position: relative; /* Added to make button absolute to this container */
+    margin-bottom: 4rem;
+}
+.featured-service button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-2.5rem);
+}
+
+.featured-image {
+    /* height: 10rem; */
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-right: 3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    float: left;
+    width: 40%;
+    border: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 991px) {
+    .featured-image {
+        float: none;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .content {
+        display: block;
+        width: 100%;
+    }
+}

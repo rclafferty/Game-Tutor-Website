@@ -9,6 +9,7 @@ import About from './components/About';
 import Book from './components/Book';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
+import JumpToTopButton from './components/JumpToTop';
 
 const name = 'Game Tutor';
 
@@ -17,7 +18,6 @@ function App() {
         <>
             <ErrorBoundary fallback="An error has occurred. For the static site, please visit this page: ">
                 <NavBar />
-                <div className="container">
                     <Routes>
                         <Route index element={<Home />} />
                         <Route path="service/:id" element={<Service />} />
@@ -25,8 +25,8 @@ function App() {
                         <Route path="about" element={<About />} />
                         {/* Add more routes as needed */}
                     </Routes>
-                    <Footer copyright={name} />
-                </div>
+                    <JumpToTopButton />
+                <Footer copyright={name} />
             </ErrorBoundary>
         </>
     );

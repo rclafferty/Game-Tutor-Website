@@ -8,8 +8,10 @@ export default function Home(props) {
     return (
         <>
             <ImageMarquee images={images.images} cycleTime={5} />
-            <DiscountBanner />
-            <ServiceList />
+            <div className='container'>
+                <DiscountBanner />
+                <ServiceList />
+            </div>
         </>
     );
 }

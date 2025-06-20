@@ -1,6 +1,7 @@
 :root {
     --primary-color: #6A0DAD;
     --secondary-color: #bd67f7;
+    --light-secondary-color: #e6d6ff;
     --tertiary-color: black;
     --primary-color-selected: #3949ab;
     --primary-color-selected: #490977;
@@ -9,6 +10,20 @@
     --background-color: #F5F5F5;
     --text-color: #1B1B1B;
     --button-color: var(--secondary-color);
+
+    --palette-blue: #369cb9;
+    --palette-dark-blue: #113b53;
+    --palette-orange: #f68e47;
+    --palette-light-orange: #f7c090;
+    --palette-red: #bb392f;
+    --palette-white: #F5F5F5;
+    --palette-lavender: #A7A8D9;
+    
+    --primary-color: var(--palette-dark-blue);
+    --secondary-color: var(--palette-orange);
+    --tertiary-color: var(--palette-red);
+    --button-color: var(--palette-dark-blue);
+    --button-hover-color: var(--palette-blue);
 }
 
 body {
@@ -56,10 +71,10 @@ tr {
 }
 
 button {
-    border-radius: 1rem !important;
-    font-weight: bold !important;
+    border-radius: 1rem;
+    font-weight: bold;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--button-color);
     color: white;
     padding: 0.25rem;
     margin: 0 auto;
@@ -72,7 +87,7 @@ button.wide {
     width: 20rem;
 }
 button:hover {
-    background-color: var(--secondary-color-selected);
+    background-color: var(--button-hover-color);
 }
 button.secondary:hover {
     background-color: white;

@@ -3,11 +3,17 @@
         {
             "id": "unity",
             "currently-offered": true,
+            "featured": true,
             "name": "Unity 101",
             "subtitle": "Unity tutoring your way!",
             "short-description": "Get personalized help in starting your Unity adventures! From small hobby projects to publishing your first professional game, this is the place to begin your journey!",
             "description": "Ready to become a confident Unity developer? From small hobby projects to publishing your first professional game, this is the place to begin your journey! Our one-on-one tutoring service is built around your goals, your pace, and your projects. We offer a personalized learning plan that covers the most essential and in-demand areas of game development.",
-            "image": "",
+            "featured-description": [
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
+                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
+                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're looking to turn your game ideas into playable, polished experiences, this is your next step."
+            ],
+            "image": "UnityFundamentals4.png",
             "price": 40,
             "research-price": 20,
             "deliverable-price": 20,
@@ -110,10 +116,16 @@
         {
             "id": "unreal",
             "currently-offered": true,
+            "featured": false,
             "name": "Unreal 101",
             "subtitle": "Unreal tutoring your way!",
             "short-description": "Get personalized help in starting your Unreal Engine journey! Whether you're building a prototype or aiming to develop a polished, professional game, this is the perfect place to level up with expert guidance in both Blueprints and C++.",
             "description": "Unlock the full potential of Unreal Engine with one-on-one tutoring tailored to your goals. Whether you're building your first game or leveling up your professional skills, we'll guide you through Unreal's powerful systems, from level design and animation to AI and cross-platform builds. With a flexible learning plan built around your experience and interests, you'll gain confidence using both C++ and Blueprints while developing real-world, production-ready skills. Learn faster, solve real challenges, and bring your ideas to life your way.",
+            "featured-description": [
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
+                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
+                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
+            ],
             "image": "",
             "price": 40,
             "research-price": 20,
@@ -217,10 +229,16 @@
         {
             "id": "game_programming",
             "currently-offered": true,
+            "featured": false,
             "name": "Game Programming",
             "subtitle": "C++ tutoring your way!",
             "short-description": "Get personalized help in starting your C++ adventures!",
             "description": "Get personalized help in starting your C++ adventures!",
+            "featured-description": [
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
+                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
+                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
+            ],
             "image": "",
             "price": 40,
             "research-price": 20,
@@ -355,11 +373,17 @@
         },
         {
             "id": "game_design",
-            "currently-offered": true,
+            "currently-offered": false,
+            "featured": false,
             "name": "Game Design",
             "subtitle": "C++ tutoring your way!",
             "short-description": "Get personalized help in starting your C++ adventures!",
             "description": "Get personalized help in starting your C++ adventures!",
+            "featured-description": [
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
+                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
+                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
+            ],
             "image": "",
             "price": 40,
             "research-price": 20,
@@ -494,11 +518,17 @@
         },
         {
             "id": "qa",
-            "currently-offered": true,
+            "currently-offered": false,
+            "featured": false,
             "name": "QA for Games",
             "subtitle": "C++ tutoring your way!",
             "short-description": "Get personalized help in starting your C++ adventures!",
             "description": "Get personalized help in starting your C++ adventures!",
+            "featured-description": [
+                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
+                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
+                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
+            ],
             "image": "",
             "price": 40,
             "research-price": 20,
