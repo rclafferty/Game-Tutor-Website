@@ -16,6 +16,7 @@ function ExplanationDropdown({json}) {
           <button
             onClick={() => toggleDropdown()}
             title={isOpen ? `Hide ${json.title}` : `Show ${json.title}`}
+            // className='secondary'
           >
             <span>
               <i className={`fa-solid ${isOpen ? 'fa-chevron-down' : 'fa-chevron-right'}`}></i>

@@ -15,8 +15,8 @@ export default function BookCalendly() {
 
     return (
         <>
-            <h2>Calendly</h2>
-            <p>Ready to book now? Use the Calendly view below to schedule your free introductory call.</p>
+            <h1>Calendly</h1>
+            <p>Ready to book now? Use the Calendly view below to schedule your free consultation.</p>
 
             <div
                 className={

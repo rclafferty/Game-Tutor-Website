@@ -115,13 +115,12 @@ button {
 }
 button.selected, button.secondary {
     background-color: var(--secondary-color);
-    /* color: var(--primary-color); */
 }
 button.wide {
     width: 20rem;
 }
 button:hover {
-    background-color: var(--button-hover-color);
+    background-color: var(--secondary-color);
 }
 button.secondary:hover {
     background-color: white;
@@ -138,7 +137,6 @@ button.secondary:hover {
 
 .hover-lift:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    /* transform: translateY(-0.25rem); */
 }
 
 footer {
@@ -146,7 +144,6 @@ footer {
 }
 footer p {
     text-align: center;
-    /* margin: 2rem auto; */
 }
 
 @media(max-width: 767px) {

@@ -31,6 +31,7 @@ export default function Footer({copyright}) {
                     <div className={`${styles['group']}`}>
                         <h1><Link to={'/services'} className='header-link'>Services</Link></h1>
                         <ul>
+                        <li><Link to={`/services`}>All Services</Link></li>
                         {services.map(({id}, i) => {
                             const service = getServiceById(id);
                             if (!service) {
@@ -41,7 +42,6 @@ export default function Footer({copyright}) {
                                 <li><Link to={`/service/${service.id}`}>{service.name}</Link></li>
                             );
                         })}
-                        <li><Link to={`/services`}>All Services</Link></li>
                         </ul>
                     </div>
                     <div className={`${styles['group']}`}>
