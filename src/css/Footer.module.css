@@ -7,9 +7,18 @@ footer p {
 }
 
 .footer-div {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     text-align: center;
+    
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem;
+    margin-top: 3rem;
 }
+.footer-div h1 {
+    color: var(--secondary-color);
+}
+
 
 .footer-hr {
     margin-bottom: 3rem;
@@ -24,7 +33,7 @@ footer p {
     height: auto;
 }
 .footer-signage h1 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.5rem;
     margin: auto 0;
 }
@@ -51,12 +60,16 @@ footer p {
     flex-direction: column;
 }
 .group a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .group a:hover {
     text-decoration: underline;
-    color: var(--palette-orange);
+    color: var(--light-primary-color);
+}
+.group h1 a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 .group ul {

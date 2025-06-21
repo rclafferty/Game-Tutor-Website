@@ -12,15 +12,21 @@
     --button-color: var(--secondary-color);
 
     --palette-blue: #369cb9;
-    --palette-dark-blue: #113b53;
+    --palette-blue: #4abbda;
+    --palette-dark-blue: #084366;
     --palette-orange: #f68e47;
     --palette-light-orange: #f7c090;
     --palette-red: #bb392f;
     --palette-white: #F5F5F5;
     --palette-lavender: #A7A8D9;
+    --palette-purple: #6A0DAD;
+    --palette-rich-lavender: #bd67f7;
+    --palette-light-purple: #E6D6FF;
     
     --primary-color: var(--palette-dark-blue);
+    --light-primary-color: var(--palette-blue);
     --secondary-color: var(--palette-orange);
+    --light-secondary-color: var(--palette-light-orange);
     --tertiary-color: var(--palette-red);
     --button-color: var(--palette-dark-blue);
     --button-hover-color: var(--palette-blue);
@@ -31,10 +37,33 @@ body {
     font-family: 'Merriweather', sans-serif;
 }
 
+html[data-theme="purple"] {
+    --primary-color: var(--palette-purple);
+    --light-primary-color: var(--palette-rich-lavender);
+    --secondary-color: var(--palette-rich-lavender);
+    --light-secondary-color: var(--palette-light-purple);
+    --tertiary-color: black;
+    --button-color: var(--palette-purple);
+    --button-hover-color: var(--palette-rich-lavender);
+}
+
+html[data-theme="blue"] {
+    --primary-color: var(--palette-dark-blue);
+    --light-primary-color: var(--palette-blue);
+    --secondary-color: var(--palette-orange);
+    --light-secondary-color: var(--palette-light-orange);
+    --tertiary-color: var(--palette-red);
+    --button-color: var(--palette-dark-blue);
+    --button-hover-color: var(--palette-blue);
+}
+
 html[data-theme="color-blind"] {
     --primary-color: black;
     --secondary-color: rgb(114, 114, 114);
-    --secondary-color-selected: var(--secondary-color);
+    --light-secondary-color: rgb(224, 224, 224);
+    --tertiary-color: white;
+    --button-color: black;
+    --button-hover-color: var(--secondary-color);
 }
 
 h1 {
@@ -69,6 +98,10 @@ tr {
 .margin-left-2 {
     padding-left: 2rem;
 }
+.center {
+    display: block;
+    margin: 1rem auto;
+}
 
 button {
     border-radius: 1rem;
@@ -82,6 +115,7 @@ button {
 }
 button.selected, button.secondary {
     background-color: var(--secondary-color);
+    /* color: var(--primary-color); */
 }
 button.wide {
     width: 20rem;
@@ -100,6 +134,11 @@ button.secondary:hover {
   gap: 1rem;
   padding: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.hover-lift:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* transform: translateY(-0.25rem); */
 }
 
 footer {

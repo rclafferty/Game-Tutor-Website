@@ -30,6 +30,12 @@ export default function NavBar() {
                     Home
                 </button>
                 <button
+                    className={`${getActiveClass(`/services`)}`}
+                    onClick={() => navigate(`/services`)}
+                >
+                    Services
+                </button>
+                <button
                     className={`${getActiveClass(`/book`)}`}
                     onClick={() => navigate(`/book`)}
                 >

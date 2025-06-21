@@ -19,7 +19,7 @@ export default function About() {
                         <BookLink
                             link={"https://linkedin.com/in/rclafferty"}
                             title="Click here to connect with me on LinkedIn"
-                            classInfo={styles["about-connect-button"]}
+                            classInfo={`hover-lift ${styles["about-connect-button"]}`}
                             displayTextLine1={
                                 <>
                                     Connect on LinkedIn{" "}

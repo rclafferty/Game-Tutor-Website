@@ -228,7 +228,7 @@
         },
         {
             "id": "game_programming",
-            "currently-offered": true,
+            "currently-offered": false,
             "featured": false,
             "name": "Game Programming",
             "subtitle": "C++ tutoring your way!",
@@ -663,13 +663,12 @@
         }
     ],
     "primary-services" : [
-        {
-            "id": "unity"
-        },
-        {
-            "id": "unreal"
-        }
+        "unity",
+        "unreal"
     ],
     "secondary-services" : [
+        "game_programming",
+        "game_design",
+        "qa"
     ]
 }

@@ -48,6 +48,7 @@ export default function Book() {
                     <BookLink
                         link={mailtoLink}
                         title={`Click here to email us at ${email}`}
+                        classInfo="hover-lift"
                         displayTextLine1={
                             <>
                                 Email{" "}
@@ -59,6 +60,7 @@ export default function Book() {
                     <BookLink
                         link={telLink}
                         title={`Click here to call us at ${formattedPhoneNumber}`}
+                        classInfo="hover-lift"
                         displayTextLine1={
                             <>
                                 Phone{" "}
@@ -70,6 +72,7 @@ export default function Book() {
                     <BookLink
                         link={"https://discord.gg/8SSbAs8MEv"}
                         title="Click here to join the discord server"
+                        classInfo="hover-lift"
                         displayTextLine1={
                             <>
                                 Discord{" "}

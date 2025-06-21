@@ -10,6 +10,7 @@ import Book from './components/Book';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import JumpToTopButton from './components/JumpToTop';
+import Services from './components/Services';
 
 const name = 'Game Tutor';
 
@@ -20,6 +21,7 @@ function App() {
                 <NavBar />
                     <Routes>
                         <Route index element={<Home />} />
+                        <Route path="services" element={<Services />} />
                         <Route path="service/:id" element={<Service />} />
                         <Route path="book" element={<Book />} />
                         <Route path="about" element={<About />} />

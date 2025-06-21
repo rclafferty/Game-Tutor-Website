@@ -11,8 +11,9 @@ export default function Footer({copyright}) {
 
     return (
         <>
-            <div className="container">
-                <hr className={`${styles['footer-hr']}`} />
+            <div className={`${styles['footer-div']}`}>
+                <div className='container'>
+                {/* <hr className={`${styles['footer-hr']}`} /> */}
 
                 <div className={`${styles['footer-links']}`}>
                     <div className={`${styles['group']}`}>
@@ -23,12 +24,12 @@ export default function Footer({copyright}) {
                                     // className={BannerStyles.logo}
                                     style={{ cursor: 'pointer' }}
                                     />
-                                <h1>Game Tutor</h1>
+                                <h1>{copyright}</h1>
                         </div>
                         <p>Ready to make your dream game a reality? Game Tutor offers one-on-one coaching tailored to your goals. Book your first session today and start building with confidence!</p>
                     </div>
                     <div className={`${styles['group']}`}>
-                        <h1>Services</h1>
+                        <h1><Link to={'/services'} className='header-link'>Services</Link></h1>
                         <ul>
                         {services.map(({id}, i) => {
                             const service = getServiceById(id);
@@ -40,6 +41,7 @@ export default function Footer({copyright}) {
                                 <li><Link to={`/service/${service.id}`}>{service.name}</Link></li>
                             );
                         })}
+                        <li><Link to={`/services`}>All Services</Link></li>
                         </ul>
                     </div>
                     <div className={`${styles['group']}`}>
@@ -52,7 +54,8 @@ export default function Footer({copyright}) {
                     </div>
                 </div>
 
-                <p className={`${styles['footer-div']}`}>&copy; 2025 {copyright}</p>
+                <p className={`center`}>&copy; 2025 {copyright}</p>
+            </div>
             </div>
         </>
     );
