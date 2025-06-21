@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import JumpToTopButton from './components/JumpToTop';
 import Services from './components/Services';
+import FAQ from './components/FAQ';
 
 const name = 'Game Tutor';
 
@@ -24,6 +25,7 @@ function App() {
                         <Route path="services" element={<Services />} />
                         <Route path="service/:id" element={<Service />} />
                         <Route path="book" element={<Book />} />
+                        <Route path="faq" element={<FAQ />} />
                         <Route path="about" element={<About />} />
                         {/* Add more routes as needed */}
                     </Routes>

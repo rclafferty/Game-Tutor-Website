@@ -52,6 +52,13 @@ export default function Footer({copyright}) {
                             <li><Link to={"/about"}>About</Link></li>
                         </ul>
                     </div>
+                    <div className={`${styles['group']}`}>
+                        <h1>Contact</h1>
+                        <ul>
+                            <li><Link to={"/"}>Phone</Link></li>
+                            <li><Link to={"/book"}>Email</Link></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <p className={`center`}>&copy; 2025 {copyright}</p>

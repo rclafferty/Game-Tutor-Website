@@ -42,6 +42,12 @@ export default function NavBar() {
                     Book a Session
                 </button>
                 <button
+                    className={`${getActiveClass(`/faq`)}`}
+                    onClick={() => navigate(`/faq`)}
+                >
+                    FAQs
+                </button>
+                <button
                     className={`${getActiveClass(`/about`)}`}
                     onClick={() => navigate(`/about`)}
                 >
