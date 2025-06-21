@@ -2,11 +2,12 @@ import { useParams } from "react-router";
 
 import ExplanationDropdown from './ExplanationDropdown';
 import DiscountBanner from './DiscountBanner';
+import ImageMarquee from "./ImageMarquee";
+import CostExplanationDropdown from "./CostExplanationDropdown";
 
 import styles from '../css/Service.module.css'
 import ServicesJson from '../json/Services.json';
 import ServiceImagesJson from '../json/MarqueeImages.json';
-import ImageMarquee from "./ImageMarquee";
 
 export default function Service() {
     const { id } = useParams();
@@ -33,7 +34,14 @@ export default function Service() {
                 <div className="row">
                     <div>
                         <p className="col-12 mt-3">{details.description}</p>
-                        <h6 className={`col-12 mt-3 fst-italic ${styles["service-cost"]}`}><strike>{`Cost: $${details.price} ${details.priceType}`}</strike> <div className={styles.discount}>Limited time: $10 per session the first two sessions (75% off)! New students only</div></h6>
+                        
+                        <div className={styles["explanation-group"]} >
+                            <h5 className={`col-12 mt-3 ${styles["service-cost"]}`}>{`Cost: $${details.price} ${details.priceType}`}</h5>
+                            {ServicesJson['pricing-offers'].map((benefit, i) => (
+                                <CostExplanationDropdown key={i} json={benefit} price={details.price} discount={benefit.discount} />
+                            ))}
+                        </div>
+
                         <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>
                         
                         <div className={styles["explanation-group"]} >
@@ -61,6 +69,13 @@ export default function Service() {
                             })}
                             </ol>
                             <p>* addons available upon request by student</p>
+                        </div>
+
+                        <div className={styles["explanation-group"]} >
+                            <h5 className={`col-12 mt-3 ${styles["service-cost"]}`}>Optional Addons:</h5>
+                            {ServicesJson['addons'].map((addon, i) => (
+                                <CostExplanationDropdown key={i} json={addon} price={addon.price} />
+                            ))}
                         </div>
                     </div>
                 </div>

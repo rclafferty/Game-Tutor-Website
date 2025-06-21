@@ -48,8 +48,13 @@
 
 .dropdown-text {
     margin-top: 3rem;
+    /* flex: 0 0 auto; */
+    /* width: 60%; */
+}
+.dropdown-text-no-margin {
+    margin-top: 0;
     flex: 0 0 auto;
-    width: 60%;
+    width: 100%;
 }
 
 @media (max-width: 1199px) {

@@ -13,7 +13,6 @@ export default function Footer({copyright}) {
         <>
             <div className={`${styles['footer-div']}`}>
                 <div className='container'>
-                {/* <hr className={`${styles['footer-hr']}`} /> */}
 
                 <div className={`${styles['footer-links']}`}>
                     <div className={`${styles['group']}`}>
@@ -21,7 +20,6 @@ export default function Footer({copyright}) {
                                 <img
                                     src={`${process.env.PUBLIC_URL}/GameTutorLogo2.png`}
                                     alt="Logo"
-                                    // className={BannerStyles.logo}
                                     style={{ cursor: 'pointer' }}
                                     />
                                 <h1>{copyright}</h1>
@@ -57,6 +55,7 @@ export default function Footer({copyright}) {
                         <ul>
                             <li><Link to={"/"}>Phone</Link></li>
                             <li><Link to={"/book"}>Email</Link></li>
+                            <li><Link to={"/book"}>Discord</Link></li>
                         </ul>
                     </div>
                 </div>

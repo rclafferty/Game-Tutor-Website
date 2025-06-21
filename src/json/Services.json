@@ -14,11 +14,11 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're looking to turn your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "UnityFundamentals4.png",
-            "price": 40,
+            "price": 1600,
+            "priceType": "",
+            "session-length": "1-2 hours",
             "research-price": 20,
             "deliverable-price": 20,
-            "priceType": "per hour",
-            "session-length": "1-2 hours",
             "benefits": [
                 {
                     "title": "One-on-one sessions",
@@ -670,5 +670,55 @@
         "game_programming",
         "game_design",
         "qa"
+    ],
+    "pricing-offers": [
+        {
+            "title": "100% Upfront Payment",
+            "title-subtag": "+ More!",
+            "description": "Pay in full up-front and unlock unbeatable value! Not only do you **save 10%**, but you'll also receive a **fully customized sandbox project (a $1,000 value) included absolutely free** with your learning plan. Jumpstart your journey with the ultimate personalized experience, designed to help you succeed faster and smarter!",
+            "discount": 0.10,
+            "show-total": true
+        },
+        {
+            "title": "Flexible 2-Part Payment Plan",
+            "description": "Split your payment into two easy installments (half now, half later) and enjoy a **10% discount**! Get started right away with less upfront cost, while unlocking all the benefits of our personalized tutoring plan.",
+            "discount": 0.10,
+            "show-total": true
+        },
+        {
+            "title": "$100 Introductory Sessions Offer",
+            "description": "Not sure if we're the right fit? Try your first two sessions for just **$100**! If you decide to continue within a month, that $100 goes straight toward your full learning plan, so you get a risk-free head start on your game development journey.",
+            "discount": 0,
+            "show-total": false
+        },
+        {
+            "title": "Pay As You Go",
+            "description": "Prefer maximum flexibility? With our Pay As You Go option, you can book sessions one at a time for just $100 each with no upfront commitment required. Enjoy expert guidance at your own pace, whenever you're ready to learn!",
+            "discount": 0,
+            "show-total": false
+        }
+    ],
+    "addons": [
+        {
+            "currently-offered": true,
+            "title": "Sandbox Project",
+            "description": "Unlock your full learning potential with an exclusive Sandbox Project! This hands-on, fully customized project is designed to reinforce and expand on the concepts covered in your sessions directly inside the engine. Dive in, experiment, and master new skills faster with a practical, interactive environment built just for you. It's the ultimate way to turn knowledge into real-world results!",
+            "price": 1000,
+            "priceType": ""
+        },
+        {
+            "currently-offered": true,
+            "title": "Practice Sessions (1 session)",
+            "description": "Supercharge your progress with an exclusive practice session! After completing your learning plan, book an extra session within 1 month to reinforce key concepts, tackle lingering questions, or polish your skills with expert guidance. It's the perfect way to lock in your knowledge and keep your momentum going strong!",
+            "price": 90,
+            "priceType": "per session"
+        },
+        {
+            "currently-offered": true,
+            "title": "Practice Sessions (3 sessions)",
+            "description": "Strengthen your understanding of the topics covered in your learning plan with a bundle of three focused practice sessions. After completing your plan, schedule these sessions within 1 month to review and reinforce key concepts, clarify any lingering questions, and ensure you have a solid grasp of the material. It's an effective way to build confidence and retain what you've learned.",
+            "price": 250,
+            "priceType": ""
+        }
     ]
 }

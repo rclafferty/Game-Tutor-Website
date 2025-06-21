@@ -102,6 +102,9 @@ tr {
     display: block;
     margin: 1rem auto;
 }
+.hidden {
+    display: none !important;
+}
 
 button {
     border-radius: 1rem;

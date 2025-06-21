@@ -27,9 +27,8 @@ function ExplanationDropdown({json}) {
       </div>
 
       <div
-        className={`${styles["dropdown-content"]} ${isOpen ? styles.open : ''}`}
+        className={`${styles["dropdown-content"]} ${isOpen ? styles.open : 'hidden'}`}
       >
-        {isOpen && (
           <>
             <img
               className={`${styles["dropdown-image"]}`}
@@ -41,7 +40,6 @@ function ExplanationDropdown({json}) {
                 <p>{json.description}</p>
             </div>
           </>
-        )}
       </div>
     </div>
   );
