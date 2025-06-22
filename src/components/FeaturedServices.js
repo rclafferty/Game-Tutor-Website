@@ -28,7 +28,7 @@ export default function FeaturedServices() {
                     }
                     return (
                         <div className={`${ServiceCardStyles["featured-service"]}`}>
-                            <Link to={`/service/${service.id}`} title={`Learn more about ${service.name}`}>
+                            <Link to={`/services/${service.id}`} title={`Learn more about ${service.name}`}>
                                 <h2>{service.name}</h2>
                             </Link>
 
@@ -42,7 +42,7 @@ export default function FeaturedServices() {
                                 
                                 </div>
                             <button
-                                onClick={() => navigate(`/service/${service.id}`)}
+                                onClick={() => navigate(`/services/${service.id}`)}
                                 title={`Learn more about ${service.name}`}
                             >
                                 Learn More

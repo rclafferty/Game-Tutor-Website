@@ -37,7 +37,7 @@ export default function Footer({copyright}) {
                                 return null;
                             }
                             return (
-                                <li><Link to={`/service/${service.id}`}>{service.name}</Link></li>
+                                <li><Link to={`/services/${service.id}`}>{service.name}</Link></li>
                             );
                         })}
                         </ul>

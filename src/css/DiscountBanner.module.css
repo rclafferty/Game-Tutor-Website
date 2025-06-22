@@ -32,3 +32,11 @@
 .discount-banner-link h1 {
     margin: 0;
 }
+
+.highlight {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.discount-banner-link:hover h1 span.highlight {
+    color: var(--primary-color);
+}

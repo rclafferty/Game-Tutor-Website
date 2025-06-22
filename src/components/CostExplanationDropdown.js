@@ -4,7 +4,7 @@ import { parseBoldText } from '../helpers/parseBoldText';
 
 import styles from '../css/ExplanationDropdown.module.css'
 
-export default function CostExplanationDropdown({json, price, discount=0}) {
+export default function CostExplanationDropdown({json, price, discount = 0}) {
     console.log(json);
     const [isOpen, setIsOpen] = useState(null);
     
@@ -22,7 +22,7 @@ export default function CostExplanationDropdown({json, price, discount=0}) {
                     <span>
                         <i className={`fa-solid ${isOpen ? 'fa-chevron-down' : 'fa-chevron-right'}`}></i>
                     </span>
-                    {json.title} {(json.discount < 0.04) ? "" : `- ${json.discount * 100}% off`} {json['title-subtag'] ? json['title-subtag'] : ""}
+                    {json.title} {(discount < 0.04) ? "" : `- ${discount * 100}% off`} {json['title-subtag'] ? json['title-subtag'] : ""}
                 </button>
             </div>
             <div

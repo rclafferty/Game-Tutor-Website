@@ -81,7 +81,7 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
                         </div>
                     );
                     return useLinks ? (
-                        <Link key={i} to={`/service/${item.service}`} title={`${item.subtitle} ${item['subtitle-2']}`}>
+                        <Link key={i} to={`/services/${item.service}`} title={`${item.subtitle} ${item['subtitle-2']}`}>
                             {content}
                         </Link>
                     ) : (
