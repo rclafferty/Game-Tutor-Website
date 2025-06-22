@@ -9,6 +9,13 @@ export default function Footer({copyright}) {
     const [services] = useState(ServicesJson.services);
     const getServiceById = (id) => services.find(service => service.id === id && service['currently-offered'] === true);
 
+    
+    // Scroll to top handler
+    const scrollToTop = (e) => {
+        // e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <>
             <div className={`${styles['footer-div']}`}>
@@ -27,9 +34,9 @@ export default function Footer({copyright}) {
                         <p>Ready to make your dream game a reality? Game Tutor offers one-on-one coaching tailored to your goals. Book your first session today and start building with confidence!</p>
                     </div>
                     <div className={`${styles['group']}`}>
-                        <h1><Link to={'/services'} className='header-link'>Services</Link></h1>
+                        <h1><Link to={'/services'} className='header-link' onClick={scrollToTop}>Services</Link></h1>
                         <ul>
-                        <li><Link to={`/services`}>All Services</Link></li>
+                        <li><Link to={`/services`} onClick={scrollToTop}>All Services</Link></li>
                         {services.map(({id}, i) => {
                             const service = getServiceById(id);
                             if (!service) {
@@ -37,7 +44,7 @@ export default function Footer({copyright}) {
                                 return null;
                             }
                             return (
-                                <li><Link to={`/services/${service.id}`}>{service.name}</Link></li>
+                                <li><Link to={`/services/${service.id}`} onClick={scrollToTop}>{service.name}</Link></li>
                             );
                         })}
                         </ul>
@@ -45,17 +52,17 @@ export default function Footer({copyright}) {
                     <div className={`${styles['group']}`}>
                         <h1>Resources</h1>
                         <ul>
-                            <li><Link to={"/"}>Home</Link></li>
-                            <li><Link to={"/book"}>Book a Session</Link></li>
-                            <li><Link to={"/about"}>About</Link></li>
+                            <li><Link to={"/"} onClick={scrollToTop}>Home</Link></li>
+                            <li><Link to={"/book"} onClick={scrollToTop}>Book a Session</Link></li>
+                            <li><Link to={"/about"} onClick={scrollToTop}>About</Link></li>
                         </ul>
                     </div>
                     <div className={`${styles['group']}`}>
-                        <h1>Contact</h1>
+                        <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
                         <ul>
-                            <li><Link to={"/"}>Phone</Link></li>
-                            <li><Link to={"/book"}>Email</Link></li>
-                            <li><Link to={"/book"}>Discord</Link></li>
+                            <li><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={"/"}>+1 (234) 567-8900</Link></li>
+                            <li><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={"/book"}>test@test.com</Link></li>
+                            <li><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={"/book"}>Join Discord</Link></li>
                         </ul>
                     </div>
                 </div>
