@@ -25,6 +25,9 @@
 .price-chart table tbody tr:last-child {
     border: 1px solid var(--secondary-color);
 }
+.price-chart table tr td {
+    padding: 0.5rem;
+}
 .price-chart table tr td:first-child {
     text-align: left;
     padding-left: 2rem;

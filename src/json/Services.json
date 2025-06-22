@@ -127,11 +127,11 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "",
-            "price": 40,
+            "price": 1600,
+            "priceType": "",
+            "session-length": "1 hour",
             "research-price": 20,
             "deliverable-price": 20,
-            "priceType": "per hour",
-            "session-length": "1 hour",
             "benefits": [
                 {
                     "title": "One-on-one sessions",
