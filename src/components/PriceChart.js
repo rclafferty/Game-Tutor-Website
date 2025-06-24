@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import styles from '../css/PriceChart.module.css'
 
 import currencyFormat from '../helpers/currencyFormat.js';

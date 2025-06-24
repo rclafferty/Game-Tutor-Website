@@ -1,6 +1,4 @@
-import { Link, useNavigate } from 'react-router';
-
-import styles from '../css/Home.module.css';
+import { useNavigate } from 'react-router';
 
 import ImageMarquee from './ImageMarquee';
 import DiscountBanner from './DiscountBanner';

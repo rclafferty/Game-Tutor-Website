@@ -7,14 +7,13 @@ import scrollToTop from '../helpers/scrollToTop';
 import keywordJSON from '../json/LinkKeywords.json';
 
 export default function useHyperlinkKeywords(nodes) {
-    const [keywords, setKeywords] = useState(keywordJSON.keywords);
+    const [keywords] = useState(keywordJSON.keywords);
     // nodes can be string or array of React elements/strings
     if (typeof nodes === 'string') {
         nodes = [nodes];
     }
     return nodes.flatMap((node, idx) => {
         if (typeof node === 'string') {
-            // Split string into words and punctuation, preserving all parts
             // Split string into words, whitespace, and punctuation, preserving all parts
             const parts = node.match(/(\w+|\s+|[^\w\s]+)/gu) || [];
             return parts.map((part, index) => {

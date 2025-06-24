@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from "react-router";
 
 import styles from "../css/FAQ.module.css"
 
