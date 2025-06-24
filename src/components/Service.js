@@ -1,5 +1,7 @@
 import { useParams } from "react-router";
 
+import styles from '../css/Service.module.css'
+
 import ExplanationDropdown from './ExplanationDropdown';
 import DiscountBanner from './DiscountBanner';
 import ImageMarquee from "./ImageMarquee";
@@ -10,8 +12,6 @@ import currencyFormat from "../helpers/currencyFormat";
 
 import ServicesJson from '../json/Services.json';
 import ServiceImagesJson from '../json/MarqueeImages.json';
-
-import styles from '../css/Service.module.css'
 
 export default function Service() {
     const { id } = useParams();

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import currencyFormat from '../helpers/currencyFormat.js';
-
 import styles from '../css/PriceChart.module.css'
+
+import currencyFormat from '../helpers/currencyFormat.js';
 
 export default function PriceChart({allOffers, price}) {
     

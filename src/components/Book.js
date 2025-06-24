@@ -1,7 +1,7 @@
+import styles from "../css/Book.module.css";
+
 import BookLink from "./BookLink";
 import BookCalendly from "./BookCalendly";
-
-import styles from "../css/Book.module.css";
 
 export default function Book() {
     const phoneNumber = "+11234567890"; // Replace with your phone number
@@ -111,11 +111,15 @@ export default function Book() {
                             <td>100%</td>
                         </tr>
                         <tr>
-                            <td>After Completing Session 2</td>
+                            <td>Completed Sessions 1 - 2</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Completed Sessions 3 - 5</td>
                             <td>75%</td>
                         </tr>
                         <tr>
-                            <td>After Completing Session 5</td>
+                            <td>Completed Sessions 6 - 7</td>
                             <td>50%</td>
                         </tr>
                         <tr>

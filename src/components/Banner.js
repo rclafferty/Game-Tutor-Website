@@ -2,9 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import propTypes from 'prop-types';
 
-import NavBar from './NavBar';
-
 import BannerStyles from '../css/Banner.module.css';
+
+import NavBar from './NavBar';
 
 export default function Banner(props) {
     const navigate = useNavigate();

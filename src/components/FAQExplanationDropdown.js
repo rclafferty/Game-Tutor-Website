@@ -3,14 +3,16 @@ import React, { useState } from 'react';
 import styles from '../css/ExplanationDropdown.module.css'
 
 import { parseBoldText } from '../helpers/parseBoldText';
+import useHyperlinkKeywords from '../helpers/hyperlinkKeywords';
 
-export default function CostExplanationDropdown({json, price, discount = 0}) {
+export default function FAQExplanationDropdown({json, price, discount = 0}) {
     console.log(json);
     const [isOpen, setIsOpen] = useState(null);
     
     const toggleDropdown = () => {
         setIsOpen(isOpen => !isOpen);
     };
+
 
     return (
         <div className={`${styles["dropdown-container"]}`}>
@@ -19,10 +21,10 @@ export default function CostExplanationDropdown({json, price, discount = 0}) {
                     onClick={() => toggleDropdown()}
                     title={isOpen ? `Hide ${json.title}` : `Show ${json.title}`}
                     >
-                    <span>
+                        <span>
                         <i className={`fa-solid ${isOpen ? 'fa-chevron-down' : 'fa-chevron-right'}`}></i>
                     </span>
-                    {json.title} {(discount < 0.04) ? "" : `- ${discount * 100}% off`} {json['title-subtag'] ? json['title-subtag'] : ""}
+                    {json.title} {json['title-subtag'] ? json['title-subtag'] : ""}
                 </button>
             </div>
             <div
@@ -30,10 +32,7 @@ export default function CostExplanationDropdown({json, price, discount = 0}) {
             >
                 <>
                     <div className={`${styles["dropdown-text-no-margin"]}`}>
-                        <p>{parseBoldText(json.description)}</p>
-                        { json['show-total'] &&
-                            <h5>Total Price: ${price - (price * discount)}</h5>
-                        }
+                        <p>{useHyperlinkKeywords(parseBoldText(json.description))}</p>
                     </div>
                 </>
             </div>

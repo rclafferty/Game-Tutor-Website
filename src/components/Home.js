@@ -1,13 +1,13 @@
 import { Link, useNavigate } from 'react-router';
 
+import styles from '../css/Home.module.css';
+
 import ImageMarquee from './ImageMarquee';
 import DiscountBanner from './DiscountBanner';
 import FeaturedServices from './FeaturedServices';
-
-import styles from '../css/Home.module.css';
+import AboutPreview from './AboutPreview';
 
 import images from '../json/MarqueeImages.json';
-import AboutPreview from './AboutPreview';
 
 export default function Home() {
     const navigate = useNavigate();

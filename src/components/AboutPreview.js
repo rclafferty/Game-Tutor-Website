@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 
-import ServicesJson from '../json/Services.json';
-
 import styles from '../css/Home.module.css';
+
+import ServicesJson from '../json/Services.json';
 
 export default function AboutPreview() {
     const navigate = useNavigate();

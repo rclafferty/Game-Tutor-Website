@@ -75,6 +75,14 @@
     background-color: var(--light-primary-color);
     border-color: var(--primary-color);
 }
+.featured-service::selection {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+.featured-service::-moz-selection {
+    background: var(--primary-color) !important;
+    color: white;
+}
 
 .featured-image {
     object-fit: cover;

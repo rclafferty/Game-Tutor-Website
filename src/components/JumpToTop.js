@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import scrollToTop from '../helpers/scrollToTop';
+
 function JumpToTopButton() {
     const [visible, setVisible] = useState(false);
 
@@ -11,10 +13,6 @@ function JumpToTopButton() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
 
     return (
         visible && (

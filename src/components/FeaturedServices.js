@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 
-import ServicesJson from '../json/Services.json';
-
 import ServiceCardStyles from '../css/ServiceCard.module.css';
+
+import ServicesJson from '../json/Services.json';
 
 export default function FeaturedServices() {
     const navigate = useNavigate();

@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from "react-router";
 
-import ServicesJson from '../json/Services.json';
-
 import styles from "../css/Footer.module.css"
+
+import scrollToTop from '../helpers/scrollToTop';
+
+import ServicesJson from '../json/Services.json';
 
 export default function Footer({copyright}) {
     const [services] = useState(ServicesJson.services);
     const getServiceById = (id) => services.find(service => service.id === id && service['currently-offered'] === true);
-
-    
-    // Scroll to top handler
-    const scrollToTop = (e) => {
-        // e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
 
     return (
         <>

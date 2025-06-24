@@ -1,0 +1,24 @@
+{
+    "keywords": [
+            {
+                "keyword": "booking",
+                "link": "/book"
+            },
+            {
+                "keyword": "services",
+                "link": "/services"
+            },
+            {
+                "keyword": "Discord",
+                "link": "/book"
+            },
+            {
+                "keyword": "phone",
+                "link": "/book"
+            },
+            {
+                "keyword": "email",
+                "link": "/book"
+            }
+    ]
+}

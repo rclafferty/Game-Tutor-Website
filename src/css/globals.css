@@ -154,6 +154,16 @@ footer p {
     text-align: center;
 }
 
+::selection {
+    background: var(--secondary-color);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--secondary-color);
+    color: white;
+}
+
 @media(max-width: 767px) {
   .button-row button {
       width: 100%;
