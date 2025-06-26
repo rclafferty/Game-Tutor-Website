@@ -9,7 +9,7 @@
         {
             "image": "/images/Banner/UnityAI.png",
             "service": "unity",
-            "subtitle": "Learn AI",
+            "subtitle": "Learn Game AI",
             "subtitle-2": "in Unity 101"
         },
         {
@@ -39,9 +39,9 @@
             "subtitle-2": "in Unreal 101"
         },
         {
-            "image": "/images/Banner/UnityAI.png",
+            "image": "/images/Banner/UEGameAI.png",
             "service": "unreal",
-            "subtitle": "Learn AI",
+            "subtitle": "Learn Game AI",
             "subtitle-2": "in Unreal 101"
         },
         {
@@ -51,9 +51,9 @@
             "subtitle-2": "in Unreal 101"
         },
         {
-            "image": "/images/Banner/CSharp.png",
+            "image": "/images/Banner/UECppAndBlueprints.png",
             "service": "unreal",
-            "subtitle": "Learn C# Scripting",
+            "subtitle": "Learn Programming",
             "subtitle-2": "in Unreal 101"
         },
         {
