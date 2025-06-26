@@ -50,6 +50,10 @@
             "title": "Booking & Policies",
             "questions": [
                 {
+                    "title": "I've started a lesson plan. How do I book a session?",
+                    "description": "Contact us by phone, send us an email, or book your session instantly through our convenient Calendly widget, all of which are on the booking page."
+                },
+                {
                     "title": "How long is a typical session?",
                     "description": "Most sessions are a focused 60 minutes, but we're happy to adjust to your needs. Our goal is to provide a productive and engaging learning experience that fits your schedule."
                 },
@@ -59,7 +63,7 @@
                 },
                 {
                     "title": "Are sessions recorded?",
-                    "description": "No, we do not record sessions, and we do not allow students to record them either. We believe that active participation leads to the best results, so we encourage you to take notes and utilize the resources provided to maximize your learning experience!"
+                    "description": "Yes, we record sessions for internal quality assurance and to continually improve your learning experience. These recordings are strictly for our internal use and are never shared externally. For privacy and to maintain a focused environment, we do not allow students to record sessions."
                 }
             ]
         },
@@ -68,7 +72,7 @@
             "questions": [
                 {
                     "title": "What platform do you use for online sessions?",
-                    "description": "We use industry-leading platforms like **Zoom** and **Google Meet** to deliver seamless, high-quality online sessions. This ensures you enjoy a smooth, interactive learning experience—no matter where you are!"
+                    "description": "We use **Google Meet** to deliver seamless, high-quality online sessions. This ensures you enjoy a smooth, interactive learning experience no matter where you are!"
                 },
                 {
                     "title": "Do I need any special software or equipment?",

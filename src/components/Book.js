@@ -85,7 +85,8 @@ export default function Book() {
                     />
                 </div>
                 
-                <BookCalendly />
+                {/* TODO: Add Calendly back after scheduling chat with Dustin. */}
+                {/* <BookCalendly /> */}
 
                 <h1>Cancelation + Refund Policy</h1>
                 <p>We understand that life can be unpredictable. If you need to cancel or reschedule a session, please do so at least 24 hours in advance to avoid being charged for the session. If you cancel with less than 24 hours notice, you will be charged for the session.</p>
@@ -96,7 +97,7 @@ export default function Book() {
                 <p>If you have any questions or concerns about our cancelation or refund policy, please feel free to contact us.</p>
 
                 <h2>Refund Schedule</h2>
-                <p>If you paid upfront to take advantage of discounts and bonus offers but plans changed, here's a schedule of when you're eligible for refunds.</p>
+                <p><strong>If you paid upfront</strong> to take advantage of discounts and bonus offers but plans changed, here's a schedule of when you're eligible for refunds.</p>
 
                 <table className={`${styles['refund-schedule-table']}`}>
                     <thead>

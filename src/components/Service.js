@@ -39,13 +39,7 @@ export default function Service() {
                     <div>
                         <p className="col-12 mt-3">{details.description}</p>
                         
-                        <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}</h5>
-                        {/* <div className={styles["explanation-group"]} >
-                            <h5 className={`col-12 mt-3 ${styles["service-cost"]}`}>{`Cost: $${details.price} ${details.priceType}`}</h5>
-                            {ServicesJson['pricing-offers'].map((benefit, i) => (
-                                <CostExplanationDropdown key={i} json={benefit} price={details.price} discount={benefit.discount} />
-                            ))}
-                        </div> */}
+                        <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}*</h5>
                         <PriceChart allOffers={ServicesJson["pricing-offers"]} price={details.price}/>
 
                         <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>

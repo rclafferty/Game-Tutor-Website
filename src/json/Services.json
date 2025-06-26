@@ -82,8 +82,8 @@
                     "display": true
                 },
                 {
-                    "title": "C# Scripting",
-                    "description": "Unlock the full power of Unity with C# scripting. We'll help you go from zero to fluent in writing game logic, creating interactivity, and architecting your systems the right way. Learn core programming concepts, Unity's scripting API, and best practices that will help you code smarter, cleaner, and more efficiently. This is where your games truly come to life.",
+                    "title": "C# Programming",
+                    "description": "Unlock the full power of Unity with C# Programming. We'll help you go from zero to fluent in writing game logic, creating interactivity, and architecting your systems the right way. Learn core programming concepts, Unity's scripting API, and best practices that will help you code smarter, cleaner, and more efficiently. This is where your games truly come to life.",
                     "image": "CSharp2.png",
                     "display": true
                 },
@@ -203,7 +203,7 @@
                 {
                     "title": "Game AI",
                     "description": "Build smarter, more reactive NPCs with Unreal's AI systems. You'll explore Behavior Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
-                    "image": "logo.png",
+                    "image": "UnrealGameAI.png",
                     "display": true
                 },
                 {

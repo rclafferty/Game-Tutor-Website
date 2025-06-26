@@ -76,7 +76,7 @@ export default function PriceChart({allOffers, price}) {
         </table>
         </div>
 
-        <p>* = Average of 16 sessions</p>
+        <p>* = Average of 16 sessions before any promotional offers or discounts</p>
         <p>** = Introductory offer price will be credited towards the final price of another qualifying plan should you choose to continue within 1 month of completing the intro sessions.</p>
         </>
     );
