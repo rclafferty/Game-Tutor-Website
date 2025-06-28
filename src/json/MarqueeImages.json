@@ -33,19 +33,19 @@
 
         ,
         {
-            "image": "/images/Banner/UnityPhysics.png",
+            "image": "/images/Banner/UEPhysics.png",
             "service": "unreal",
             "subtitle": "Learn Physics",
             "subtitle-2": "in Unreal 101"
         },
         {
-            "image": "/images/Banner/UEGameAI.png",
+            "image": "/images/Banner/UEGameAI2.png",
             "service": "unreal",
             "subtitle": "Learn Game AI",
             "subtitle-2": "in Unreal 101"
         },
         {
-            "image": "/images/Banner/Animation.png",
+            "image": "/images/Banner/UEAnimation.png",
             "service": "unreal",
             "subtitle": "Learn Animation",
             "subtitle-2": "in Unreal 101"

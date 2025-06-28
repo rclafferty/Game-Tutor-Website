@@ -179,7 +179,7 @@
                 {
                     "title": "UE Fundamentals",
                     "description": "Build a strong foundation in Unreal Engine—the powerhouse behind many of today's top-tier games. Learn to navigate the editor, understand levels, actors, components, and the essential systems that drive gameplay. Whether you're starting fresh or switching from another engine, we'll help you master the tools and workflows that make Unreal tick.",
-                    "image": "logo.png",
+                    "image": "UEFundamentals.png",
                     "display": true
                 },
                 {
@@ -191,31 +191,31 @@
                 {
                     "title": "Testing Fundamentals",
                     "description": "Get ahead of bugs before they become blockers. Learn how to use Unreal's debugging tools like the Visual Logger, output log, breakpoints, and on-screen debugging. We'll also cover in-editor testing, play-in-editor workflows, and methods for validating systems before they go live.",
-                    "image": "logo.png",
+                    "image": "UETestFundamentals.png",
                     "display": true
                 },
                 {
                     "title": "C++ and Blueprints",
                     "description": "Master Unreal Engine's dual powerhouses: Blueprints and C++. Learn how to build gameplay systems visually with Blueprints, then go deeper with C++ to unlock advanced functionality, custom actors, and performance-driven solutions. We'll show you how these two systems work together so you can create clean, scalable, and flexible game logic with confidence. Whether you're aiming for rapid prototyping or full-scale development, this balanced approach gives you the best of both worlds.",
-                    "image": "logo.png",
+                    "image": "UECppAndBlueprints.png",
                     "display": true
                 },
                 {
                     "title": "Game AI",
                     "description": "Build smarter, more reactive NPCs with Unreal's AI systems. You'll explore Behavior Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
-                    "image": "UnrealGameAI.png",
+                    "image": "UEGameAI.png",
                     "display": true
                 },
                 {
                     "title": "Physics",
                     "description": "Create more immersive gameplay with Unreal's physics simulation. Learn how to use physics bodies, collision channels, constraints, and force applications. From destructible environments to realistic movement, we'll help you understand and control how your game world behaves under the laws of physics.",
-                    "image": "logo.png",
+                    "image": "UEPhysics.png",
                     "display": true
                 },
                 {
                     "title": "Animation",
                     "description": "Bring your characters and creatures to life with powerful animation tools in Unreal. Explore animation blueprints, blend spaces, state machines, and control rigs to create fluid and responsive motion. Whether it's a walk cycle or complex combat animations, you'll learn how to tie animation into gameplay for dynamic results.",
-                    "image": "logo.png",
+                    "image": "UEAnimation2.png",
                     "display": true
                 },
                 {
