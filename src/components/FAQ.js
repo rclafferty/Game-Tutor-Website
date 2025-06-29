@@ -6,7 +6,7 @@ import FAQExplanationDropdown from './FAQExplanationDropdown';
 
 import FAQsJson from '../json/FAQs.json';
 
-export default function FAQ({copyright}) {
+export default function FAQ() {
     const [faqs] = useState(FAQsJson["faqs"]);
 
     return (

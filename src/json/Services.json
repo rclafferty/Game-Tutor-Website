@@ -17,8 +17,6 @@
             "price": 1600,
             "priceType": "",
             "session-length": "1 hour",
-            "research-price": 20,
-            "deliverable-price": 20,
             "benefits": [
                 {
                     "title": "One-on-one sessions",
@@ -83,7 +81,7 @@
                 },
                 {
                     "title": "C# Programming",
-                    "description": "Unlock the full power of Unity with C# Programming. We'll help you go from zero to fluent in writing game logic, creating interactivity, and architecting your systems the right way. Learn core programming concepts, Unity's scripting API, and best practices that will help you code smarter, cleaner, and more efficiently. This is where your games truly come to life.",
+                    "description": "Unlock the full power of Unity with C# Programming (pronounced \"C Sharp\"). We'll help you go from zero to fluent in writing game logic, creating interactivity, and architecting your systems the right way. Learn core programming concepts, Unity's scripting API, and best practices that will help you code smarter, cleaner, and more efficiently. This is where your games truly come to life.",
                     "image": "CSharp2.png",
                     "display": true
                 },
@@ -130,8 +128,6 @@
             "price": 1600,
             "priceType": "",
             "session-length": "1 hour",
-            "research-price": 20,
-            "deliverable-price": 20,
             "benefits": [
                 {
                     "title": "One-on-one sessions",
@@ -228,7 +224,7 @@
         },
         {
             "id": "game_programming",
-            "currently-offered": false,
+            "currently-offered": true,
             "featured": false,
             "name": "Game Programming",
             "subtitle": "C++ tutoring your way!",
@@ -240,10 +236,8 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "",
-            "price": 40,
-            "research-price": 20,
-            "deliverable-price": 20,
-            "priceType": "per hour",
+            "price": 100,
+            "priceType": "per session",
             "session-length": "1 hour",
             "benefits": [
                 {
@@ -385,10 +379,8 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "",
-            "price": 40,
-            "research-price": 20,
-            "deliverable-price": 20,
-            "priceType": "per hour",
+            "price": 100,
+            "priceType": "per session",
             "session-length": "1 hour",
             "benefits": [
                 {
@@ -530,10 +522,8 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "",
-            "price": 40,
-            "research-price": 20,
-            "deliverable-price": 20,
-            "priceType": "per hour",
+            "price": 100,
+            "priceType": "per session",
             "session-length": "1 hour",
             "benefits": [
                 {

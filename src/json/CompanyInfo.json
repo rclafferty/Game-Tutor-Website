@@ -1,0 +1,31 @@
+{
+    "name": "Game Tutor",
+    "description": "Game Tutor is a platform that connects students with experienced game developers for personalized tutoring sessions.",
+    "email": "test@test.com",
+    "phone": "+1 (555) 555-5555",
+    "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "zipCode": ""
+    },
+    "privacyPolicy": {
+        "effectiveDate": "June 29, 2023",
+        "lastUpdated": "June 29, 2023",
+        "policyUrl": "/privacy-policy"
+    },
+    "termsOfService": {
+        "effectiveDate": "June 29, 2023",
+        "lastUpdated": "June 29, 2023",
+        "termsUrl": "/terms-of-service"
+    },
+    "socialMediaLinks": {
+        "facebook": "FB-TBD",
+        "twitter": "X-TBD",
+        "instagram": "I-TBD",
+        "linkedin": "LI-TBD"
+    },
+    "logoUrl": "/images/logo.png",
+    "logoWhiteUrl": "/GameTutorLogo2.png",
+    "faviconUrl": "/images/favicon.ico"
+}

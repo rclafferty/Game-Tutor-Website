@@ -12,8 +12,7 @@ import NavBar from './components/NavBar';
 import JumpToTopButton from './components/JumpToTop';
 import Services from './components/Services';
 import FAQ from './components/FAQ';
-
-const name = 'Game Tutor';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
     return(
@@ -27,10 +26,11 @@ function App() {
                         <Route path="book" element={<Book />} />
                         <Route path="faq" element={<FAQ />} />
                         <Route path="about" element={<About />} />
+                        <Route path="privacy" element={<PrivacyPolicy />} />
                         {/* Add more routes as needed */}
                     </Routes>
                     <JumpToTopButton />
-                <Footer copyright={name} />
+                <Footer />
             </ErrorBoundary>
         </>
     );

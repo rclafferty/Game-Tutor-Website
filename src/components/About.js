@@ -2,11 +2,13 @@ import styles from "../css/About.module.css"
 
 import BookLink from "./BookLink";
 
+import CompanyJSON from '../json/CompanyInfo.json';
+
 export default function About() {
     return (
         <>
             <div className="container">
-                <h1 className={`header`}>About Game Tutor</h1>
+                <h1 className={`header`}>About {CompanyJSON.name}</h1>
 
                 <div className={`${styles['about-section']}`}>
                     <img className={`${styles["about-image"]}`} src={`${process.env.PUBLIC_URL}/images/headshot.jpg`} alt=""/>

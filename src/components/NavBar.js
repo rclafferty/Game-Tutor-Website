@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import styles from '../css/NavBar.module.css';
 import BannerStyles from '../css/Banner.module.css';
 
+import CompanyJSON from '../json/CompanyInfo.json';
+
 export default function NavBar() {
     const navigate = useNavigate();
     
@@ -21,7 +23,7 @@ export default function NavBar() {
                         className={BannerStyles.logo}
                         style={{ cursor: 'pointer' }}
                     />
-                    <h1>Game Tutor</h1>
+                    <h1>{CompanyJSON.name}</h1>
                 </Link>
                 <button
                     className={`${getActiveClass(`/`)}`}

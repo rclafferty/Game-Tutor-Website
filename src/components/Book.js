@@ -3,8 +3,10 @@ import styles from "../css/Book.module.css";
 import BookLink from "./BookLink";
 import BookCalendly from "./BookCalendly";
 
+import CompanyJSON from '../json/CompanyInfo.json';
+
 export default function Book() {
-    const phoneNumber = "+11234567890"; // Replace with your phone number
+    const phoneNumber = CompanyJSON.phone; // Replace with your phone number
     const telLink = `tel:${phoneNumber}`;
 
     // Format phone number as (123) 456-7890
@@ -21,7 +23,7 @@ export default function Book() {
 
     const formattedPhoneNumber = formatPhoneNumber(phoneNumber);
 
-    const email = "test@test.com";
+    const email = CompanyJSON.email;
     const subject = encodeURIComponent("Tutoring Inquiry");
     const body = encodeURIComponent(
         `Hi,
