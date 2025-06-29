@@ -29,7 +29,7 @@ export default function Home() {
     // Pick one random image from each group
     const selectedImages = Object.values(grouped).map(groupArr => {
         const shuffled = shuffle(groupArr);
-        console.log('Shuffled group:', shuffled);
+        if (groupArr[0]?.service === 'default') return [];
         return shuffled;
     });
 

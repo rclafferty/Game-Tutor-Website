@@ -29,7 +29,7 @@ export default function AboutPreview() {
                 </p>
                 <button
                     className="wide center"
-                    onClick={() => navigate(`/`)}
+                    onClick={() => navigate(`/about`)}
                     style={{ marginTop: '2rem' }}
                 >
                     Learn More About Us

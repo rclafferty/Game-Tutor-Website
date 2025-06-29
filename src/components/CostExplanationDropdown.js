@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 
 import styles from '../css/ExplanationDropdown.module.css'
 
@@ -32,7 +33,7 @@ export default function CostExplanationDropdown({json, price, discount = 0}) {
                     <div className={`${styles["dropdown-text-no-margin"]}`}>
                         <p>{parseBoldText(json.description)}</p>
                         { json['show-total'] &&
-                            <h5>Total Price: ${price - (price * discount)}</h5>
+                            <h5><Link to={"/book"}>Total Price: ${price - (price * discount)}</Link></h5>
                         }
                     </div>
                 </>

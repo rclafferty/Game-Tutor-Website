@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
                     <li><strong>With Your Consent:</strong> We may share your information with third parties if you have given us explicit consent to do so.</li>
                     <li><strong>Social Media Platforms:</strong> If you interact with us on social media, your information may be shared with the respective platform according to their privacy policies.</li>
                     <li><strong>Hyperlink Keywords:</strong> You can choose to click or avoid links in our content. We recommend reviewing third-party privacy policies when you do.</li>
-                    <li><strong>Areas of Interest and Experience Level:</strong> We may share your information regarding your technical knowledge and prior expertise with our tutors to better tailor the coaching experience to your needs.</li>
+                    <li><strong>Areas of Interest and Experience Level:</strong> We may share your information regarding your technical knowledge and prior expertise with our tutors to better tailor the learning experience to your needs.</li>
                 </ul>
 
                 <h2>Data Security</h2>
@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
                     <li><strong>Data Portability:</strong> You have the right to request a copy of your personal information in a structured, commonly used, and machine-readable format.</li>
                     <li><strong>Opt-Out:</strong> You can opt out of receiving marketing communications from us by following the unsubscribe instructions included in those communications or by contacting us directly.</li>
                     <li><strong>Hyperlink Keywords:</strong> You can choose whether to click on hyperlinks in our content, and you can review the privacy policies of any third-party websites or services linked from our content.</li>
-                    <li><strong>Areas of Interest and Experience Level:</strong> You can choose to provide or withhold information regarding your technical knowledge and prior expertise. This information is used to tailor the coaching experience to your needs.</li>
+                    <li><strong>Areas of Interest and Experience Level:</strong> You can choose to provide or withhold information regarding your technical knowledge and prior expertise. This information is used to tailor the learning experience to your needs.</li>
                 </ul>
 
                 <p>To exercise any of these rights, please contact us using the contact information provided below.</p>
@@ -138,7 +138,7 @@ export default function PrivacyPolicy() {
                 <p>Discord: <a href="https://discord.gg/your-discord-link" target="_blank" rel="noopener noreferrer">Join our Discord</a></p>
                 <p>Website: <a href="https://www.gametutor.com" target="_blank" rel="noopener noreferrer">www.gametutor.com</a></p>
                 <p>By using our website and services, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
-                <p>Thank you for choosing {CompanyJSON.name} for your game development coaching needs!</p>
+                <p>Thank you for choosing {CompanyJSON.name} for your game development learning needs!</p>
                 
             </div>
         </>

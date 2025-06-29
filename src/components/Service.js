@@ -22,9 +22,15 @@ export default function Service() {
 
     // Find all image objects with matching id
     // Find all image objects with matching id and shuffle them
-    const images = ServiceImagesJson.images
+    let images = ServiceImagesJson.images
         .filter(img => String(img.service) === id)
         .sort(() => Math.random() - 0.5);
+
+    if (images.length === 0) {
+        images = ServiceImagesJson.images
+            .filter(img => String(img.service) === 'default')
+            .sort(() => Math.random() - 0.5);
+    }
 
     return (
         <>

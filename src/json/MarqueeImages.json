@@ -62,5 +62,37 @@
             "subtitle": "Learn Version Control",
             "subtitle-2": "in Unreal 101"
         }
+
+        ,
+        {
+            "image": "/images/Banner/UEPhysics.png",
+            "service": "default",
+            "subtitle": "Learn Physics",
+            "subtitle-2": "in Unreal 101"
+        },
+        {
+            "image": "/images/Banner/UEGameAI2.png",
+            "service": "default",
+            "subtitle": "Learn Game AI",
+            "subtitle-2": "in Unreal 101"
+        },
+        {
+            "image": "/images/Banner/UEAnimation.png",
+            "service": "default",
+            "subtitle": "Learn Animation",
+            "subtitle-2": "in Unreal 101"
+        },
+        {
+            "image": "/images/Banner/UECppAndBlueprints.png",
+            "service": "default",
+            "subtitle": "Learn Programming",
+            "subtitle-2": "in Unreal 101"
+        },
+        {
+            "image": "/images/Banner/VersionControl.png",
+            "service": "default",
+            "subtitle": "Learn Version Control",
+            "subtitle-2": "in Unreal 101"
+        }
     ]
 }
