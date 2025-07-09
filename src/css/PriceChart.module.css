@@ -23,7 +23,7 @@
     background-color: var(--background-color);
 }
 .price-chart table tbody tr:last-child {
-    border: 1px solid var(--secondary-color);
+    /* border: 1px solid var(--secondary-color); */
 }
 .price-chart table tr td {
     padding: 0.5rem;

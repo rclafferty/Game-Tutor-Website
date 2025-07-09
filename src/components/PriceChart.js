@@ -3,6 +3,8 @@ import styles from '../css/PriceChart.module.css'
 import currencyFormat from '../helpers/currencyFormat.js';
 
 export default function PriceChart({allOffers, price}) {
+
+    const isIntroOfferAvailable = false;
     
     return (
         <>
@@ -20,14 +22,16 @@ export default function PriceChart({allOffers, price}) {
             </thead>
             <tbody>
                 {/* Example data, replace with actual data */}
-                <tr>
-                    <td><strong>Two Intro Sessions</strong></td>
-                    {
-                        allOffers.map((offer, index) => (
-                            <td key={index}>{`${offer['include-intro-sessions'] ? "Yes" : "-"}`}</td>
-                        ))
-                    }
-                </tr>
+                { isIntroOfferAvailable &&
+                    <tr>
+                        <td><strong>Two Intro Sessions</strong></td>
+                        {
+                            allOffers.map((offer, index) => (
+                                <td key={index}>{`${offer['include-intro-sessions'] ? "Yes" : "-"}`}</td>
+                            ))
+                        }
+                    </tr>
+                }
                 <tr>
                     <td><strong>Full Plan</strong></td>
                     {
@@ -60,24 +64,15 @@ export default function PriceChart({allOffers, price}) {
                         ))
                     }
                 </tr>
-                <tr>
-                    <td><strong>Total Price</strong></td>
-                    {
-                        allOffers.map((offer, index) => (
-                            <td key={index}><strong>
-                                {
-                                    offer['replace-total'] ? offer['replace-total'] : currencyFormat.format(price - (price * (typeof offer.discount === 'number' ? offer.discount : 0)))
-                                } {offer['append-total'] ? offer['append-total'] : ""}
-                            </strong></td>
-                        ))
-                    }
-                </tr>
             </tbody>
         </table>
         </div>
 
-        <p>* = Average of 16 sessions before any promotional offers or discounts</p>
-        <p>** = Introductory offer price will be credited towards the final price of another qualifying plan should you choose to continue within 1 month of completing the intro sessions.</p>
+        <p>* = Base session price before any promotional offers, discounts, taxes, and fees.</p>
+        {
+            isIntroOfferAvailable && 
+            <p>** = Introductory offer price will be credited towards the final price of another qualifying plan should you choose to continue within 1 month of completing the intro sessions.</p>
+        }
         </>
     );
 }

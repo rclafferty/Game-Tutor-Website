@@ -32,12 +32,14 @@ export default function Service() {
             .sort(() => Math.random() - 0.5);
     }
 
+    const offers = ServicesJson["pricing-offers"].filter(offer => offer["currently-offered"])
+
     return (
         <>
             <ImageMarquee images={images} useSubtitle2={false} useLinks={false}/>
 
             <div className="container">
-                <DiscountBanner />
+                {/* <DiscountBanner /> */}
 
                 <h1 className={`col-12 header`}>{details.name}</h1>
                 <h2 className={`col-12 header`}>{details.subtitle}</h2>
@@ -46,7 +48,7 @@ export default function Service() {
                         <p className="col-12 mt-3">{details.description}</p>
                         
                         <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}*</h5>
-                        <PriceChart allOffers={ServicesJson["pricing-offers"]} price={details.price}/>
+                        <PriceChart allOffers={offers} price={details.price}/>
 
                         <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>
                         
