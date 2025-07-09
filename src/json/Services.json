@@ -14,8 +14,8 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're looking to turn your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "UnityFundamentals4.png",
-            "price": 1600,
-            "priceType": "",
+            "price": 100,
+            "priceType": "per session",
             "session-length": "1 hour",
             "benefits": [
                 {
@@ -125,8 +125,8 @@
                 "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
             ],
             "image": "",
-            "price": 1600,
-            "priceType": "",
+            "price": 100,
+            "priceType": "per session",
             "session-length": "1 hour",
             "benefits": [
                 {
