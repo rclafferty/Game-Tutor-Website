@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Game-Tutor-Website/static/css/main.ccc9efcd.css",
-    "main.js": "/Game-Tutor-Website/static/js/main.c5575769.js",
+    "main.css": "/Game-Tutor-Website/static/css/main.7258c0af.css",
+    "main.js": "/Game-Tutor-Website/static/js/main.b37ef25f.js",
     "static/js/453.06378a6c.chunk.js": "/Game-Tutor-Website/static/js/453.06378a6c.chunk.js",
     "static/media/inter-latin-ext-400-normal.woff": "/Game-Tutor-Website/static/media/inter-latin-ext-400-normal.c616205185f0d3677df9.woff",
     "static/media/inter-latin-ext-400-normal.woff2": "/Game-Tutor-Website/static/media/inter-latin-ext-400-normal.210fb826cb25acbd4094.woff2",
@@ -18,12 +18,12 @@
     "static/media/inter-greek-ext-400-normal.woff2": "/Game-Tutor-Website/static/media/inter-greek-ext-400-normal.f2fa0d9ef98f59d4a75b.woff2",
     "static/media/inter-vietnamese-400-normal.woff2": "/Game-Tutor-Website/static/media/inter-vietnamese-400-normal.44c9df135eec470b0ab6.woff2",
     "index.html": "/Game-Tutor-Website/index.html",
-    "main.ccc9efcd.css.map": "/Game-Tutor-Website/static/css/main.ccc9efcd.css.map",
-    "main.c5575769.js.map": "/Game-Tutor-Website/static/js/main.c5575769.js.map",
+    "main.7258c0af.css.map": "/Game-Tutor-Website/static/css/main.7258c0af.css.map",
+    "main.b37ef25f.js.map": "/Game-Tutor-Website/static/js/main.b37ef25f.js.map",
     "453.06378a6c.chunk.js.map": "/Game-Tutor-Website/static/js/453.06378a6c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc9efcd.css",
-    "static/js/main.c5575769.js"
+    "static/css/main.7258c0af.css",
+    "static/js/main.b37ef25f.js"
   ]
 }
