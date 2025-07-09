@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import styles from '../css/Service.module.css'
 
 import ExplanationDropdown from './ExplanationDropdown';
-import DiscountBanner from './DiscountBanner';
 import ImageMarquee from "./ImageMarquee";
 import CostExplanationDropdown from "./CostExplanationDropdown";
 import PriceChart from "./PriceChart";

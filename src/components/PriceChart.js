@@ -1,7 +1,5 @@
 import styles from '../css/PriceChart.module.css'
 
-import currencyFormat from '../helpers/currencyFormat.js';
-
 export default function PriceChart({allOffers, price}) {
 
     const isIntroOfferAvailable = false;
