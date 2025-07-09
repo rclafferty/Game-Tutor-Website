@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router';
 
 import ImageMarquee from './ImageMarquee';
-import DiscountBanner from './DiscountBanner';
 import FeaturedServices from './FeaturedServices';
 import AboutPreview from './AboutPreview';
 
@@ -48,7 +47,6 @@ export default function Home() {
             <ImageMarquee images={combinedImages} cycleTime={5} />
             {/* <FeaturedServices /> */}
             <div className='container'>
-                <DiscountBanner />
                 <FeaturedServices />
                 <button
                     className="wide center"

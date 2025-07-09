@@ -34,8 +34,8 @@ jobs:
       
       - name: Configure Git user
         run: |
-          git config --global user.email "frogboythatsme@gmail.com"
-          git config --global user.name "Robert Lafferty"
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy

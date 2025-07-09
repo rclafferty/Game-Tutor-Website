@@ -38,8 +38,6 @@ export default function Service() {
             <ImageMarquee images={images} useSubtitle2={false} useLinks={false}/>
 
             <div className="container">
-                {/* <DiscountBanner /> */}
-
                 <h1 className={`col-12 header`}>{details.name}</h1>
                 <h2 className={`col-12 header`}>{details.subtitle}</h2>
                 <div className="row">
