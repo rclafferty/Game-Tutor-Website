@@ -1,9 +1,7 @@
-import styles from "../css/Book.module.css";
-
 import BookLink from "./BookLink";
-import BookCalendly from "./BookCalendly";
 
 import CompanyJSON from '../json/CompanyInfo.json';
+import CancelationPolicy from "./CancelationPolicy";
 
 export default function Book() {
     const phoneNumber = CompanyJSON.phone; // Replace with your phone number
@@ -86,57 +84,11 @@ export default function Book() {
                         displayTextLine2={"https://discord.gg/8SSbAs8MEv"}
                     />
                 </div>
-                
+
                 {/* TODO: Add Calendly back after scheduling chat with Dustin. */}
                 {/* <BookCalendly /> */}
 
-                <h1>Cancelation + Refund Policy</h1>
-                <p>We understand that life can be unpredictable. If you need to cancel or reschedule a session, please do so at least 24 hours in advance to avoid being charged for the session. If you cancel with less than 24 hours notice, you will be charged for the session.</p>
-
-                <p>Refunds are available for sessions that are canceled at least 24 hours in advance. If you cancel with less than 24 hours notice, you will not be eligible for a refund.</p>
-                <p>Refunds are processed within 7-10 business days. If you have not received your refund after 10 business days, please contact us.</p>
-
-                <p>If you have any questions or concerns about our cancelation or refund policy, please feel free to contact us.</p>
-
-                <h2>Refund Schedule</h2>
-                <p><strong>If you paid upfront</strong> to take advantage of discounts and bonus offers but plans changed, here's a schedule of when you're eligible for refunds.</p>
-
-                <table className={`${styles['refund-schedule-table']}`}>
-                    <thead>
-                        <tr>
-                            <th>Progress Point</th>
-                            <th>Refund Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Prior to 1st Session (requires 24 hour notice)</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>Completed Sessions 1 - 2</td>
-                            <td>90%</td>
-                        </tr>
-                        <tr>
-                            <td>Completed Sessions 3 - 5</td>
-                            <td>75%</td>
-                        </tr>
-                        <tr>
-                            <td>Completed Sessions 6 - 7</td>
-                            <td>50%</td>
-                        </tr>
-                        <tr>
-                            <td>After Session 8</td>
-                            <td>No refunds available</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p><strong>Note</strong>: Refunds are only available for sessions that have <strong>not been completed</strong>. If you have completed a session, you will not be eligible for a refund.</p>
-
-                <p>If you chose a Pay As You Go plan, sessions are only eligible for refund if you cancel <strong>at least 24 hours prior to the session</strong>.</p>
-
-                <p>We want to ensure that you have a positive experience with us, and we are committed to providing you with the best possible service. If you have any questions or concerns about our cancelation or refund policy, please feel free to contact us.</p>
+                <CancelationPolicy />
 
             </div>
         </>
