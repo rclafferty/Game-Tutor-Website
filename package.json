@@ -1,7 +1,7 @@
 {
   "name": "game-tutor",
   "description": "Game Tutor | Start Your Game Dev Journey Today!",
-  "homepage": "https://www.guildofbeginnings.com",
+  "homepage": "/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://x-access-token:${GH_TOKEN}@github.com/rclafferty/Game-Tutor-Website.git"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -48,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0"
   }
 }

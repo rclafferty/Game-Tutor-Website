@@ -134,9 +134,9 @@ export default function PrivacyPolicy() {
 
                 <h2>Contact Us</h2>
                 <p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:</p>
-                <p>Email: <a href="mailto:">e</a></p>
-                <p>Discord: <a href="https://discord.gg/your-discord-link" target="_blank" rel="noopener noreferrer">Join our Discord</a></p>
-                <p>Website: <a href="https://www.gametutor.com" target="_blank" rel="noopener noreferrer">www.gametutor.com</a></p>
+                <p>Email: <a href={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</a></p>
+                <p>Discord: <a href={`${CompanyJSON.socialMediaLinks.discord}`} target="_blank" rel="noopener noreferrer">{CompanyJSON.socialMediaLinks.discord}</a></p>
+                <p>Website: <a href={`${CompanyJSON.website}`} target="_blank" rel="noopener noreferrer">{CompanyJSON.website}</a></p>
                 <p>By using our website and services, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
                 <p>Thank you for choosing {CompanyJSON.name} for your game development learning needs!</p>
                 

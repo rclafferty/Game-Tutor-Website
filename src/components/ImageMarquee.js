@@ -68,7 +68,7 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
                                 minWidth: imageWidth ? `${imageWidth}px` : undefined,
                             }}
                         >
-                            <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={`Slide ${i}`} />
+                            <img src={`${item.image}`} alt={`Slide ${i}`} />
                             <div className={styles["marquee-overlay-text"]}>
                                 {item.subtitle}
                                 {useSubtitle2 &&

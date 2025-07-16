@@ -21,7 +21,6 @@ export default function Book() {
 
     const formattedPhoneNumber = formatPhoneNumber(phoneNumber);
 
-    const email = CompanyJSON.email;
     const subject = encodeURIComponent("Tutoring Inquiry");
     const body = encodeURIComponent(
         `Hi,
@@ -34,7 +33,7 @@ export default function Book() {
 
         [NAME]`
     );
-    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:${CompanyJSON.book.email}?subject=${subject}&body=${body}`;
 
     return (
         <>
@@ -49,7 +48,7 @@ export default function Book() {
                 <div className="button-row">
                     <BookLink
                         link={mailtoLink}
-                        title={`Click here to email us at ${email}`}
+                        title={`Click here to email us at ${CompanyJSON.book.email}`}
                         classInfo="hover-lift"
                         displayTextLine1={
                             <>
@@ -57,7 +56,7 @@ export default function Book() {
                                 <i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>
                             </>
                         }
-                        displayTextLine2={email}
+                        displayTextLine2={CompanyJSON.book.email}
                     />
                     <BookLink
                         link={telLink}
@@ -72,7 +71,7 @@ export default function Book() {
                         displayTextLine2={formattedPhoneNumber}
                     />
                     <BookLink
-                        link={"https://discord.gg/8SSbAs8MEv"}
+                        link={CompanyJSON.socialMediaLinks.discord}
                         title="Click here to join the discord server"
                         classInfo="hover-lift"
                         displayTextLine1={
@@ -81,7 +80,7 @@ export default function Book() {
                                 <i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>
                             </>
                         }
-                        displayTextLine2={"https://discord.gg/8SSbAs8MEv"}
+                        displayTextLine2={CompanyJSON.socialMediaLinks.discord}
                     />
                 </div>
 

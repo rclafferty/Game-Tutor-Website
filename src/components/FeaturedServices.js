@@ -33,7 +33,7 @@ export default function FeaturedServices() {
                             </Link>
 
                             <div>
-                            <img className={`${ServiceCardStyles["featured-image"]}`} src={`${process.env.PUBLIC_URL}/${service.image ? `/images/${service.image}` : 'GameTutorLogo2.png'}`} alt=""/>
+                            <img className={`${ServiceCardStyles["featured-image"]}`} src={`${service.image ? `/images/${service.image}` : '/GameTutorLogo2.png'}`} alt=""/>
                             <div className={`${ServiceCardStyles["content"]}`}>
                                 {service['featured-description'].map((text, i) => {
                                     return (<p key={i}>{text}</p>);

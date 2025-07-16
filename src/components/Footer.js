@@ -56,9 +56,9 @@ export default function Footer() {
                     <div className={`${styles['group']}`}>
                         <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
                         <ul>
-                            <li><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={"/"}>{CompanyJSON.phone}</Link></li>
-                            <li><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={"/book"}>{CompanyJSON.email}</Link></li>
-                            <li><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={"/book"}>Join Discord</Link></li>
+                            <li><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`}>{CompanyJSON.phone}</Link></li>
+                            <li><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
+                            <li><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={CompanyJSON.socialMediaLinks.discord}>Join Discord</Link></li>
                         </ul>
                     </div>
                 </div>

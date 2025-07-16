@@ -1,13 +1,17 @@
 {
     "name": "Game Tutor",
     "description": "Game Tutor is a platform that connects students with experienced game developers for personalized tutoring sessions.",
-    "email": "test@test.com",
-    "phone": "+1 (555) 555-5555",
+    "website": "https://www.guildofbeginnings.com",
+    "email": "info@guildofbeginnings.com",
+    "phone": "+1 (424) 231-3756",
     "address": {
         "street": "",
         "city": "",
         "state": "",
         "zipCode": ""
+    },
+    "book": {
+        "email": "schedule@guildofbeginnings.com"
     },
     "privacyPolicy": {
         "effectiveDate": "June 29, 2023",
@@ -23,7 +27,8 @@
         "facebook": "FB-TBD",
         "twitter": "X-TBD",
         "instagram": "I-TBD",
-        "linkedin": "LI-TBD"
+        "linkedin": "LI-TBD",
+        "discord": "https://discord.gg/UKjBpKSPWB"
     },
     "logoUrl": "/images/logo.png",
     "logoWhiteUrl": "/GameTutorLogo2.png",
