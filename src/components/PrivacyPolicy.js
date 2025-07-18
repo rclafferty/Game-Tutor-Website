@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
                 <h1 className='header'>Privacy Policy</h1>
                 <p><i>Effective Date: June 29, 2023</i></p>
                 <p><i>Last Updated: June 29, 2023</i></p>
-                <p>This Privacy Policy describes how {CompanyJSON.name} ("we", "us", or "our") collects, uses, and shares information about you when you visit our website, book a session, or use our services. By using our website or services, you agree to the collection and use of information in accordance with this policy.</p>
+                <p>This Privacy Policy describes how {CompanyJSON.stealth.active ? CompanyJSON.stealth.name : CompanyJSON.name} ("we", "us", or "our") collects, uses, and shares information about you when you visit our website, book a session, or use our services. By using our website or services, you agree to the collection and use of information in accordance with this policy.</p>
 
                 <h2>Information We Collect</h2>
                 <p>We may collect the following types of information:</p>
@@ -134,11 +134,16 @@ export default function PrivacyPolicy() {
 
                 <h2>Contact Us</h2>
                 <p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:</p>
-                <p>Email: <a href={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</a></p>
-                <p>Discord: <a href={`${CompanyJSON.socialMediaLinks.discord}`} target="_blank" rel="noopener noreferrer">{CompanyJSON.socialMediaLinks.discord}</a></p>
-                <p>Website: <a href={`${CompanyJSON.website}`} target="_blank" rel="noopener noreferrer">{CompanyJSON.website}</a></p>
+                {CompanyJSON.stealth.active ?
+                    <p><strong>Contact info coming soon!</strong></p> :
+                    <>
+                        <p>Email: <a href={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</a></p>
+                        <p>Discord: <a href={`${CompanyJSON.socialMediaLinks.discord}`} target="_blank" rel="noopener noreferrer">{CompanyJSON.socialMediaLinks.discord}</a></p>
+                        <p>Website: <a href={`${CompanyJSON.website}`} target="_blank" rel="noopener noreferrer">{CompanyJSON.website}</a></p>
+                    </>
+                }
                 <p>By using our website and services, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
-                <p>Thank you for choosing {CompanyJSON.name} for your game development learning needs!</p>
+                <p>Thank you for choosing {CompanyJSON.stealth.active ? CompanyJSON.stealth.name : CompanyJSON.name} for your game development learning needs!</p>
                 
             </div>
         </>

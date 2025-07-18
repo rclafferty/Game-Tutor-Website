@@ -13,6 +13,9 @@ import JumpToTopButton from './components/JumpToTop';
 import Services from './components/Services';
 import FAQ from './components/FAQ';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Error404 from './components/Error404';
+
+import CompanyJSON from './json/CompanyInfo.json'
 
 function App() {
     return(
@@ -23,11 +26,17 @@ function App() {
                         <Route index element={<Home />} />
                         <Route path="services" element={<Services />} />
                         <Route path="services/:id" element={<Service />} />
-                        <Route path="book" element={<Book />} />
-                        <Route path="faq" element={<FAQ />} />
-                        <Route path="about" element={<About />} />
                         <Route path="privacy" element={<PrivacyPolicy />} />
+                        <Route path="faq" element={<FAQ />} />
+
+                        { !CompanyJSON.stealth.active &&
+                            <>
+                                <Route path="book" element={<Book />} />
+                                <Route path="about" element={<About />} />
+                            </>
+                        }
                         {/* Add more routes as needed */}
+                        <Route path="*" element={<Error404 />} />
                     </Routes>
                     <JumpToTopButton />
                 <Footer />

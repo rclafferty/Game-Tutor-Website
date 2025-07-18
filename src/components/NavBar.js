@@ -16,15 +16,17 @@ export default function NavBar() {
     return (
         <>
             <div className={styles.navbar}>
-                <Link to={"/"}>
-                    <img
-                        src={`${process.env.PUBLIC_URL}/GameTutorLogo2.png`}
-                        alt="Logo"
-                        className={BannerStyles.logo}
-                        style={{ cursor: 'pointer' }}
-                    />
-                    <h1>{CompanyJSON.name}</h1>
-                </Link>
+                { !CompanyJSON.stealth.active &&
+                    <Link to={"/"}>
+                        <img
+                            src={`${process.env.PUBLIC_URL}/GameTutorLogo2.png`}
+                            alt="Logo"
+                            className={BannerStyles.logo}
+                            style={{ cursor: 'pointer' }}
+                        />
+                        <h1>{CompanyJSON.name}</h1>
+                    </Link>
+                }
                 <button
                     className={`${getActiveClass(`/`)}`}
                     onClick={() => navigate(`/`)}
@@ -37,24 +39,28 @@ export default function NavBar() {
                 >
                     Services
                 </button>
-                <button
-                    className={`${getActiveClass(`/book`)}`}
-                    onClick={() => navigate(`/book`)}
-                >
-                    Book a Session
-                </button>
+                { !CompanyJSON.stealth.active &&
+                    <button
+                        className={`${getActiveClass(`/book`)}`}
+                        onClick={() => navigate(`/book`)}
+                    >
+                        Book a Session
+                    </button>
+                }
                 <button
                     className={`${getActiveClass(`/faq`)}`}
                     onClick={() => navigate(`/faq`)}
                 >
                     FAQs
                 </button>
-                <button
-                    className={`${getActiveClass(`/about`)}`}
-                    onClick={() => navigate(`/about`)}
-                >
-                    About
-                </button>
+                { !CompanyJSON.stealth.active &&
+                    <button
+                        className={`${getActiveClass(`/about`)}`}
+                        onClick={() => navigate(`/about`)}
+                    >
+                        About
+                    </button>
+                }
             </div>
         </>
     );

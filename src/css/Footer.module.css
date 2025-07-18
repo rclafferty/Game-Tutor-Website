@@ -78,6 +78,15 @@ footer p {
     margin: 0;
 }
 
+@media (max-width: 991px) {
+    .footer-links {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .group:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
 @media (max-width: 767px) {
     .footer-links {
         grid-template-columns: 1fr;

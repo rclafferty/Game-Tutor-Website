@@ -2,27 +2,33 @@
     "keywords": [
         {
             "keyword": "booking",
-            "link": "/book"
+            "link": "/book",
+            "enabled": false
         },
         {
             "keyword": "services",
-            "link": "/services"
+            "link": "/services",
+            "enabled": true
         },
         {
             "keyword": "Discord",
-            "link": "/book"
+            "link": "/book",
+            "enabled": false
         },
         {
             "keyword": "phone",
-            "link": "/book"
+            "link": "/book",
+            "enabled": false
         },
         {
             "keyword": "email",
-            "link": "/book"
+            "link": "/book",
+            "enabled": false
         },
         {
             "keyword": "consultation",
-            "link": "/book"
+            "link": "/book",
+            "enabled": false
         }
     ]
 }

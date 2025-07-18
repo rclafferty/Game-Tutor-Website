@@ -18,7 +18,7 @@ export default function useHyperlinkKeywords(nodes) {
             const parts = node.match(/(\w+|\s+|[^\w\s]+)/gu) || [];
             return parts.map((part, index) => {
                 const keywordObj = keywords.find(({ keyword }) => part.trim() === keyword);
-                if (keywordObj && part.trim()) {
+                if (keywordObj && keywordObj.enabled && part.trim()) {
                     return (
                         <Link key={`${idx}-${index}`} to={keywordObj.link} onClick={scrollToTop}>
                             {part}

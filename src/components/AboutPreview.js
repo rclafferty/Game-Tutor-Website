@@ -15,7 +15,7 @@ export default function AboutPreview() {
         return <p>No services available at the moment.</p>;
     }
 
-    return (
+    return ( !CompanyJSON.stealth.active &&
         <>
             <h1 className='col-12 header'>About {CompanyJSON.name}</h1>
             <div className={`${styles['about-preview']}`}>

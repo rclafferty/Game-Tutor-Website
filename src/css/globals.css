@@ -121,6 +121,7 @@ button.selected, button.secondary {
 }
 button.wide {
     width: 20rem;
+    max-width: 100%;
 }
 button:hover {
     background-color: var(--secondary-color);
@@ -152,6 +153,17 @@ footer {
 }
 footer p {
     text-align: center;
+}
+
+.content-container {
+    width: 60%;
+    /* padding: 1rem 3rem; */
+    margin: 0 auto;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 ::selection {

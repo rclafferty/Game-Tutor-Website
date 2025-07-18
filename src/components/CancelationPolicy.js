@@ -1,4 +1,21 @@
+import CompanyJSON from '../json/CompanyInfo.json'
+
 export default function CancelationPolicy() {
+    
+    const subject = encodeURIComponent(`${CompanyJSON.refunds.subject} for [name here]`);
+    const body = encodeURIComponent(
+        `Hi,
+
+        I am requesting a refund for the session scheduled on [DATE] at [TIME]. I previously paid for the session on [DATE].
+
+        [INSERT DETAILS ABOUT YOUR REQUEST]
+
+        Thank you in advance,
+
+        [NAME]`
+    );
+    const mailtoLink = `mailto:${CompanyJSON.refunds.email}?subject=${subject}&body=${body}`;
+
     return (
         <>
             <h1>Cancelation + Refund Policy</h1>
@@ -10,8 +27,8 @@ export default function CancelationPolicy() {
             <h2>Full Refund Eligibility</h2>
             <p>If you paid upfront to take advantage of discounts or scheduled a session more than 24 hours in advance, you're eligible for refunds so long as you follow these steps:</p>
             <ol>
-                <li>Send an email to test@test.com more than 24 hours prior to your scheduled session.</li>
-                <li>Include <strong>REFUND REQUEST</strong> in the email subject line.</li>
+                <li>Send an email to <a href={mailtoLink} title={`Send refund request to ${CompanyJSON.refunds.email}`}>{CompanyJSON.refunds.email}</a> more than 24 hours prior to your scheduled session.</li>
+                <li>Include <strong>{CompanyJSON.refunds.subject}</strong> and your name in the email subject line.</li>
                 <li>In the body of the email, include the date and time of the session, the date you paid for the session, and the amount paid.</li>
             </ol>
 

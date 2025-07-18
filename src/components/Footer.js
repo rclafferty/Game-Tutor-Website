@@ -17,17 +17,21 @@ export default function Footer() {
             <div className={`${styles['footer-div']}`}>
                 <div className='container'>
 
-                <div className={`${styles['footer-links']}`}>
-                    <div className={`${styles['group']}`}>
-                        <div className={`${styles['footer-signage']}`}>
-                                <img
-                                    src={`${process.env.PUBLIC_URL}${CompanyJSON.logoWhiteUrl}`}
-                                    alt="Logo"
-                                    />
-                                <h1>{CompanyJSON.name}</h1>
+                <div className={`${styles['footer-links']}`}
+                    style={CompanyJSON.stealth.active ? {"grid-template-columns": "1fr 1fr"} : {}}
+                >
+                    { !CompanyJSON.stealth.active &&
+                        <div className={`${styles['group']}`}>
+                            <div className={`${styles['footer-signage']}`}>
+                                    <img
+                                        src={`${process.env.PUBLIC_URL}${CompanyJSON.logoWhiteUrl}`}
+                                        alt="Logo"
+                                        />
+                                    <h1>{CompanyJSON.name}</h1>
+                            </div>
+                            <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one coaching tailored to your goals. Book your first session today and start building with confidence!</p>
                         </div>
-                        <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one coaching tailored to your goals. Book your first session today and start building with confidence!</p>
-                    </div>
+                    }
                     <div className={`${styles['group']}`}>
                         <h1><Link to={'/services'} className='header-link' onClick={scrollToTop}>Services</Link></h1>
                         <ul>
@@ -48,22 +52,28 @@ export default function Footer() {
                         <h1>Resources</h1>
                         <ul>
                             <li><Link to={"/"} onClick={scrollToTop}>Home</Link></li>
-                            <li><Link to={"/book"} onClick={scrollToTop}>Book a Session</Link></li>
-                            <li><Link to={"/about"} onClick={scrollToTop}>About</Link></li>
+                            {!CompanyJSON.stealth.active && 
+                                <li><Link to={"/book"} onClick={scrollToTop}>Book a Session</Link></li>
+                            }
+                            {!CompanyJSON.stealth.active && 
+                                <li><Link to={"/about"} onClick={scrollToTop}>About</Link></li>
+                            }
                             <li><Link to={"/privacy"} onClick={scrollToTop}>Privacy Policy</Link></li>
                         </ul>
                     </div>
-                    <div className={`${styles['group']}`}>
-                        <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
-                        <ul>
-                            <li><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`}>{CompanyJSON.phone}</Link></li>
-                            <li><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
-                            <li><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={CompanyJSON.socialMediaLinks.discord}>Join Discord</Link></li>
-                        </ul>
-                    </div>
+                    { !CompanyJSON.stealth.active &&
+                        <div className={`${styles['group']}`}>
+                            <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
+                            <ul>
+                                <li><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`}>{CompanyJSON.phone}</Link></li>
+                                <li><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
+                                <li><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={CompanyJSON.socialMediaLinks.discord}>Join Discord</Link></li>
+                            </ul>
+                        </div>
+                    }
                 </div>
 
-                <p className={`center`}>&copy; 2025 {CompanyJSON.name}</p>
+                <p className={`center`}>&copy; 2025 {CompanyJSON.stealth.active ? CompanyJSON.stealth.name : CompanyJSON.name}</p>
             </div>
             </div>
         </>
