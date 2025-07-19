@@ -4,7 +4,7 @@ import CompanyJSON from '../json/CompanyInfo.json';
 import CancelationPolicy from "./CancelationPolicy";
 
 export default function BookLive() {
-    const phoneNumber = CompanyJSON.stealth.active ? CompanyJSON.stealth.phone : CompanyJSON.phone; // Replace with your phone number
+    const phoneNumber = CompanyJSON.phone; // Replace with your phone number
     const telLink = `tel:${phoneNumber}`;
 
     // Format phone number as (123) 456-7890

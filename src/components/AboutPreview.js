@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
 import styles from '../css/Home.module.css';
+import ServiceCardStyles from '../css/ServiceCard.module.css';
 
 import ServicesJson from '../json/Services.json';
 import CompanyJSON from '../json/CompanyInfo.json';
+
 
 export default function AboutPreview() {
     const navigate = useNavigate();
@@ -15,25 +17,44 @@ export default function AboutPreview() {
         return <p>No services available at the moment.</p>;
     }
 
-    return ( !CompanyJSON.stealth.active &&
+    return (
         <>
             <h1 className='col-12 header'>About {CompanyJSON.name}</h1>
             <div className={`${styles['about-preview']}`}>
                 <div className='container'>
-                <p>
-                    {CompanyJSON.name} is dedicated to helping gamers of all levels improve their skills and enjoy their favorite games more. Whether you're a beginner looking to learn the basics or an experienced player aiming to refine your strategies, our expert tutors are here to guide you.
-                </p>
-                <p>
-                    With personalized coaching sessions, we focus on your unique goals and challenges, providing tailored advice and strategies to help you succeed. Our tutors are passionate gamers and developers themselves, bringing a wealth of knowledge and experience to each session.
-                    Join us at {CompanyJSON.name} and take your game dev skills to the next level!
-                </p>
-                <button
-                    className="wide center"
-                    onClick={() => navigate(`/about`)}
-                    style={{ marginTop: '2rem' }}
-                >
-                    Learn More About Us
-                </button>
+                    <div className={`${ServiceCardStyles["featured-service"]}`}>
+                        {/* <div className={`${ServiceCardStyles["content"]}`}>
+                            <p>
+                                At {CompanyJSON.name}, we specialize in helping gamers and aspiring game developers grow their skills through one-on-one, personalized coaching. Whether you're learning the basics or refining advanced techniques, our expert tutors are here to guide you every step of the way.
+                            </p>
+                            <p>
+                                With personalized coaching sessions, we focus on your unique goals and challenges, providing tailored advice and strategies to help you succeed. Our tutors are passionate gamers and developers themselves, bringing a wealth of knowledge and experience to each session.
+                                Join us at {CompanyJSON.name} and take your game dev skills to the next level!
+                            </p>
+                        </div>
+                        <img className={`${ServiceCardStyles["featured-image"]}`} src={ '/GameTutorLogo2.png'} alt=""/> */}
+
+                        
+                        <div>
+                            <img className={`${ServiceCardStyles["featured-image-right"]} ${ServiceCardStyles["img-width-20"]}`} src={'/GoBLogoColor.png'} alt=""/>
+                            <div className={`${ServiceCardStyles["content"]}`}>
+                                <p>
+                                At {CompanyJSON.name}, we specialize in helping gamers and aspiring game developers grow their skills through one-on-one, personalized coaching. Whether you're learning the basics or refining advanced techniques, our expert tutors are here to guide you every step of the way.
+                            </p>
+                            <p>
+                                With personalized coaching sessions, we focus on your unique goals and challenges, providing tailored advice and strategies to help you succeed. Our tutors are passionate gamers and developers themselves, bringing a wealth of knowledge and experience to each session.
+                                Join us at {CompanyJSON.name} and take your game dev skills to the next level!
+                            </p>
+                            </div>
+                        </div>
+                    <button
+                        className="wide center"
+                        onClick={() => navigate(`/about`)}
+                        style={{ marginTop: '2rem' }}
+                    >
+                        Learn More About Us
+                    </button>
+                    </div>
                 </div>
             </div>
         </>

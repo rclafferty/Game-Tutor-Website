@@ -27,20 +27,19 @@ export default function FeaturedServices() {
                         return null;
                     }
                     return (
-                        <div className={`${ServiceCardStyles["featured-service"]}`}>
+                        <div key={i} className={`${ServiceCardStyles["featured-service"]}`}>
                             <Link to={`/services/${service.id}`} title={`Learn more about ${service.name}`}>
                                 <h2>{service.name}</h2>
                             </Link>
 
                             <div>
-                            <img className={`${ServiceCardStyles["featured-image"]}`} src={`${service.image ? `/images/${service.image}` : '/GameTutorLogo2.png'}`} alt=""/>
-                            <div className={`${ServiceCardStyles["content"]}`}>
-                                {service['featured-description'].map((text, i) => {
-                                    return (<p key={i}>{text}</p>);
-                                })}
-                            </div>
-                                
+                                <img className={`${ServiceCardStyles["featured-image"]}`} src={`${service.image ? `/images/${service.image}` : '/GameTutorLogo2.png'}`} alt=""/>
+                                <div className={`${ServiceCardStyles["content"]}`}>
+                                    {service['featured-description'].map((text, i) => {
+                                        return (<p key={i}>{text}</p>);
+                                    })}
                                 </div>
+                            </div>
                             <button
                                 onClick={() => navigate(`/services/${service.id}`)}
                                 title={`Learn more about ${service.name}`}

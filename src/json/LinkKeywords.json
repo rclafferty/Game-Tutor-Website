@@ -3,7 +3,7 @@
         {
             "keyword": "booking",
             "link": "/book",
-            "enabled": false
+            "enabled": true
         },
         {
             "keyword": "services",
@@ -13,22 +13,22 @@
         {
             "keyword": "Discord",
             "link": "/book",
-            "enabled": false
+            "enabled": true
         },
         {
             "keyword": "phone",
             "link": "/book",
-            "enabled": false
+            "enabled": true
         },
         {
             "keyword": "email",
             "link": "/book",
-            "enabled": false
+            "enabled": true
         },
         {
             "keyword": "consultation",
             "link": "/book",
-            "enabled": false
+            "enabled": true
         }
     ]
 }

@@ -26,15 +26,11 @@ function App() {
                         <Route index element={<Home />} />
                         <Route path="services" element={<Services />} />
                         <Route path="services/:id" element={<Service />} />
-                        <Route path="privacy" element={<PrivacyPolicy />} />
+                        <Route path={CompanyJSON.privacyPolicy.policyUrl} element={<PrivacyPolicy />} />
                         <Route path="faq" element={<FAQ />} />
+                        <Route path="book" element={<Book />} />
+                        <Route path="about" element={<About />} />
 
-                        { !CompanyJSON.stealth.active &&
-                            <>
-                                <Route path="book" element={<Book />} />
-                                <Route path="about" element={<About />} />
-                            </>
-                        }
                         {/* Add more routes as needed */}
                         <Route path="*" element={<Error404 />} />
                     </Routes>

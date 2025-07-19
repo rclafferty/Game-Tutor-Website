@@ -18,24 +18,21 @@ export default function Footer() {
                 <div className='container'>
 
                 <div className={`${styles['footer-links']}`}
-                    style={CompanyJSON.stealth.active ? {"grid-template-columns": "1fr 1fr"} : {}}
                 >
-                    { !CompanyJSON.stealth.active &&
-                        <div className={`${styles['group']}`}>
-                            <div className={`${styles['footer-signage']}`}>
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}${CompanyJSON.logoWhiteUrl}`}
-                                        alt="Logo"
-                                        />
-                                    <h1>{CompanyJSON.name}</h1>
-                            </div>
-                            <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one coaching tailored to your goals. Book your first session today and start building with confidence!</p>
+                    <div className={`${styles['group']}`}>
+                        <div className={`${styles['footer-signage']}`}>
+                                <img
+                                    src={`${process.env.PUBLIC_URL}${CompanyJSON.logoWhiteUrl}`}
+                                    alt="Logo"
+                                    />
+                                <h1>{CompanyJSON.name}</h1>
                         </div>
-                    }
+                        <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one coaching tailored to your goals. Book your first session today and start building with confidence!</p>
+                    </div>
                     <div className={`${styles['group']}`}>
                         <h1><Link to={'/services'} className='header-link' onClick={scrollToTop}>Services</Link></h1>
                         <ul>
-                        <li><Link to={`/services`} onClick={scrollToTop}>All Services</Link></li>
+                        <li key={"Services"}><Link to={`/services`} onClick={scrollToTop}>All Services</Link></li>
                         {services.map(({id}, i) => {
                             const service = getServiceById(id);
                             if (!service) {
@@ -43,7 +40,7 @@ export default function Footer() {
                                 return null;
                             }
                             return (
-                                <li><Link to={`/services/${service.id}`} onClick={scrollToTop}>{service.name}</Link></li>
+                                <li key={i}><Link to={`/services/${service.id}`} onClick={scrollToTop}>{service.name}</Link></li>
                             );
                         })}
                         </ul>
@@ -51,29 +48,23 @@ export default function Footer() {
                     <div className={`${styles['group']}`}>
                         <h1>Resources</h1>
                         <ul>
-                            <li><Link to={"/"} onClick={scrollToTop}>Home</Link></li>
-                            {!CompanyJSON.stealth.active && 
-                                <li><Link to={"/book"} onClick={scrollToTop}>Book a Session</Link></li>
-                            }
-                            {!CompanyJSON.stealth.active && 
-                                <li><Link to={"/about"} onClick={scrollToTop}>About</Link></li>
-                            }
-                            <li><Link to={"/privacy"} onClick={scrollToTop}>Privacy Policy</Link></li>
+                            <li key={"Home"}><Link to={"/"} onClick={scrollToTop}>Home</Link></li>
+                            <li key={"Book"}><Link to={"/book"} onClick={scrollToTop}>Book a Session</Link></li>
+                            <li key={"About"}><Link to={"/about"} onClick={scrollToTop}>About</Link></li>
+                            <li key={"Privacy"}><Link to={CompanyJSON.privacyPolicy.policyUrl} onClick={scrollToTop}>Privacy Policy</Link></li>
                         </ul>
                     </div>
-                    { !CompanyJSON.stealth.active &&
-                        <div className={`${styles['group']}`}>
-                            <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
-                            <ul>
-                                <li><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`}>{CompanyJSON.phone}</Link></li>
-                                <li><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
-                                <li><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={CompanyJSON.socialMediaLinks.discord}>Join Discord</Link></li>
-                            </ul>
-                        </div>
-                    }
+                    <div className={`${styles['group']}`}>
+                        <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
+                        <ul>
+                            <li key={"Phone"}><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`}>{CompanyJSON.phone}</Link></li>
+                            <li key={"Email"}><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
+                            <li key={"Discord"}><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={CompanyJSON.socialMediaLinks.discord}>Join Discord</Link></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <p className={`center`}>&copy; 2025 {CompanyJSON.stealth.active ? CompanyJSON.stealth.name : CompanyJSON.name}</p>
+                <p className={`center`}>&copy; 2025 {CompanyJSON.name}</p>
             </div>
             </div>
         </>
