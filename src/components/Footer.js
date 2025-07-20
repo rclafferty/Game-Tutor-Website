@@ -27,7 +27,7 @@ export default function Footer() {
                                     />
                                 <h1>{CompanyJSON.name}</h1>
                         </div>
-                        <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one coaching tailored to your goals. Book your first session today and start building with confidence!</p>
+                        <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one tutoring tailored to your goals. {CompanyJSON.book.waitlist ? "Reserve your spot on our waitlist today!" : "Book your first session today and start building with confidence!"}</p>
                     </div>
                     <div className={`${styles['group']}`}>
                         <h1><Link to={'/services'} className='header-link' onClick={scrollToTop}>Services</Link></h1>
@@ -36,7 +36,6 @@ export default function Footer() {
                         {services.map(({id}, i) => {
                             const service = getServiceById(id);
                             if (!service) {
-                                console.log(`services[${i}] (id: ${id}) is undefined`);
                                 return null;
                             }
                             return (

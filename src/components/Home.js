@@ -45,7 +45,6 @@ export default function Home() {
     return (
         <>
             <ImageMarquee images={combinedImages} cycleTime={5} />
-            {/* <FeaturedServices /> */}
             <div className='container'>
                 <FeaturedServices />
                 <button

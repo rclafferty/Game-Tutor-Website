@@ -1,6 +1,6 @@
 import styles from '../css/PriceChart.module.css'
 
-export default function PriceChart({allOffers, price}) {
+export default function PriceChart({allOffers, caveats}) {
 
     const isIntroOfferAvailable = false;
     
@@ -66,10 +66,14 @@ export default function PriceChart({allOffers, price}) {
         </table>
         </div>
 
-        <p>* = Base session price before any promotional offers, discounts, taxes, and fees.</p>
+        {
+            caveats && caveats.length > 0 && caveats.map((caveat, index) => (
+                <p key={index} className={`${styles["caveat"]} col-12 mt-3 fst-italic`}>{caveat}</p>
+            ))
+        }
         {
             isIntroOfferAvailable && 
-            <p>** = Introductory offer price will be credited towards the final price of another qualifying plan should you choose to continue within 1 month of completing the intro sessions.</p>
+            <p>*** = Introductory offer price will be credited towards the final price of another qualifying plan should you choose to continue within 1 month of completing the intro sessions.</p>
         }
         </>
     );

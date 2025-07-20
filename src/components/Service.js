@@ -6,6 +6,7 @@ import ExplanationDropdown from './ExplanationDropdown';
 import ImageMarquee from "./ImageMarquee";
 import CostExplanationDropdown from "./CostExplanationDropdown";
 import PriceChart from "./PriceChart";
+import Error404 from "./Error404";
 
 import currencyFormat from "../helpers/currencyFormat";
 
@@ -16,7 +17,7 @@ export default function Service() {
     const { id } = useParams();
     const details = ServicesJson.services.find(x => String(x.id) === id);
 
-    if (!details) return <div>Loading...</div>;
+    if (!details) return <Error404 />;
     console.log(id);
 
     // Find all image objects with matching id
@@ -31,7 +32,9 @@ export default function Service() {
             .sort(() => Math.random() - 0.5);
     }
 
-    const offers = ServicesJson["pricing-offers"].filter(offer => offer["currently-offered"])
+    const offers = ServicesJson["pricing-offers"].filter(offer => offer["currently-offered"]);
+
+    const lessonPlanningFee = ServicesJson.fees.find(fee => fee.title === "Lesson Planning Fee");
 
     return (
         <>
@@ -42,16 +45,26 @@ export default function Service() {
                 <h2 className={`col-12 header`}>{details.subtitle}</h2>
                 <div className="row">
                     <div>
-                        <p className="col-12 mt-3">{details.description}</p>
+                        {Array.isArray(details.description) ? (
+                            details.description.map((text, i) => (
+                                <p key={i} className="col-12">{text}</p>
+                            ))
+                        ) : (
+                            <p className="col-12">{details.description}</p>
+                        )}
+                        {/* <p className="col-12 mt-3">{details.description}</p> */}
                         
-                        <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}*</h5>
-                        <PriceChart allOffers={offers} price={details.price}/>
+                        <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}*{lessonPlanningFee && ` + ${currencyFormat.format(lessonPlanningFee.price)} ${lessonPlanningFee.title}**`}</h5>
+                        <PriceChart allOffers={offers} caveats={[
+                            `* = Base session price before any promotional offers, discounts, taxes, and fees.`,
+                            `** = ${lessonPlanningFee.description}`
+                        ]}/>
 
                         <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>
                         
                         <div className={styles["explanation-group"]} >
                             <h5 className={"col-12 mt-3 " + styles["service-header"]}>Services Included:</h5>
-                            {details.benefits.map((benefit, i) => (
+                            {ServicesJson.benefits.map((benefit, i) => (
                                 <ExplanationDropdown key={i} json={benefit} />
                             ))}
                         </div>

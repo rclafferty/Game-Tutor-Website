@@ -4,10 +4,14 @@
             "id": "unity",
             "currently-offered": true,
             "featured": true,
-            "name": "Unity 101",
-            "subtitle": "Unity tutoring your way!",
-            "short-description": "Get personalized help in starting your Unity adventures! From small hobby projects to publishing your first professional game, this is the place to begin your journey!",
-            "description": "Ready to become a confident Unity developer? From small hobby projects to publishing your first professional game, this is the place to begin your journey! Our one-on-one tutoring service is built around your goals, your pace, and your projects. We offer a personalized learning plan that covers the most essential and in-demand areas of game development.",
+            "name": "Scrolls of Unity",
+            "subtitle": "Every journey starts with a scroll. Let's chart your Unity path together!",
+            "short-description": "Unroll the Scrolls of Unity and take your first steps into the world of game development. Whether you're curious about 2D or 3D, this path offers hands-on, one-on-one guidance to help you build your first projects, explore Unity's tools, and spark your creative journey.",
+            "description": [
+                "Chart your course through the Realm of Unity with a guide by your side. Each session is a one-on-one expedition built around your pace, goals, and style. From your first lines of C# to crafting dynamic gameplay systems, every lesson is tailored to help you grow with purpose and direction.",
+                "Forge the essentials: clean coding practices, smart physics, responsive animations, and interactive game mechanics. As you travel deeper, you'll pick up the tools of real-world development—structured systems, practical debugging, and hands-on testing that strengthens the player's experience.",
+                "You choose when to travel. With fully flexible scheduling and expert guidance on version control, you'll not only build games, you'll gain the confidence and skills to carry them across the finish line. The Scrolls await! Are you ready to turn your ideas into living, playable worlds?"
+            ],
             "featured-description": [
                 "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
                 "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
@@ -17,49 +21,6 @@
             "price": 100,
             "priceType": "per session",
             "session-length": "1 hour",
-            "benefits": [
-                {
-                    "title": "One-on-one sessions",
-                    "description": "Get the attention and support you deserve with personalized, one-on-one tutoring. No crowded classes, no generic videos! Just focused time with an experienced mentor who's there to answer your questions, solve your challenges, and guide your growth in real time. Every session is tailored to your goals, your pace, and your project.",
-                    "display": true,
-                    "image": "OneOnOneSessions.png"
-                },
-                {
-                    "title": "Personalized learning plans",
-                    "description": "No two developers are alike, so why settle for a one-size-fits-all curriculum? We create a custom learning path built around your experience level, interests, and career goals. Whether you're building your first prototype or refining a portfolio piece, your plan evolves with you, ensuring you're always learning what matters most.",
-                    "display": true,
-                    "image": "PersonalizedLessons.png"
-                },
-                {
-                    "title": "Flexible scheduling",
-                    "description": "Life gets busy. We get it. That's why we offer flexible scheduling to fit tutoring around your lifestyle, not the other way around. Whether you prefer evenings, weekends, or changing availability week to week, we'll work with you to find times that keep your momentum going without the stress.",
-                    "display": true,
-                    "image": "FlexibleScheduling2.png"
-                }
-            ],
-            "addons": [
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom project assets",
-                    "description": "Receive custom assets tailored to your project needs.",
-                    "price": 20,
-                    "priceType": "per asset"
-                },
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom recordings or documentation",
-                    "description": "Receive custom learning materials to personalize your async learning experience.",
-                    "price": 20,
-                    "priceType": "per deliverable"
-                },
-                {
-                    "currently-offered": false,
-                    "name": "Develop custom features or plugins",
-                    "description": "I will create features for you to test and expand upon in your learning process.",
-                    "price": 100,
-                    "priceType": "per asset"
-                }
-            ],
             "topics": [
                 {
                     "title": "Unity Fundamentals",
@@ -115,10 +76,14 @@
             "id": "unreal",
             "currently-offered": true,
             "featured": false,
-            "name": "Unreal 101",
-            "subtitle": "Unreal tutoring your way!",
-            "short-description": "Get personalized help in starting your Unreal Engine journey! Whether you're building a prototype or aiming to develop a polished, professional game, this is the perfect place to level up with expert guidance in both Blueprints and C++.",
-            "description": "Unlock the full potential of Unreal Engine with one-on-one tutoring tailored to your goals. Whether you're building your first game or leveling up your professional skills, we'll guide you through Unreal's powerful systems, from level design and animation to AI and cross-platform builds. With a flexible learning plan built around your experience and interests, you'll gain confidence using both C++ and Blueprints while developing real-world, production-ready skills. Learn faster, solve real challenges, and bring your ideas to life your way.",
+            "name": "Scrolls of Unreal",
+            "subtitle": "Every journey starts with a scroll. Let's chart your Unreal path together!",
+            "short-description": "Discover the Scrolls of Unreal and learn the foundations of Unreal Engine through personalized, one-on-one support. Whether you're exploring Blueprints or just starting with C++, this path helps you get familiar with the tools and build confidence as you begin your development adventure.",
+            "description": [
+                "Step into the world of Unreal with your own path and personal guide. Whether you're just setting foot in the engine or seeking to sharpen your edge, this one-on-one tutoring journey is shaped entirely around your experience, ambitions, and creative vision.",
+                "Together, we'll explore Unreal's powerful magic: Blueprints and C++, level design, AI systems, animation, and platform builds, each skill tied to real, hands-on progress. You'll learn not just how to use Unreal, but how to wield it like a seasoned builder of worlds.",
+                "Your journey, your rhythm. With a flexible path and practical challenges drawn from real development, you'll gain more than knowledge. You'll gain mastery, momentum, and the power to bring your ideas to life."
+            ],
             "featured-description": [
                 "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
                 "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
@@ -128,53 +93,10 @@
             "price": 100,
             "priceType": "per session",
             "session-length": "1 hour",
-            "benefits": [
-                {
-                    "title": "One-on-one sessions",
-                    "description": "Get the attention and support you deserve with personalized, one-on-one tutoring. No crowded classes, no generic videos! Just focused time with an experienced mentor who's there to answer your questions, solve your challenges, and guide your growth in real time. Every session is tailored to your goals, your pace, and your project.",
-                    "display": true,
-                    "image": "OneOnOneSessions.png"
-                },
-                {
-                    "title": "Personalized learning plans",
-                    "description": "No two developers are alike, so why settle for a one-size-fits-all curriculum? We create a custom learning path built around your experience level, interests, and career goals. Whether you're building your first prototype or refining a portfolio piece, your plan evolves with you, ensuring you're always learning what matters most.",
-                    "display": true,
-                    "image": "PersonalizedLessons.png"
-                },
-                {
-                    "title": "Flexible scheduling",
-                    "description": "Life gets busy. We get it. That's why we offer flexible scheduling to fit tutoring around your lifestyle, not the other way around. Whether you prefer evenings, weekends, or changing availability week to week, we'll work with you to find times that keep your momentum going without the stress.",
-                    "display": true,
-                    "image": "FlexibleScheduling2.png"
-                }
-            ],
-            "addons": [
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom project assets",
-                    "description": "Receive custom assets tailored to your project needs.",
-                    "price": 20,
-                    "priceType": "per asset"
-                },
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom recordings or documentation",
-                    "description": "Receive custom learning materials to personalize your async learning experience.",
-                    "price": 20,
-                    "priceType": "per deliverable"
-                },
-                {
-                    "currently-offered": false,
-                    "name": "Develop custom features or plugins",
-                    "description": "I will create features for you to test and expand upon in your learning process.",
-                    "price": 100,
-                    "priceType": "per asset"
-                }
-            ],
             "topics": [
                 {
                     "title": "UE Fundamentals",
-                    "description": "Build a strong foundation in Unreal Engine—the powerhouse behind many of today's top-tier games. Learn to navigate the editor, understand levels, actors, components, and the essential systems that drive gameplay. Whether you're starting fresh or switching from another engine, we'll help you master the tools and workflows that make Unreal tick.",
+                    "description": "Begin your Unreal journey with a strong foundation in the engine behind many of today's top-tier games. Learn to navigate the editor, understand levels, actors, components, and the essential systems that drive gameplay. Whether you're starting fresh or switching from another engine, we'll help you master the tools and workflows that make Unreal tick.",
                     "image": "UEFundamentals.png",
                     "display": true
                 },
@@ -192,13 +114,13 @@
                 },
                 {
                     "title": "C++ and Blueprints",
-                    "description": "Master Unreal Engine's dual powerhouses: Blueprints and C++. Learn how to build gameplay systems visually with Blueprints, then go deeper with C++ to unlock advanced functionality, custom actors, and performance-driven solutions. We'll show you how these two systems work together so you can create clean, scalable, and flexible game logic with confidence. Whether you're aiming for rapid prototyping or full-scale development, this balanced approach gives you the best of both worlds.",
+                    "description": "Wield Unreal's dual powerhouses, Blueprints and C++, to shape your gameplay systems from both sides of the craft. Learn how to build gameplay systems visually with Blueprints, then go deeper with C++ to unlock advanced functionality, custom actors, and performance-driven solutions. We'll show you how these two systems work together so you can create clean, scalable, and flexible game logic with confidence. Whether you're aiming for rapid prototyping or full-scale development, this balanced approach gives you the best of both worlds.",
                     "image": "UECppAndBlueprints.png",
                     "display": true
                 },
                 {
                     "title": "Game AI",
-                    "description": "Build smarter, more reactive NPCs with Unreal's AI systems. You'll explore Behavior Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
+                    "description": "Craft reactive, intelligent NPCs using Unreal's AI systems, from loyal companions to cunning foes. You'll explore Behavior Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
                     "image": "UEGameAI.png",
                     "display": true
                 },
@@ -226,440 +148,26 @@
             "id": "game_programming",
             "currently-offered": false,
             "featured": false,
-            "name": "Game Programming",
-            "subtitle": "C++ tutoring your way!",
-            "short-description": "Get personalized help in starting your C++ adventures!",
-            "description": "Get personalized help in starting your C++ adventures!",
-            "featured-description": [
-                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
-                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
-                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
-            ],
-            "image": "",
-            "price": 100,
-            "priceType": "per session",
-            "session-length": "1 hour",
-            "benefits": [
-                {
-                    "title": "One-on-one sessions",
-                    "description": "Get the attention and support you deserve with personalized, one-on-one tutoring. No crowded classes, no generic videos! Just focused time with an experienced mentor who's there to answer your questions, solve your challenges, and guide your growth in real time. Every session is tailored to your goals, your pace, and your project.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                },
-                {
-                    "title": "Personalized learning plans",
-                    "description": "No two developers are alike, so why settle for a one-size-fits-all curriculum? We create a custom learning path built around your experience level, interests, and career goals. Whether you're building your first prototype or refining a portfolio piece, your plan evolves with you, ensuring you're always learning what matters most.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                },
-                {
-                    "title": "Flexible scheduling",
-                    "description": "Life gets busy. We get it. That's why we offer flexible scheduling to fit tutoring around your lifestyle, not the other way around. Whether you prefer evenings, weekends, or changing availability week to week, we'll work with you to find times that keep your momentum going without the stress.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                }
-            ],
-            "addons": [
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom project assets",
-                    "description": "Receive custom assets tailored to your project needs.",
-                    "price": 20,
-                    "priceType": "per asset"
-                },
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom recordings or documentation",
-                    "description": "Receive custom learning materials to personalize your async learning experience.",
-                    "price": 20,
-                    "priceType": "per deliverable"
-                },
-                {
-                    "currently-offered": false,
-                    "name": "Develop custom features or plugins",
-                    "description": "I will create features for you to test and expand upon in your learning process.",
-                    "price": 100,
-                    "priceType": "per asset"
-                }
-            ],
-            "topics": [
-                {
-                    "title": "Unity Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Game Design Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "User Experience (UX)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "User Interface (UI)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Animation",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Physics",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Asset Management",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "C# Scripting",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Debugging",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Version Control",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Game Artificial Intelligence (AI)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Music and Sound Effects",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Testing Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Tools and Task Tracking",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Building to Different Platforms",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Third-Party Integrations",
-                    "description": "test",
-                    "display": true
-                }
-            ]
+            "name": "Echoes of the Programmer",
+            "subtitle": "Start your journey with the fundamentals of code!",
+            "short-description": "Learn the essential skills every programmer needs. No prior experience required! This beginner-friendly path introduces you to core programming concepts like variables, loops, and logic in a way that's easy to follow and fun to explore. Whether you're aiming to build games or just curious about how code works, this is where it all begins. Your first steps into the world of programming echo with potential."
         },
         {
             "id": "game_design",
             "currently-offered": false,
             "featured": false,
-            "name": "Game Design",
-            "subtitle": "C++ tutoring your way!",
-            "short-description": "Get personalized help in starting your C++ adventures!",
-            "description": "Get personalized help in starting your C++ adventures!",
-            "featured-description": [
-                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
-                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
-                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
-            ],
-            "image": "",
-            "price": 100,
-            "priceType": "per session",
-            "session-length": "1 hour",
-            "benefits": [
-                {
-                    "title": "One-on-one sessions",
-                    "description": "Get the attention and support you deserve with personalized, one-on-one tutoring. No crowded classes, no generic videos! Just focused time with an experienced mentor who's there to answer your questions, solve your challenges, and guide your growth in real time. Every session is tailored to your goals, your pace, and your project.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                },
-                {
-                    "title": "Personalized learning plans",
-                    "description": "No two developers are alike, so why settle for a one-size-fits-all curriculum? We create a custom learning path built around your experience level, interests, and career goals. Whether you're building your first prototype or refining a portfolio piece, your plan evolves with you, ensuring you're always learning what matters most.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                },
-                {
-                    "title": "Flexible scheduling",
-                    "description": "Life gets busy. We get it. That's why we offer flexible scheduling to fit tutoring around your lifestyle, not the other way around. Whether you prefer evenings, weekends, or changing availability week to week, we'll work with you to find times that keep your momentum going without the stress.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                }
-            ],
-            "addons": [
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom project assets",
-                    "description": "Receive custom assets tailored to your project needs.",
-                    "price": 20,
-                    "priceType": "per asset"
-                },
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom recordings or documentation",
-                    "description": "Receive custom learning materials to personalize your async learning experience.",
-                    "price": 20,
-                    "priceType": "per deliverable"
-                },
-                {
-                    "currently-offered": false,
-                    "name": "Develop custom features or plugins",
-                    "description": "I will create features for you to test and expand upon in your learning process.",
-                    "price": 100,
-                    "priceType": "per asset"
-                }
-            ],
-            "topics": [
-                {
-                    "title": "Unity Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Game Design Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "User Experience (UX)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "User Interface (UI)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Animation",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Physics",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Asset Management",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "C# Scripting",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Debugging",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Version Control",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Game Artificial Intelligence (AI)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Music and Sound Effects",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Testing Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Tools and Task Tracking",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Building to Different Platforms",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Third-Party Integrations",
-                    "description": "test",
-                    "display": true
-                }
-            ]
-        },
-        {
-            "id": "qa",
-            "currently-offered": false,
-            "featured": false,
-            "name": "QA for Games",
-            "subtitle": "C++ tutoring your way!",
-            "short-description": "Get personalized help in starting your C++ adventures!",
-            "description": "Get personalized help in starting your C++ adventures!",
-            "featured-description": [
-                "Unlock your potential with a personalized tutoring plan built just for you. Through one-on-one sessions, you'll master the Unity Engine fundamentals, C# scripting, and core game design principles. Whether you're just starting out or looking to sharpen your skills, each lesson is tailored to your pace and goals, ensuring steady progress and real-world understanding.",
-                "From building interactive gameplay systems to implementing smart game AI, this plan dives deep into the practical side of development. You'll learn how to structure efficient code, work with physics systems, and bring your game to life with responsive animation integration, all while following clean development practices. Hands-on testing techniques are built in every step of the way, helping you catch bugs early and improve player experience.",
-                "Scheduling is fully flexible, so you can learn on your time without the stress. And with built-in guidance on version control, you'll be equipped with professional workflows from day one. If you're serious about turning your game ideas into playable, polished experiences, this is your next step."
-            ],
-            "image": "",
-            "price": 100,
-            "priceType": "per session",
-            "session-length": "1 hour",
-            "benefits": [
-                {
-                    "title": "One-on-one sessions",
-                    "description": "Get the attention and support you deserve with personalized, one-on-one tutoring. No crowded classes, no generic videos! Just focused time with an experienced mentor who's there to answer your questions, solve your challenges, and guide your growth in real time. Every session is tailored to your goals, your pace, and your project.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                },
-                {
-                    "title": "Personalized learning plans",
-                    "description": "No two developers are alike, so why settle for a one-size-fits-all curriculum? We create a custom learning path built around your experience level, interests, and career goals. Whether you're building your first prototype or refining a portfolio piece, your plan evolves with you, ensuring you're always learning what matters most.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                },
-                {
-                    "title": "Flexible scheduling",
-                    "description": "Life gets busy. We get it. That's why we offer flexible scheduling to fit tutoring around your lifestyle, not the other way around. Whether you prefer evenings, weekends, or changing availability week to week, we'll work with you to find times that keep your momentum going without the stress.",
-                    "display": true,
-                    "image": "/images/logo.png"
-                }
-            ],
-            "addons": [
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom project assets",
-                    "description": "Receive custom assets tailored to your project needs.",
-                    "price": 20,
-                    "priceType": "per asset"
-                },
-                {
-                    "currently-offered": true,
-                    "name": "Provide custom recordings or documentation",
-                    "description": "Receive custom learning materials to personalize your async learning experience.",
-                    "price": 20,
-                    "priceType": "per deliverable"
-                },
-                {
-                    "currently-offered": false,
-                    "name": "Develop custom features or plugins",
-                    "description": "I will create features for you to test and expand upon in your learning process.",
-                    "price": 100,
-                    "priceType": "per asset"
-                }
-            ],
-            "topics": [
-                {
-                    "title": "Unity Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Game Design Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "User Experience (UX)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "User Interface (UI)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Animation",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Physics",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Asset Management",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "C# Scripting",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Debugging",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Version Control",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Game Artificial Intelligence (AI)",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Music and Sound Effects",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Testing Fundamentals",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Tools and Task Tracking",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Building to Different Platforms",
-                    "description": "test",
-                    "display": true
-                },
-                {
-                    "title": "Third-Party Integrations",
-                    "description": "test",
-                    "display": true
-                }
-            ]
+            "name": "Prologue of the Designer",
+            "subtitle": "Discover what makes a game fun and how to shape it!",
+            "short-description": "Game design is more than great ideas, it's about creating meaningful experiences. In this beginner track, you'll learn how to think like a designer by exploring game mechanics, player motivation, balance, and the creative decisions behind unforgettable games. Perfect for those who love storytelling, strategy, or just tinkering with how things work. Every world starts with a design. Let's create yours."
         }
     ],
     "primary-services" : [
         "unity",
         "unreal"
     ],
-    "secondary-services" : [
+    "services-coming-soon": [
         "game_programming",
-        "game_design",
-        "qa"
+        "game_design"
     ],
     "pricing-offers": [
         {
@@ -734,6 +242,34 @@
             "price": 250,
             "priceType": "",
             "show-total": true
+        }
+    ],
+    "benefits": [
+        {
+            "title": "One-on-one sessions",
+            "description": "Skip the crowded lecture halls and cutscenes! This is real-time, one-on-one mentoring with a guide who's walked the path. Each session is tailored to your goals, your pace, and your project. Get answers, overcome roadblocks, and level up with purpose.",
+            "display": true,
+            "image": "OneOnOneSessions.png"
+        },
+        {
+            "title": "Personalized learning plans",
+            "description": "Your learning path is built just for you. No cookie-cutter curriculum and no guessing what to study next. Whether you're prototyping a first game or building a polished portfolio, your sessions evolve with you every step of the way.",
+            "display": true,
+            "image": "PersonalizedLessons.png"
+        },
+        {
+            "title": "Flexible scheduling",
+            "description": "Every questing schedule is unique. That's why sessions are built around your time, not ours. Prefer evening sprints? Weekend explorations? Or a schedule that shifts week to week? We'll adapt, so your journey continues without the burnout.",
+            "display": true,
+            "image": "FlexibleScheduling2.png"
+        }
+    ],
+    "fees": [
+        {
+            "title": "Lesson Planning Fee",
+            "description": "Lesson Planning Fee is a one-time fee to cover the time spent creating your personalized learning plan.",
+            "price": 200,
+            "priceType": ""
         }
     ]
 }

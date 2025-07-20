@@ -41,7 +41,7 @@ export default function NavBar() {
                     className={`${getActiveClass(`/book`)}`}
                     onClick={() => navigate(`/book`)}
                 >
-                    Book a Session
+                    {CompanyJSON.book.waitlist ? "Join Waitlist" : "Book a Session"}
                 </button>
                 <button
                     className={`${getActiveClass(`/faq`)}`}
