@@ -23,7 +23,7 @@ export default function NavBar() {
                         className={BannerStyles.logo}
                         style={{ cursor: 'pointer' }}
                     />
-                    <h1>{CompanyJSON.name}</h1>
+                    <h1 className='logo'>{CompanyJSON.name}</h1>
                 </Link>
                 <button
                     className={`${getActiveClass(`/`)}`}

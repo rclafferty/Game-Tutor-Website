@@ -19,7 +19,7 @@ export default function AboutPreview() {
 
     return (
         <>
-            <h1 className='col-12 header'>About {CompanyJSON.name}</h1>
+            <h1 className='col-12 header'><span className='logo'>{CompanyJSON.name}</span></h1>
             <div className={`${styles['about-preview']}`}>
                 <div className={`container`}>
                     <div className={`${ServiceCardStyles["featured-service"]}`}>

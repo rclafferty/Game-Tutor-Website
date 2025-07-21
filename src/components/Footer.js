@@ -25,7 +25,7 @@ export default function Footer() {
                                     src={`${process.env.PUBLIC_URL}${CompanyJSON.logoWhiteUrl}`}
                                     alt="Logo"
                                     />
-                                <h1>{CompanyJSON.name}</h1>
+                                <h1 className='logo'>{CompanyJSON.name}</h1>
                         </div>
                         <p>Ready to make your dream game a reality? {CompanyJSON.name} offers one-on-one tutoring tailored to your goals. {CompanyJSON.book.waitlist ? "Reserve your spot on our waitlist today!" : "Book your first session today and start building with confidence!"}</p>
                     </div>
@@ -56,7 +56,7 @@ export default function Footer() {
                     <div className={`${styles['group']}`}>
                         <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
                         <ul>
-                            <li key={"Phone"}><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`}>{CompanyJSON.phone}</Link></li>
+                            <li key={"Phone"}><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`} className='default-font'>{CompanyJSON.phone}</Link></li>
                             <li key={"Email"}><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
                             <li key={"Discord"}><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={CompanyJSON.socialMediaLinks.discord}>Join Discord</Link></li>
                         </ul>

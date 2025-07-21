@@ -75,6 +75,7 @@ export default function BookWaitlist() {
                             </>
                         }
                         displayTextLine2={formattedPhoneNumber}
+                        defaultFont={true}
                     />
                     <BookLink
                         link={CompanyJSON.socialMediaLinks.discord}

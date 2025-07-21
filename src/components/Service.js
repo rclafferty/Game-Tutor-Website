@@ -54,13 +54,13 @@ export default function Service() {
                         )}
                         {/* <p className="col-12 mt-3">{details.description}</p> */}
                         
-                        <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}*{lessonPlanningFee && ` + ${currencyFormat.format(lessonPlanningFee.price)} ${lessonPlanningFee.title}**`}</h5>
+                        <h5 style={{fontWeight: "bold"}}>{`Cost: ${currencyFormat.format(details.price)} ${details.priceType}`}<span className="default-font">*</span>{lessonPlanningFee && ` + ${currencyFormat.format(lessonPlanningFee.price)} ${lessonPlanningFee.title}`}{lessonPlanningFee && <span className="default-font">**</span>}</h5>
                         <PriceChart allOffers={offers} caveats={[
                             `* = Base session price before any promotional offers, discounts, taxes, and fees.`,
-                            `** = ${lessonPlanningFee.description}`
-                        ]}/>
+                            lessonPlanningFee ? `** = ${lessonPlanningFee.description}` : null,
+                        ].filter(Boolean)}/>
 
-                        <h6 className="col-12 mt-3 fst-italic">{`Typically ${details["session-length"]} per session`}</h6>
+                        <p className="col-12 mt-3">{`Typically ${details["session-length"]} per session`}</p>
                         
                         <div className={styles["explanation-group"]} >
                             <h5 className={"col-12 mt-3 " + styles["service-header"]}>Services Included:</h5>

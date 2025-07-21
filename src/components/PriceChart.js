@@ -68,7 +68,7 @@ export default function PriceChart({allOffers, caveats}) {
 
         {
             caveats && caveats.length > 0 && caveats.map((caveat, index) => (
-                <p key={index} className={`${styles["caveat"]} col-12 mt-3 fst-italic`}>{caveat}</p>
+                <p key={index} className={`${styles["caveat"]} col-12 mt-3`}>{caveat}</p>
             ))
         }
         {

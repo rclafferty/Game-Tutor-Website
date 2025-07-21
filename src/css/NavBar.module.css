@@ -15,6 +15,10 @@
 }
 .navbar button {
   margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+    font-weight: 700 !important;
 }
 .navbar h1 {
   color: white;
@@ -22,6 +26,9 @@
   display: inline-block;
   margin: 0;
   vertical-align: middle;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
 }
 @media(max-width: 767px) {
   .navbar {

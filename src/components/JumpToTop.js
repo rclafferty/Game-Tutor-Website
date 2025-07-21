@@ -36,7 +36,7 @@ function JumpToTopButton() {
                         height: '100%',
                         fontSize: '1.2rem',
                         borderRadius: '3rem',
-                        border: 'none',
+                        border: '1px solid var(--primary-color)',
                         background: 'var(--secondary-color)',
                         color: '#fff',
                         cursor: 'pointer',

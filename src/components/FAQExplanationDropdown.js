@@ -20,6 +20,7 @@ export default function FAQExplanationDropdown({json, price, discount = 0}) {
                 <button
                     onClick={() => toggleDropdown()}
                     title={isOpen ? `Hide ${json.title}` : `Show ${json.title}`}
+                    className={`${styles["accent-border"]}`}
                     >
                         <span>
                         <i className={`fa-solid ${isOpen ? 'fa-chevron-down' : 'fa-chevron-right'}`}></i>

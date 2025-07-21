@@ -39,6 +39,8 @@
 body {
     background-color: var(--background-color) !important;
     font-family: 'Merriweather', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html[data-theme="purple"] {
@@ -70,9 +72,58 @@ html[data-theme="color-blind"] {
     --button-hover-color: var(--button-color);
 }
 
+.logo {
+    font-family: "Almendra SC", serif !important;
+    letter-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Almendra SC", serif;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-family: "Almendra SC", serif;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+}
+
+p, button, a {
+    font-family: "Crimson Pro", serif;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+}
+button {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.2rem    !important;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+}
+p {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+}
+button {
+    font-size: 1.1rem;
+    font-weight: 100 !important;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+}
+
+.default-font {
+    font-family: "Crimson Pro", serif;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+}
+
 h1 {
     color: var(--primary-color);
-    font-weight: bold;
+    font-weight: 700 !important;
+    /* font-family: "IM Fell English SC", serif !important; */
+    font-size: 2.8rem;
 }
 h1.header {
     text-align: center;
@@ -82,6 +133,8 @@ h1.header {
 
 h2 {
     color: var(--secondary-color);
+    /* font-family: "IM Fell English SC", serif !important; */
+    font-size: 2.2rem;
 }
 h2.header {
     text-align: center;
@@ -138,6 +191,11 @@ button:hover {
 button.secondary:hover {
     background-color: white;
     color: var(--primary-color);
+}
+button.accent-border {
+    border: 1px solid var(--secondary-color) !important;
+    /* background-color: transparent; */
+    /* color: var(--primary-color); */
 }
 
 .button-row {
