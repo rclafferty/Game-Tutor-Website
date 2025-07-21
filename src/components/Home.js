@@ -55,6 +55,7 @@ export default function Home() {
                 >
                     View All Services
                 </button>
+                <hr />
                 <AboutPreview />
             </div>
         </>

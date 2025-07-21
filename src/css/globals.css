@@ -67,7 +67,7 @@ html[data-theme="color-blind"] {
     --light-secondary-color: rgb(224, 224, 224);
     --tertiary-color: white;
     --button-color: black;
-    --button-hover-color: var(--secondary-color);
+    --button-hover-color: var(--button-color);
 }
 
 h1 {
@@ -86,6 +86,14 @@ h2 {
 h2.header {
     text-align: center;
     margin-bottom: 2rem;
+}
+
+hr {
+    margin: 4rem 0;
+    height: 1px;
+    background-color: var(--primary-color);
+    border: none;
+    opacity: 1;
 }
 
 .themeFontColor {

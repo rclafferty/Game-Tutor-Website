@@ -19,23 +19,11 @@ export default function AboutPreview() {
 
     return (
         <>
-            <h1 className='col-12 header'>About {CompanyJSON.name}</h1>
             <div className={`${styles['about-preview']}`}>
-                <div className='container'>
+                <div className={`container`}>
                     <div className={`${ServiceCardStyles["featured-service"]}`}>
-                        {/* <div className={`${ServiceCardStyles["content"]}`}>
-                            <p>
-                                At {CompanyJSON.name}, we specialize in helping gamers and aspiring game developers grow their skills through one-on-one, personalized coaching. Whether you're learning the basics or refining advanced techniques, our expert tutors are here to guide you every step of the way.
-                            </p>
-                            <p>
-                                With personalized coaching sessions, we focus on your unique goals and challenges, providing tailored advice and strategies to help you succeed. Our tutors are passionate gamers and developers themselves, bringing a wealth of knowledge and experience to each session.
-                                Join us at {CompanyJSON.name} and take your game dev skills to the next level!
-                            </p>
-                        </div>
-                        <img className={`${ServiceCardStyles["featured-image"]}`} src={ '/GameTutorLogo2.png'} alt=""/> */}
-
-                        
                         <div>
+                            <h1 className='col-12 header'>About {CompanyJSON.name}</h1>
                             <img className={`${ServiceCardStyles["featured-image-right"]} ${ServiceCardStyles["img-width-20"]}`} src={'/GoBLogoColor.png'} alt=""/>
                             <div className={`${ServiceCardStyles["content"]}`}>
                                 <p>
@@ -50,7 +38,7 @@ export default function AboutPreview() {
                     <button
                         className="wide center"
                         onClick={() => navigate(`/about`)}
-                        style={{ marginTop: '2rem' }}
+                        style={{ margin: '0' }}
                     >
                         Learn More About Us
                     </button>
