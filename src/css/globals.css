@@ -88,13 +88,13 @@ h2.header {
     margin-bottom: 2rem;
 }
 
-hr {
+/* hr {
     margin: 4rem 0;
     height: 1px;
     background-color: var(--primary-color);
     border: none;
     opacity: 1;
-}
+} */
 
 .themeFontColor {
     color: var(--primary-color);

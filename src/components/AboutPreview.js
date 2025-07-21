@@ -19,11 +19,11 @@ export default function AboutPreview() {
 
     return (
         <>
+            <h1 className='col-12 header'>About {CompanyJSON.name}</h1>
             <div className={`${styles['about-preview']}`}>
                 <div className={`container`}>
                     <div className={`${ServiceCardStyles["featured-service"]}`}>
                         <div>
-                            <h1 className='col-12 header'>About {CompanyJSON.name}</h1>
                             <img className={`${ServiceCardStyles["featured-image-right"]} ${ServiceCardStyles["img-width-20"]}`} src={'/GoBLogoColor.png'} alt=""/>
                             <div className={`${ServiceCardStyles["content"]}`}>
                                 <p>
@@ -38,7 +38,7 @@ export default function AboutPreview() {
                     <button
                         className="wide center"
                         onClick={() => navigate(`/about`)}
-                        style={{ margin: '0' }}
+                        style={{ marginTop: '2rem' }}
                     >
                         Learn More About Us
                     </button>
