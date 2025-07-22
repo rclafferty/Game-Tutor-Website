@@ -22,7 +22,6 @@ export default function AboutPreview() {
             <h1 className='col-12 header'><span className='logo'>{CompanyJSON.name}</span></h1>
             <div className={`${styles['about-preview']}`}>
                 <div className={`container`}>
-                    <div className={`${ServiceCardStyles["featured-service"]}`}>
                         <div>
                             <img className={`${ServiceCardStyles["featured-image-right"]} ${ServiceCardStyles["img-width-20"]}`} src={'/GoBLogoColor.png'} alt=""/>
                             <div className={`${ServiceCardStyles["content"]}`}>
@@ -44,7 +43,6 @@ export default function AboutPreview() {
                     </button>
                     </div>
                 </div>
-            </div>
         </>
     );
 }

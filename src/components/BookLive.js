@@ -1,7 +1,9 @@
+
 import BookLink from "./BookLink";
+import BookGoogle from "./BookGoogle";
+import CancelationPolicy from "./CancelationPolicy";
 
 import CompanyJSON from '../json/CompanyInfo.json';
-import CancelationPolicy from "./CancelationPolicy";
 
 export default function BookLive() {
     const phoneNumber = CompanyJSON.phone; // Replace with your phone number
@@ -86,6 +88,7 @@ export default function BookLive() {
 
                 {/* TODO: Add Calendly back after scheduling chat with Dustin. */}
                 {/* <BookCalendly /> */}
+                <BookGoogle />
 
                 <CancelationPolicy />
 

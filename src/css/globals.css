@@ -89,9 +89,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     letter-spacing: 0.15rem;
 }
 
-p, button, a {
+p, button, a, li {
     font-family: "Crimson Pro", serif;
     line-height: 1.6;
+    font-size: 1.3rem;
     letter-spacing: 0.05rem;
 }
 button {
@@ -183,6 +184,10 @@ button.selected, button.secondary {
 }
 button.wide {
     width: 20rem;
+    max-width: 100%;
+}
+button.extra-wide {
+    width: 25rem;
     max-width: 100%;
 }
 button:hover {
