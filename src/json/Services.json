@@ -9,7 +9,7 @@
             "short-description": "Unroll the Scrolls of Unity and take your first steps into the world of game development. Whether you're curious about 2D or 3D, this path offers hands-on, one-on-one guidance to help you build your first projects, explore Unity's tools, and spark your creative journey.",
             "description": [
                 "Chart your course through the Realm of Unity with a guide by your side. Each session is a one-on-one expedition built around your pace, goals, and style. From your first lines of C# to crafting dynamic gameplay systems, every lesson is tailored to help you grow with purpose and direction.",
-                "Forge the essentials: clean coding practices, smart physics, responsive animations, and interactive game mechanics. As you travel deeper, you'll pick up the tools of real-world development—structured systems, practical debugging, and hands-on testing that strengthens the player's experience.",
+                "Forge the essentials: clean coding practices, smart physics, responsive animations, and interactive game mechanics. As you travel deeper, you'll pick up the tools of real-world development: structured systems, practical debugging, and hands-on testing that strengthens the player's experience.",
                 "You choose when to travel. With fully flexible scheduling and expert guidance on version control, you'll not only build games, you'll gain the confidence and skills to carry them across the finish line. The Scrolls await! Are you ready to turn your ideas into living, playable worlds?"
             ],
             "featured-description": [
@@ -48,7 +48,7 @@
                 },
                 {
                     "title": "Game AI",
-                    "description": "Build intelligent behaviors for enemies, NPCs, and gameplay systems using Unity's AI tools. Learn pathfinding with NavMesh, decision-making through state machines, and even how to create reactive AI that challenges the player in meaningful ways. We'll tailor the AI depth to match your project—whether it's simple patrol routes or complex tactical opponents.",
+                    "description": "Build intelligent behaviors for enemies, NPCs, and gameplay systems using Unity's AI tools. Learn pathfinding with NavMesh, decision-making through state machines, and even how to create reactive AI that challenges the player in meaningful ways. We'll tailor the AI depth to match your project, whether it's simple patrol routes or complex tactical opponents.",
                     "image": "GameAI.png",
                     "display": true
                 },

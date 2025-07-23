@@ -212,8 +212,12 @@ button.accent-border {
 }
 
 a {
-    /* text-decoration: none; */
     color: var(--secondary-color);
+}
+a:hover {
+    text-decoration-line: underline;
+    color: var(--light-primary-color);
+    text-decoration-color: var(--light-primary-color);
 }
 
 .hover-lift:hover {
@@ -236,6 +240,10 @@ footer p {
 .footer-container {
     width: 80%;
     margin: 0 auto;
+}
+
+.no-underline {
+    text-decoration: none !important;
 }
 
 ::selection {
