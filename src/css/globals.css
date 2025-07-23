@@ -89,7 +89,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     letter-spacing: 0.15rem;
 }
 
-p, button, a, li {
+p, button, a, li, table {
     font-family: "Crimson Pro", serif;
     line-height: 1.6;
     font-size: 1.3rem;
