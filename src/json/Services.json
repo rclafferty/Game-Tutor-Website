@@ -31,7 +31,7 @@
                 },
                 {
                     "title": "Game Design Fundamentals",
-                    "description": "Learn the art of creating games that are not only fun but intuitive and user-friendly. We'll cover the essentials of game design theory, player feedback, onboarding, and interface layout. Whether it's designing engaging core loops or building clean, responsive menus, you'll develop the skills to make your game both playable and enjoyable from start to finish.",
+                    "description": "Learn the art of creating games that are not only fun but intuitive and user-friendly. We'll cover the essentials of game design theory, player feedback, onboarding, and interface layout. Whether it's designing engaging core loops or building clean gameplay mechanics, you'll develop the skills to make your game both playable and enjoyable from start to finish.",
                     "image": "GameDesignFundamentals2.png",
                     "display": true
                 },
@@ -103,13 +103,13 @@
                 },
                 {
                     "title": "Game Design Fundamentals",
-                    "description": "Design games that are as intuitive as they are engaging. Learn how to apply core game design principles, build responsive user interfaces with UMG (Unreal Motion Graphics), and craft player experiences that feel polished and professional. From menus to HUDs to user flows—we help you design with players in mind.",
+                    "description": "Design games that are as intuitive as they are engaging. Learn how to apply core game design principles and craft player experiences that feel polished and professional. From menus to HUDs to user flows, we help you design with players in mind.",
                     "image": "GameDesignFundamentals2.png",
                     "display": true
                 },
                 {
                     "title": "Testing Fundamentals",
-                    "description": "Get ahead of bugs before they become blockers. Learn how to use Unreal's debugging tools like the Visual Logger, output log, breakpoints, and on-screen debugging. We'll also cover in-editor testing, play-in-editor workflows, and methods for validating systems before they go live.",
+                    "description": "Get ahead of bugs before they become blockers. Learn how to use Unreal's debugging tools like output log, breakpoints, and on-screen debugging. We'll also cover in-editor testing, play-in-editor workflows, and methods for validating systems before they go live.",
                     "image": "UETestFundamentals.png",
                     "display": true
                 },
@@ -121,19 +121,19 @@
                 },
                 {
                     "title": "Game AI",
-                    "description": "Craft reactive, intelligent NPCs using Unreal's AI systems, from loyal companions to cunning foes. You'll explore Behavior Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
+                    "description": "Craft reactive, intelligent NPCs using Unreal's AI systems, from loyal companions to cunning foes. You'll explore Behavior Trees, State Trees, Blackboards, EQS (Environment Query System), and AI Controllers to craft intelligent enemies, companions, or ambient AI. Whether you need a basic guard patrol or a tactical enemy, we'll teach you how to bring it to life.",
                     "image": "UEGameAI.png",
                     "display": true
                 },
                 {
                     "title": "Physics",
-                    "description": "Create more immersive gameplay with Unreal's physics simulation. Learn how to use physics bodies, collision channels, constraints, and force applications. From destructible environments to realistic movement, we'll help you understand and control how your game world behaves under the laws of physics.",
+                    "description": "Create more immersive gameplay with Unreal's physics systems. Learn how to use physics bodies, collision channels, constraints, and force applications. From kinematics to realistic movement, we'll help you understand and control how your game world behaves under the laws of physics.",
                     "image": "UEPhysics.png",
                     "display": true
                 },
                 {
                     "title": "Animation",
-                    "description": "Bring your characters and creatures to life with powerful animation tools in Unreal. Explore animation blueprints, blend spaces, state machines, and control rigs to create fluid and responsive motion. Whether it's a walk cycle or complex combat animations, you'll learn how to tie animation into gameplay for dynamic results.",
+                    "description": "Bring your characters and creatures to life with powerful animation tools in Unreal. Explore animation blueprints, blend spaces, and state machines. Whether it's a walk cycle or complex combat animations, you'll learn how to tie animation into gameplay for dynamic results.",
                     "image": "UEAnimation2.png",
                     "display": true
                 },
