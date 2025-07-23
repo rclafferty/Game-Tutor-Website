@@ -33,7 +33,7 @@ export default function FeaturedServices() {
                             </Link>
 
                             <div>
-                                <img className={`${ServiceCardStyles["featured-image"]}`} src={`${service.image ? `/images/${service.image}` : '/GameTutorLogo2.png'}`} alt=""/>
+                                <img className={`${ServiceCardStyles["featured-image"]}`} src={`${service.image ? `/images/${service.image}` : '/GameTutorLogo2.png'}`} alt={service['featured-alt-text'] ? service['featured-alt-text'] : `No alt text available for ${service.name}`}/>
                                 <div className={`${ServiceCardStyles["content"]}`}>
                                     {service['featured-description'].map((text, i) => {
                                         return (<p key={i}>{text}</p>);

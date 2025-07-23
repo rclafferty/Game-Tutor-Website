@@ -23,7 +23,7 @@ export default function AboutPreview() {
             <div className={`${styles['about-preview']}`}>
                 <div className={`container`}>
                         <div>
-                            <img className={`${ServiceCardStyles["featured-image-right"]} ${ServiceCardStyles["img-width-20"]}`} src={'/GoBLogoColor.png'} alt=""/>
+                            <img className={`${ServiceCardStyles["featured-image-right"]} ${ServiceCardStyles["img-width-20"]}`} src={'/GoBLogoColor.png'} alt="The official Guild of Beginnings logo featuring a blue controller with peach-colored buttons, an outline of a book behind the controller to the right, and an outline of a phone behind the controller to the left."/>
                             <div className={`${ServiceCardStyles["content"]}`}>
                                 <p>
                                 At {CompanyJSON.name}, we specialize in helping gamers and aspiring game developers grow their skills through one-on-one, personalized coaching. Whether you're learning the basics or refining advanced techniques, our expert tutors are here to guide you every step of the way.

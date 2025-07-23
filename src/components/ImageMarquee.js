@@ -68,7 +68,7 @@ const ImageMarquee = ({ images, useSubtitle2 = true, useLinks = true, cycleTime 
                                 minWidth: imageWidth ? `${imageWidth}px` : undefined,
                             }}
                         >
-                            <img src={`${item.image}`} alt={`Slide ${i}`} />
+                            <img src={`${item.image}`} alt={`Slide ${i} -- ${item['alt-text'] ? item['alt-text'] : `No alt text available for ${item.subtitle} ${useSubtitle2 && item['subtitle-2']}`}`} />
                             <div className={styles["marquee-overlay-text"]}>
                                 {item.subtitle}
                                 {useSubtitle2 &&
