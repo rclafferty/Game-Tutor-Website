@@ -10,3 +10,11 @@
     width: 80%;
     margin: 0 auto;
 }
+
+
+@media (max-width: 765px) {
+    .about-preview {
+        width: 100%;
+        padding: 2rem;
+    }
+}

@@ -155,3 +155,17 @@
         width: 100%;
     }
 }
+
+@media (max-width: 765px) {
+    .featured-services {
+        /* width: 100%; */
+        width: 100%;
+        /* margin: 0; */
+    }
+    .featured-service {
+        /* width: 100%; */
+        /* width: 100%; */
+        /* margin: 0; */
+        padding: 2rem;
+    }
+}
