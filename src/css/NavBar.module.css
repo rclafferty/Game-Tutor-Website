@@ -30,12 +30,28 @@
     line-height: 1.6;
     letter-spacing: 0.05rem;
 }
-@media(max-width: 767px) {
+.navbar-toggle {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  transform: translateY(-50%);
+  width: 4rem;
+    visibility: hidden;
+}
+@media(max-width: 1024px) {
   .navbar {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
   }
+  .navbar button {
+    width: 50%;
+  }
+  .navbar-toggle {
+    visibility: visible;
+  }
+}
+@media(max-width: 767px) {
   .navbar button {
     width: 90%;
   }
