@@ -3,23 +3,13 @@ import BookLink from "./BookLink";
 import BookGoogle from "./BookGoogle";
 import CancelationPolicy from "./CancelationPolicy";
 
+import { formatPhoneNumber } from "../helpers/formatPhoneNumber";
+
 import CompanyJSON from '../json/CompanyInfo.json';
 
 export default function BookLive() {
     const phoneNumber = CompanyJSON.phone; // Replace with your phone number
     const telLink = `tel:${phoneNumber}`;
-
-    // Format phone number as (123) 456-7890
-    function formatPhoneNumber(number) {
-        // Remove all non-digit characters
-        const cleaned = ('' + number).replace(/\D/g, '');
-        // Match and format
-        const match = cleaned.match(/^1?(\d{3})(\d{3})(\d{4})$/);
-        if (match) {
-            return `+1 (${match[1]}) ${match[2]}-${match[3]}`;
-        }
-        return number;
-    }
 
     const formattedPhoneNumber = formatPhoneNumber(phoneNumber);
 

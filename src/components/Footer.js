@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import styles from "../css/Footer.module.css"
 
 import scrollToTop from '../helpers/scrollToTop';
+import { formatPhoneNumber } from "../helpers/formatPhoneNumber";
 
 import ServicesJson from '../json/Services.json';
 import CompanyJSON from '../json/CompanyInfo.json';
@@ -56,7 +57,7 @@ export default function Footer() {
                     <div className={`${styles['group']}`}>
                         <h1><Link to={'/book'} className='header-link'>Contact</Link></h1>
                         <ul>
-                            <li key={"Phone"}><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`} className='default-font'>{CompanyJSON.phone}</Link></li>
+                            <li key={"Phone"}><i className="fas fa-phone" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`tel:${CompanyJSON.phone}`} className='default-font'>{formatPhoneNumber(CompanyJSON.phone)}</Link></li>
                             <li key={"Email"}><i className="fas fa-envelope" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={`mailto:${CompanyJSON.email}`}>{CompanyJSON.email}</Link></li>
                             <li key={"Discord"}><i className="fab fa-discord" style={{ fontSize: 16, color: "white" }}></i>{" "}<Link to={CompanyJSON.socialMediaLinks.discord}>Join Discord</Link></li>
                         </ul>
